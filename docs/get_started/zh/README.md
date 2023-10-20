@@ -5,18 +5,40 @@ desc: 这里写文章简介
 date: 2022-09-01
 ---
 
-# 文章写作
+
+# Quick Installation
+
+Run the code in cmd to quickly deploy the site locally.
+
+```batch
+
+cd /d %~dp0
+
+#### virtual environment can be ignored
+call C:\dev\pyenv\Scripts\activate.bat 
+rem pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
+mkdir KnowledgeBaseTeedoc
+cd KnowledgeBaseTeedoc
+teedoc init
+teedoc -d KnowledgeBaseTeedoc init
+teedoc install
+teedoc serve
+teedoc build
+
+
+```
+
+# Article Writing
 
 ```markdown
 ---
 title: 3DEXPERIENCE查询文件大小
 keywords: 大小
 desc: teedoc 大小, 第一篇博客
-author: neucrack
+author: designer
 date: 2021-03-14
 tags: hello, blog, 查询
 ---
-
-
 
 ```

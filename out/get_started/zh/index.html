@@ -156,18 +156,36 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     </div>
                     <div id="article_content">
                         
-                            <h1 id="%E6%96%87%E7%AB%A0%E5%86%99%E4%BD%9C">文章写作</h1>
+                            <h1 id="Quick-Installation">Quick Installation</h1>
+<p>Run the code in cmd to quickly deploy the site locally.</p>
+
+<pre class="language-batch"><code class="language-batch">
+cd /d %~dp0
+
+#### virtual environment can be ignored
+call C:\dev\pyenv\Scripts\activate.bat 
+rem pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
+mkdir KnowledgeBaseTeedoc
+cd KnowledgeBaseTeedoc
+teedoc init
+teedoc -d KnowledgeBaseTeedoc init
+teedoc install
+teedoc serve
+teedoc build
+
+
+</code></pre>
+<h1 id="Article-Writing">Article Writing</h1>
 
 <pre class="language-markdown"><code class="language-markdown">---
 title: 3DEXPERIENCE查询文件大小
 keywords: 大小
 desc: teedoc 大小, 第一篇博客
-author: neucrack
+author: designer
 date: 2021-03-14
 tags: hello, blog, 查询
 ---
-
-
 
 </code></pre>
 
