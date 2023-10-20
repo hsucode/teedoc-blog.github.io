@@ -6,8 +6,8 @@ id: home_page
 ---
 
 <div>
-    <h1><span>KnowledgeBase</span></h1>
-    <h3>欢迎访问KnowledgeBase网站，也欢迎您添加自己的知识！</h3>
+    <h4><span>KnowledgeBase</span></h4>
+    <h4>欢迎访问KnowledgeBase网站，也欢迎您添加自己的知识！</h4>
 </div>
 <div id="big_btn_wrapper">
     <div class="big_btn">

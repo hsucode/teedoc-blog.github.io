@@ -16,6 +16,6 @@ teedoc install
 
 :aaa
 
-teedoc serve
-
 teedoc build
+@REM teedoc serve
+

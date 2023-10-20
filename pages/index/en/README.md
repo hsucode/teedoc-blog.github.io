@@ -9,8 +9,8 @@ id: home_page
 
 
 <div>
-    <h2><span>Knowledge Base</span></h2>
-    <h3>congratulations! web comes out~</h3>
+    <h4><span>Knowledge Base</span></h4>
+    <h4>congratulations! web comes out~</h4>
 </div>
 <div id="big_btn_wrapper">
     <div class="big_btn">
