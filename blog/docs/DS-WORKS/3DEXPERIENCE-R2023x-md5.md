@@ -1,0 +1,590 @@
+# 3DEXPERIENCE R2023x MD5
+
+=== "GA"
+
+    3DEXPERIENCE_R2023x.PDir_Multibrand.1-1.zip
+    MD5:  0d95aa2503747d0c12b216451dbbd912
+    Size: 120 MB
+
+    3DEXPERIENCE Business Analytics Apps - 3DEXPERIENCE R2023x Golden - AllOS
+
+    V6R2023x.AM_3DEXP_Analytics.AllOS.1-2.tar
+    MD5:  c7ae954aca65d924d07cb771318d06ea
+    Size: 3.4 GB
+    V6R2023x.AM_3DEXP_Analytics.AllOS.2-2.tar
+    MD5:  b9cdac5290553b9fc983a45961f990d7
+    Size: 3.2 GB
+
+    3DEXPERIENCE Content for Native Apps - 3DEXPERIENCE R2023x Golden - WIN64
+
+    CNT_NativeApps_3DEXP-V6R2023x.Windows64.1-12.zip
+    MD5:  48b62508c6c7ec5fc9bc2f5e6e1cd60f
+    Size: 3.1 GB
+    CNT_NativeApps_3DEXP-V6R2023x.Windows64.2-12.zip
+    MD5:  38242539dc819d657f194593c05029f0
+    Size: 3.1 GB
+    CNT_NativeApps_3DEXP-V6R2023x.Windows64.3-12.zip
+    MD5:  5d21186274f9456af309e74bc06cac27
+    Size: 2.7 GB
+    CNT_NativeApps_3DEXP-V6R2023x.Windows64.4-12.zip
+    MD5:  d1e9403976165bcb5dd48289338c3cb7
+    Size: 2.7 GB
+    CNT_NativeApps_3DEXP-V6R2023x.Windows64.5-12.zip
+    MD5:  ecb6b4a8025f913f8a614627076af846
+    Size: 2.7 GB
+    CNT_NativeApps_3DEXP-V6R2023x.Windows64.6-12.zip
+    MD5:  5a2ff5b6e418ef01ae8871f4882873b0
+    Size: 2.6 GB
+    CNT_NativeApps_3DEXP-V6R2023x.Windows64.7-12.zip
+    MD5:  a29a3ebcbdf071e4b5dea232f5f4c366
+    Size: 1.8 GB
+    CNT_NativeApps_3DEXP-V6R2023x.Windows64.8-12.zip
+    MD5:  66aa0b5e62f8fd54c0db44015b068fe9
+    Size: 1.8 GB
+    CNT_NativeApps_3DEXP-V6R2023x.Windows64.9-12.zip
+    MD5:  99f6dfcd5292ce97bce652f2b0eb3464
+    Size: 1.8 GB
+    CNT_NativeApps_3DEXP-V6R2023x.Windows64.10-12.zip
+    MD5:  142c6c36b84abc52b5df460c15c9125c
+    Size: 1.8 GB
+    CNT_NativeApps_3DEXP-V6R2023x.Windows64.11-12.zip
+    MD5:  3e3242b418d9997ac2e85083d0cde5ab
+    Size: 1.8 GB
+    CNT_NativeApps_3DEXP-V6R2023x.Windows64.12-12.zip
+    MD5:  2b5b3f6461685f3928b914fbd990a805
+    Size: 1.8 GB
+
+    3DEXPERIENCE Native Apps - 3DEXPERIENCE R2023x Golden - AllOS
+
+    V6R2023x.AM_3DEXP_NativeApps.AllOS.1-12.tar
+    MD5:  ba98629a517827d89e3ee29a3ed93ea8
+    Size: 3.6 GB
+    V6R2023x.AM_3DEXP_NativeApps.AllOS.2-12.tar
+    MD5:  42d59148418de4d16dcbae80c94bcd9b
+    Size: 3.6 GB
+    V6R2023x.AM_3DEXP_NativeApps.AllOS.3-12.tar
+    MD5:  d656c844fa99e93d70fa02821af184f0
+    Size: 3.6 GB
+    V6R2023x.AM_3DEXP_NativeApps.AllOS.4-12.tar
+    MD5:  b9be4aa3b55ef69c0e03d95a6cd948e5
+    Size: 3.6 GB
+    V6R2023x.AM_3DEXP_NativeApps.AllOS.5-12.tar
+    MD5:  03d7e7b01cf31cc4ffa929651fe6b4e8
+    Size: 3.6 GB
+    V6R2023x.AM_3DEXP_NativeApps.AllOS.6-12.tar
+    MD5:  616abd720175f0039f12305b0c5152f3
+    Size: 3.6 GB
+    V6R2023x.AM_3DEXP_NativeApps.AllOS.7-12.tar
+    MD5:  6dfc0c566d11931ccd832cd7db8776e7
+    Size: 3.6 GB
+    V6R2023x.AM_3DEXP_NativeApps.AllOS.8-12.tar
+    MD5:  66fa62d6e68a7e42f78817c0fd8de589
+    Size: 3.6 GB
+    V6R2023x.AM_3DEXP_NativeApps.AllOS.9-12.tar
+    MD5:  b6c1284b2acfe633117bc108c7265049
+    Size: 3.6 GB
+    V6R2023x.AM_3DEXP_NativeApps.AllOS.10-12.tar
+    MD5:  f6d575fe11f0b536f9e51acf01f9aa98
+    Size: 3.6 GB
+    V6R2023x.AM_3DEXP_NativeApps.AllOS.11-12.tar
+    MD5:  cacd5df47d2a64465aed4bb58173ef97
+    Size: 3.6 GB
+    V6R2023x.AM_3DEXP_NativeApps.AllOS.12-12.tar
+    MD5:  61de5227dc92552a7a3dde01c5d89724
+    Size: 3.6 GB
+
+    3DEXPERIENCE Open Application Development Suite - 3DEXPERIENCE R2023x Golden - AllOS
+
+    V6R2023x.AM_3DEXP_AppDevSuite.AllOS.tar
+    MD5:  f48714e84e00d9ddb690405147f5d470
+    Size: 3.2 GB
+
+    3DEXPERIENCE Platform - 3DEXPERIENCE R2023x Golden - AllOS
+
+    V6R2023x.AM_3DEXP_Platform.AllOS.1-18.tar
+    MD5:  e2a323a388a19840b731efb91fa8f053
+    Size: 3.7 GB
+    V6R2023x.AM_3DEXP_Platform.AllOS.2-18.tar
+    MD5:  f0b4f0a8ca063239278a4c001b6ac20c
+    Size: 3.6 GB
+    V6R2023x.AM_3DEXP_Platform.AllOS.3-18.tar
+    MD5:  cc65234ac4dc1b8b1cfb847a5d1917e8
+    Size: 3.6 GB
+    V6R2023x.AM_3DEXP_Platform.AllOS.4-18.tar
+    MD5:  e5a80aa3666cd19fd5930de2adf03595
+    Size: 3.6 GB
+    V6R2023x.AM_3DEXP_Platform.AllOS.5-18.tar
+    MD5:  543f8f7c948bfb30c3ccb1f5e1c996b4
+    Size: 3.6 GB
+    V6R2023x.AM_3DEXP_Platform.AllOS.6-18.tar
+    MD5:  827fd03a81a5168945fb11feb8a31950
+    Size: 3.6 GB
+    V6R2023x.AM_3DEXP_Platform.AllOS.7-18.tar
+    MD5:  f436c04e951793aed363573b8fc79687
+    Size: 3.6 GB
+    V6R2023x.AM_3DEXP_Platform.AllOS.8-18.tar
+    MD5:  596c6851c9234a47d4bdae7fbe52a12f
+    Size: 3.6 GB
+    V6R2023x.AM_3DEXP_Platform.AllOS.9-18.tar
+    MD5:  3d45947839b8fa2099d42199d96c6eb7
+    Size: 3.6 GB
+    V6R2023x.AM_3DEXP_Platform.AllOS.10-18.tar
+    MD5:  32026cf7befa81c93fce382523502ccb
+    Size: 3.6 GB
+    V6R2023x.AM_3DEXP_Platform.AllOS.11-18.tar
+    MD5:  ffa86ef0ebf607121dee62a4ece7ecbb
+    Size: 3.6 GB
+    V6R2023x.AM_3DEXP_Platform.AllOS.12-18.tar
+    MD5:  5046e32fc79ae66491ab8252e556aa60
+    Size: 3.6 GB
+    V6R2023x.AM_3DEXP_Platform.AllOS.13-18.tar
+    MD5:  b7394bb921881652f11c34f2988b50c2
+    Size: 3.6 GB
+    V6R2023x.AM_3DEXP_Platform.AllOS.14-18.tar
+    MD5:  8fcd3343f954a17d2e4e359e2b9a4f86
+    Size: 3.6 GB
+    V6R2023x.AM_3DEXP_Platform.AllOS.15-18.tar
+    MD5:  d220c58dd7b86c9e4ce3152d156ac17b
+    Size: 3.6 GB
+    V6R2023x.AM_3DEXP_Platform.AllOS.16-18.tar
+    MD5:  c20831a270091966790c10e8c1d00d21
+    Size: 3.6 GB
+    V6R2023x.AM_3DEXP_Platform.AllOS.17-18.tar
+    MD5:  09212425b3e6dc9b2f1b16fa3b24fd75
+    Size: 3.6 GB
+    V6R2023x.AM_3DEXP_Platform.AllOS.18-18.tar
+    MD5:  b5a9c7b88b90f7ca43c75a0b8512e4ed
+    Size: 3.6 GB
+
+    3DEXPERIENCE Unified Connector for CATIA V5-6R2015 to V5-6R2017 - 3DEXPERIENCE R2023x Golden - AllOS
+
+    V6R2023x.AM_UnifiedCollabDesignV5.AllOS.tar
+    MD5:  2fc01891e000513d2837bb0a440453c9
+    Size: 545 MB
+
+    3DEXPERIENCE Web Apps - 3DEXPERIENCE R2023x Golden - AllOS
+
+    V6R2023x.AM_3DEXP_WebApps.AllOS.1-12.tar
+    MD5:  e8703f7c407f2a09c8de901e8c21f667
+    Size: 3.5 GB
+    V6R2023x.AM_3DEXP_WebApps.AllOS.2-12.tar
+    MD5:  e029121e4ea099f83206ac0d17e2a57e
+    Size: 3.5 GB
+    V6R2023x.AM_3DEXP_WebApps.AllOS.3-12.tar
+    MD5:  851970de01da5845edfd28f3b9490f12
+    Size: 3.5 GB
+    V6R2023x.AM_3DEXP_WebApps.AllOS.4-12.tar
+    MD5:  a89103ccddd7cf3ab8d5d9d9c24ec476
+    Size: 3.5 GB
+    V6R2023x.AM_3DEXP_WebApps.AllOS.5-12.tar
+    MD5:  833bf7fd6ec71ad070b9839091394078
+    Size: 3.5 GB
+    V6R2023x.AM_3DEXP_WebApps.AllOS.6-12.tar
+    MD5:  ed0edd7c61e58255254b8072c7482d05
+    Size: 3.5 GB
+    V6R2023x.AM_3DEXP_WebApps.AllOS.7-12.tar
+    MD5:  0fb835c58e254886e3169acec5a330ee
+    Size: 3.5 GB
+    V6R2023x.AM_3DEXP_WebApps.AllOS.8-12.tar
+    MD5:  db04e700fa8656cb549981db7a04abc3
+    Size: 3.5 GB
+    V6R2023x.AM_3DEXP_WebApps.AllOS.9-12.tar
+    MD5:  371e07d73c7b3629ebc26b77421bcdfb
+    Size: 3.5 GB
+    V6R2023x.AM_3DEXP_WebApps.AllOS.10-12.tar
+    MD5:  bfb80e6b6720d57e29d61271aa03dca9
+    Size: 3.5 GB
+    V6R2023x.AM_3DEXP_WebApps.AllOS.11-12.tar
+    MD5:  c479261ecc770e3e3c1aa6a69ea149d4
+    Size: 3.5 GB
+    V6R2023x.AM_3DEXP_WebApps.AllOS.12-12.tar
+    MD5:  32dce4ffc996cd526b2300b6c01572a8
+    Size: 3.5 GB
+
+    Dassault Systèmes License Server (DSLS) - 3DEXPERIENCE R2023x Golden - AllOS
+
+    DSLS-V6R2023x.AllOS.zip
+    MD5:  1208853a2b77363c181689a5215a99a6
+    Size: 84 MB
+
+    3DEXPERIENCE Documentation - 3DEXPERIENCE R2023x Golden - English
+
+    DOC_Apps_3DEXP-V6R2023x.AllOS.1-5.zip
+    MD5:  778670a132488a8f2c8b5301678e96aa
+    Size: 1.6 GB
+    DOC_Apps_3DEXP-V6R2023x.AllOS.2-5.zip
+    MD5:  255df435a2b6fc5964ae700e2b11ff97
+    Size: 1.6 GB
+    DOC_Apps_3DEXP-V6R2023x.AllOS.3-5.zip
+    MD5:  4a5b82ca5cab3341fe84b00c047377d8
+    Size: 1.6 GB
+    DOC_Apps_3DEXP-V6R2023x.AllOS.4-5.zip
+    MD5:  d8657e2c82b27eba2fc194736d055979
+    Size: 1.7 GB
+    DOC_Apps_3DEXP-V6R2023x.AllOS.5-5.zip
+    MD5:  22701ab8109bb7b6aaee7b490ac26871
+    Size: 1.6 GB
+
+    3DEXPERIENCE Documentation - 3DEXPERIENCE R2023x Golden - Spanish
+
+    DOC_Apps_3DEXP_Spanish-V6R2023x.AllOS.1-5.zip
+    MD5:  df443de26b01a07c6aebcbc2aca58ee1
+    Size: 1.6 GB
+    DOC_Apps_3DEXP_Spanish-V6R2023x.AllOS.2-5.zip
+    MD5:  83fd8d04ece4c594b1afceecb48d81d8
+    Size: 1.7 GB
+    DOC_Apps_3DEXP_Spanish-V6R2023x.AllOS.3-5.zip
+    MD5:  82f79b127d66c56ed7a7031ab76f5752
+    Size: 1.6 GB
+    DOC_Apps_3DEXP_Spanish-V6R2023x.AllOS.4-5.zip
+    MD5:  5ecc1fb6390fe79b0d5bf9a62e38921c
+    Size: 1.7 GB
+    DOC_Apps_3DEXP_Spanish-V6R2023x.AllOS.5-5.zip
+    MD5:  ad1e9e8766690dea0bc274b4f44fbea8
+    Size: 1.7 GB
+
+    3DEXPERIENCE Documentation - 3DEXPERIENCE R2023x Golden - French
+
+    DOC_Apps_3DEXP_French-V6R2023x.AllOS.1-5.zip
+    MD5:  0b5e4b931759b501f71fd5a06162df0a
+    Size: 1.6 GB
+    DOC_Apps_3DEXP_French-V6R2023x.AllOS.2-5.zip
+    MD5:  b0213701ad0392712c4fc8a5311fd335
+    Size: 1.7 GB
+    DOC_Apps_3DEXP_French-V6R2023x.AllOS.3-5.zip
+    MD5:  3cdc859a08f3d727a074e3bf2477b1da
+    Size: 1.6 GB
+    DOC_Apps_3DEXP_French-V6R2023x.AllOS.4-5.zip
+    MD5:  790267ff9cd667374b72956ce8294dc7
+    Size: 1.7 GB
+    DOC_Apps_3DEXP_French-V6R2023x.AllOS.5-5.zip
+    MD5:  c1001424615cd20b19e242840f9ae7a1
+    Size: 1.6 GB
+
+    3DEXPERIENCE Documentation - 3DEXPERIENCE R2023x Golden - German
+
+    DOC_Apps_3DEXP_German-V6R2023x.AllOS.1-5.zip
+    MD5:  ba19a8e411f696da0d83deba8bc878c5
+    Size: 1.6 GB
+    DOC_Apps_3DEXP_German-V6R2023x.AllOS.2-5.zip
+    MD5:  03e29765c57aec24f911c92aa7bef038
+    Size: 1.7 GB
+    DOC_Apps_3DEXP_German-V6R2023x.AllOS.3-5.zip
+    MD5:  98872b8df603a8da47f7ed583c7e0f51
+    Size: 1.6 GB
+    DOC_Apps_3DEXP_German-V6R2023x.AllOS.4-5.zip
+    MD5:  bfb854a41fe5248ae36d991dc7543b88
+    Size: 1.7 GB
+    DOC_Apps_3DEXP_German-V6R2023x.AllOS.5-5.zip
+    MD5:  ccd954db1c64b5cfff486eb415e7f7e4
+    Size: 1.6 GB
+
+    3DEXPERIENCE Documentation - 3DEXPERIENCE R2023x Golden - Italian
+
+    DOC_Apps_3DEXP_Italian-V6R2023x.AllOS.1-5.zip
+    MD5:  01abb6a8422bc84ae9fdda1fef8fb22b
+    Size: 1.6 GB
+    DOC_Apps_3DEXP_Italian-V6R2023x.AllOS.2-5.zip
+    MD5:  9da5662ce08ca7004a719b6090fcdb85
+    Size: 1.7 GB
+    DOC_Apps_3DEXP_Italian-V6R2023x.AllOS.3-5.zip
+    MD5:  a75fd56c45680097c14d2614f2cabff7
+    Size: 1.6 GB
+    DOC_Apps_3DEXP_Italian-V6R2023x.AllOS.4-5.zip
+    MD5:  3d4c27bc14c84db24519bf7d3fcd81cc
+    Size: 1.7 GB
+    DOC_Apps_3DEXP_Italian-V6R2023x.AllOS.5-5.zip
+    MD5:  1a00142d12a60c00e9aaa1d3f089370b
+    Size: 1.7 GB
+
+    3DEXPERIENCE Documentation - 3DEXPERIENCE R2023x Golden - Japanese
+
+    DOC_Apps_3DEXP_Japanese-V6R2023x.AllOS.1-5.zip
+    MD5:  9c035327791dc80246e4e4eae3fe5355
+    Size: 1.7 GB
+    DOC_Apps_3DEXP_Japanese-V6R2023x.AllOS.2-5.zip
+    MD5:  3eabe4a8e3e83779143bef5bdc8018a6
+    Size: 1.7 GB
+    DOC_Apps_3DEXP_Japanese-V6R2023x.AllOS.3-5.zip
+    MD5:  59cc263aef44e4e69e8cbc4bbd9cfea4
+    Size: 1.6 GB
+    DOC_Apps_3DEXP_Japanese-V6R2023x.AllOS.4-5.zip
+    MD5:  15a250e47137fc8f0edc3d1300e07b27
+    Size: 1.7 GB
+    DOC_Apps_3DEXP_Japanese-V6R2023x.AllOS.5-5.zip
+    MD5:  c2d8f13d762c4ea89177155d56524cc1
+    Size: 1.7 GB
+
+    3DEXPERIENCE Documentation - 3DEXPERIENCE R2023x Golden - Russian
+
+    DOC_Apps_3DEXP_Russian-V6R2023x.AllOS.1-5.zip
+    MD5:  791bf6ec0aaf5c1df87888753ab51a2b
+    Size: 1.6 GB
+    DOC_Apps_3DEXP_Russian-V6R2023x.AllOS.2-5.zip
+    MD5:  0829f376f0eb8ad2262d36ceb8d23e22
+    Size: 1.7 GB
+    DOC_Apps_3DEXP_Russian-V6R2023x.AllOS.3-5.zip
+    MD5:  7233e63d3e8fff722bd90770cc14f54e
+    Size: 1.6 GB
+    DOC_Apps_3DEXP_Russian-V6R2023x.AllOS.4-5.zip
+    MD5:  24d23c1e9dbb1073dda9d7ea33b2a8c8
+    Size: 1.7 GB
+    DOC_Apps_3DEXP_Russian-V6R2023x.AllOS.5-5.zip
+    MD5:  7cbc7f23c9d76810a0b5949ee5a57aaf
+    Size: 1.7 GB
+
+    3DEXPERIENCE Documentation - 3DEXPERIENCE R2023x Golden - Simplified Chinese
+
+    DOC_Apps_3DEXP_Simplified_Chinese-V6R2023x.AllOS.1-5.zip
+    MD5:  ea06519016a1d8d7100dfcadbc692990
+    Size: 1.7 GB
+    DOC_Apps_3DEXP_Simplified_Chinese-V6R2023x.AllOS.2-5.zip
+    MD5:  c4515c23716617a688f834e2f3ade448
+    Size: 1.7 GB
+    DOC_Apps_3DEXP_Simplified_Chinese-V6R2023x.AllOS.3-5.zip
+    MD5:  57737e9d62d4fcfd3ac28cae587b46b1
+    Size: 1.6 GB
+    DOC_Apps_3DEXP_Simplified_Chinese-V6R2023x.AllOS.4-5.zip
+    MD5:  f0ef64096f97a14eb60b9b1bbd0b9f31
+    Size: 1.7 GB
+    DOC_Apps_3DEXP_Simplified_Chinese-V6R2023x.AllOS.5-5.zip
+    MD5:  a4a07261fb7f9f12c72450d836a95026
+    Size: 1.6 GB
+    © 2002 - 2023 Dassault Systèmes - All rights reserved
+
+=== "FP.CFA.2324"
+
+    Part_3DEXP_Readme - 3DEXPERIENCE R2023x FP.CFA.2324 - AllOS
+
+    V6R2023x.FP.CFA.2324.Part_3DEXP_Readme.AllOS.tar
+    MD5:  39126dcf1efa9a81013375b672a1cf42
+    Size: 2 MB
+
+    Program Directory - 3DEXPERIENCE R2023x FP.CFA.2324
+    3DEXPERIENCE_R2023x_FP.CFA.2324.PDir_Multibrand.1-1.zip
+    MD5:  3e8bd0892172e2048154203b668c0c69
+    Size: 364 MB
+
+    Part_3DEXP_3DOrchestrate - 3DEXPERIENCE R2023x FP.CFA.2324 - Linux64
+    V6R2023x.FP.CFA.2324.Part_3DEXP_3DOrchestrate.Linux64.1-2.tar
+    MD5:  c26807ddda7e72776255bd9bf9f0acee
+    Size: 2.1 GB
+    V6R2023x.FP.CFA.2324.Part_3DEXP_3DOrchestrate.Linux64.2-2.tar
+    MD5:  e2d0ff2578682d1662172dcbbd973f31
+    Size: 2.1 GB
+
+    Part_3DEXP_3DOrchestrate - 3DEXPERIENCE R2023x FP.CFA.2324 - WIN64
+
+    V6R2023x.FP.CFA.2324.Part_3DEXP_3DOrchestrate.Windows64.zip
+    MD5:  f4393bce133503ced2168f27a2d9e482
+    Size: 3.4 GB
+
+    Part_3DEXP_AppDevSuite - 3DEXPERIENCE R2023x FP.CFA.2324 - AllOS
+
+    V6R2023x.FP.CFA.2324.Part_3DEXP_AppDevSuite.AllOS.zip
+    MD5:  69bc99ca03a69f4e4f1bf5a9766d459a
+    Size: 1.3 GB
+
+    Part_3DEXP_AppDevSuite_Srv - 3DEXPERIENCE R2023x FP.CFA.2324 - WIN64
+
+    V6R2023x.FP.CFA.2324.Part_3DEXP_AppDevSuite_Srv.Windows64.zip
+    MD5:  4af5a28fb45ffb83be2a9317efe54355
+    Size: 205 MB
+
+    Part_3DEXP_AppDevSuite_Srv - 3DEXPERIENCE R2023x FP.CFA.2324 - Linux64
+
+    V6R2023x.FP.CFA.2324.Part_3DEXP_AppDevSuite_Srv.Linux64.tar
+    MD5:  9d03303a1848ea293f3c9fcde73cbf38
+    Size: 327 MB
+
+    Part_3DEXP_Content - 3DEXPERIENCE R2023x FP.CFA.2324 - WIN64
+
+    V6R2023x.FP.CFA.2324.Part_3DEXP_Content.Windows64.1-5.zip
+    MD5:  fd8100e6e58b12bc9d2a5ae00ca6e8a3
+    Size: 3.3 GB
+    V6R2023x.FP.CFA.2324.Part_3DEXP_Content.Windows64.2-5.zip
+    MD5:  e554215b1ddf173ee7522457794e9fa8
+    Size: 3.3 GB
+    V6R2023x.FP.CFA.2324.Part_3DEXP_Content.Windows64.3-5.zip
+    MD5:  795185db29c6554bedbe8103101cba0c
+    Size: 3.3 GB
+    V6R2023x.FP.CFA.2324.Part_3DEXP_Content.Windows64.4-5.zip
+    MD5:  6854158e9c91c437202dd3240f995435
+    Size: 3.3 GB
+    V6R2023x.FP.CFA.2324.Part_3DEXP_Content.Windows64.5-5.zip
+    MD5:  c586c7f5bf5122e1c9bec4c13d1298d3
+    Size: 3.3 GB
+
+    Part_3DEXP_EXALEAD_CloudView - 3DEXPERIENCE R2023x FP.CFA.2324 - AllOS
+
+    V6R2023x.FP.CFA.2324.Part_3DEXP_EXALEAD_CloudView.AllOS.tar
+    MD5:  c0b7f4d554b42caea265026d964d5636
+    Size: 324 MB
+
+    Part_3DEXP_EXALEAD_OnePart - 3DEXPERIENCE R2023x FP.CFA.2324 - WIN64
+
+    V6R2023x.FP.CFA.2324.Part_3DEXP_EXALEAD_OnePart.Windows64.zip
+    MD5:  8f2bdb4cb83f4aca80c72c0f10b99bcf
+    Size: 3.5 GB
+
+    Part_3DEXP_EXALEAD_OnePart - 3DEXPERIENCE R2023x FP.CFA.2324 - Linux64
+
+    V6R2023x.FP.CFA.2324.Part_3DEXP_EXALEAD_OnePart.Linux64.1-2.tar
+    MD5:  b5e9056fa28daacc1420d7c6dda3323f
+    Size: 3.8 GB
+    V6R2023x.FP.CFA.2324.Part_3DEXP_EXALEAD_OnePart.Linux64.2-2.tar
+    MD5:  5f58e68272a4598f8549e9248a483acc
+    Size: 86 MB
+
+    Part_3DEXP_GEOVIAConnectors - 3DEXPERIENCE R2023x FP.CFA.2324 - WIN64
+
+    V6R2023x.FP.CFA.2324.Part_3DEXP_GEOVIAConnectors.Windows64.zip
+    MD5:  f252e65bb1af4449f54786c61650e5c1
+    Size: 82 MB
+
+    Part_3DEXP_NativeApps - 3DEXPERIENCE R2023x FP.CFA.2324 - WIN64
+
+    V6R2023x.FP.CFA.2324.Part_3DEXP_NativeApps.Windows64.1-5.zip
+    MD5:  316458fc94cfb096281a9f5ffd663a7d
+    Size: 3.3 GB
+    V6R2023x.FP.CFA.2324.Part_3DEXP_NativeApps.Windows64.2-5.zip
+    MD5:  01a7fdd4305f63d66a8532c306c6b45d
+    Size: 3.3 GB
+    V6R2023x.FP.CFA.2324.Part_3DEXP_NativeApps.Windows64.3-5.zip
+    MD5:  bbe3c9f9d421d6668656763de61b9c35
+    Size: 3.3 GB
+    V6R2023x.FP.CFA.2324.Part_3DEXP_NativeApps.Windows64.4-5.zip
+    MD5:  54320674e6c48ebcc9fdcab14bdaa7e9
+    Size: 3.4 GB
+    V6R2023x.FP.CFA.2324.Part_3DEXP_NativeApps.Windows64.5-5.zip
+    MD5:  44e25646c2fe6605d3a8a892361aba8d
+    Size: 3.3 GB
+
+    Part_3DEXP_NativeApps - 3DEXPERIENCE R2023x FP.CFA.2324 - Linux64
+
+    V6R2023x.FP.CFA.2324.Part_3DEXP_NativeApps.Linux64.tar
+    MD5:  1f136913597829660274b7332eff5baa
+    Size: 877 MB
+
+    Part_3DEXP_OpenApps - 3DEXPERIENCE R2023x FP.CFA.2324 - AllOS
+
+    V6R2023x.FP.CFA.2324.Part_3DEXP_OpenApps.AllOS.1-7.tar
+    MD5:  b538c993bdc4e8df577fd2b2dd213a27
+    Size: 1.9 GB
+    V6R2023x.FP.CFA.2324.Part_3DEXP_OpenApps.AllOS.2-7.tar
+    MD5:  302a4b1be4704ce925e9cc9924dea591
+    Size: 1.4 GB
+    V6R2023x.FP.CFA.2324.Part_3DEXP_OpenApps.AllOS.3-7.tar
+    MD5:  a608c935985929a915367cc39361c791
+    Size: 2.8 GB
+    V6R2023x.FP.CFA.2324.Part_3DEXP_OpenApps.AllOS.4-7.tar
+    MD5:  a1e6769a90eeda62bed47a720acb2369
+    Size: 2.9 GB
+    V6R2023x.FP.CFA.2324.Part_3DEXP_OpenApps.AllOS.5-7.tar
+    MD5:  cae85f6b91ebe309f0e7914675fd268a
+    Size: 2.6 GB
+    V6R2023x.FP.CFA.2324.Part_3DEXP_OpenApps.AllOS.6-7.tar
+    MD5:  0e5400ff184d5e9b06c23bd1709dd987
+    Size: 3.6 GB
+    V6R2023x.FP.CFA.2324.Part_3DEXP_OpenApps.AllOS.7-7.tar
+    MD5:  4d47590059063938ce048205d8855155
+    Size: 3.7 GB
+
+    Part_3DEXP_Platform - 3DEXPERIENCE R2023x FP.CFA.2324 - WIN64
+
+    V6R2023x.FP.CFA.2324.Part_3DEXP_Platform.Windows64.1-4.zip
+    MD5:  e496bbec3d40f751226b970e6306ca0d
+    Size: 2.8 GB
+    V6R2023x.FP.CFA.2324.Part_3DEXP_Platform.Windows64.2-4.zip
+    MD5:  83ae34df5a05473e00c9b8ecf5c8ca62
+    Size: 1.9 GB
+    V6R2023x.FP.CFA.2324.Part_3DEXP_Platform.Windows64.3-4.zip
+    MD5:  aeddd1baf09cec1fb88a69c7894b8aae
+    Size: 1.7 GB
+    V6R2023x.FP.CFA.2324.Part_3DEXP_Platform.Windows64.4-4.zip
+    MD5:  0518013faa6a92da2dc57f9af102dae1
+    Size: 666 MB
+
+    Part_3DEXP_Platform - 3DEXPERIENCE R2023x FP.CFA.2324 - Linux64
+
+    V6R2023x.FP.CFA.2324.Part_3DEXP_Platform.Linux64.1-4.tar
+    MD5:  32037ad313a3f03a5afeef7111b8a3c3
+    Size: 2.9 GB
+    V6R2023x.FP.CFA.2324.Part_3DEXP_Platform.Linux64.2-4.tar
+    MD5:  6dbe9cab9cd1e716da3cf10dbb62f606
+    Size: 2.4 GB
+    V6R2023x.FP.CFA.2324.Part_3DEXP_Platform.Linux64.3-4.tar
+    MD5:  35f3680eef5b68286ce2ba0ad4e25501
+    Size: 1.8 GB
+    V6R2023x.FP.CFA.2324.Part_3DEXP_Platform.Linux64.4-4.tar
+    MD5:  2b6071abc4043765806bb5347e61f450
+    Size: 989 MB
+
+    Part_3DEXP_SimulationServices - 3DEXPERIENCE R2023x FP.CFA.2324 - WIN64
+
+    V6R2023x.FP.CFA.2324.Part_3DEXP_SimulationServices.Windows64.zip
+    MD5:  b011deba215eb7262cfaac25f6435df4
+    Size: 1.2 GB
+
+    Part_3DEXP_SimulationServices - 3DEXPERIENCE R2023x FP.CFA.2324 - Linux64
+
+    V6R2023x.FP.CFA.2324.Part_3DEXP_SimulationServices.Linux64.1-4.tar
+    MD5:  ceedcc63273f475e1c88663de6d8dc8b
+    Size: 3.3 GB
+    V6R2023x.FP.CFA.2324.Part_3DEXP_SimulationServices.Linux64.2-4.tar
+    MD5:  a96992533058e2b8e4a695f813f6a721
+    Size: 3.3 GB
+    V6R2023x.FP.CFA.2324.Part_3DEXP_SimulationServices.Linux64.3-4.tar
+    MD5:  9674cd01e830ce42dc8b74eed952ee38
+    Size: 3.3 GB
+    V6R2023x.FP.CFA.2324.Part_3DEXP_SimulationServices.Linux64.4-4.tar
+    MD5:  6a542bc8137034414379fd401e678386
+    Size: 3.3 GB
+
+    Part_3DEXP_WebApps - 3DEXPERIENCE R2023x FP.CFA.2324 - WIN64
+    1/1
+    2.2 GB
+    Hide details
+    Volumes
+    V6R2023x.FP.CFA.2324.Part_3DEXP_WebApps.Windows64.zip
+    MD5:  272cb24f0c6c1d0168861a4d9c41841c
+    Size: 2.2 GB
+
+    Part_3DEXP_WebApps - 3DEXPERIENCE R2023x FP.CFA.2324 - Unix64
+
+    V6R2023x.FP.CFA.2324.Part_3DEXP_WebApps.Unix64.tar
+    MD5:  deb30745391c6e592d421b5e1075b687
+    Size: 2.5 GB
+
+    Part_3DEXP_WebApps_CA - 3DEXPERIENCE R2023x FP.CFA.2324 - AllOS
+
+    V6R2023x.FP.CFA.2324.Part_3DEXP_WebApps_CA.AllOS.1-2.tar
+    MD5:  5065f11783edaf7d0b463f1670810e6a
+    Size: 2.2 GB
+    V6R2023x.FP.CFA.2324.Part_3DEXP_WebApps_CA.AllOS.2-2.tar
+    MD5:  a89554ac1baa0e43050172345aad7a7b
+    Size: 2.2 GB
+
+    Part_3DEXP_WebApps_LA - 3DEXPERIENCE R2023x FP.CFA.2324 - AllOS
+
+    V6R2023x.FP.CFA.2324.Part_3DEXP_WebApps_LA.AllOS.tar
+    MD5:  82f76a22c242146580fecafc55798fb1
+    Size: 134 MB
+
+    Part_DS_LicenseServer - 3DEXPERIENCE R2023x FP.CFA.2324 - AllOS
+
+    V6R2023x.FP.CFA.2324.Part_DS_LicenseServer.AllOS.tar
+    MD5:  89fc8f4de7b897129334a0237a516e1b
+    Size: 92 MB
+
+    Part_Documentation - 3DEXPERIENCE R2023x FP.CFA.2324 - AllOS
+
+    V6R2023x.FP.CFA.2324.Part_3DEXP_Documentation.AllOS.1-2.zip
+    MD5:  b1064cf95af7e79bdfe2d531cb525389
+    Size: 2.2 GB
+    V6R2023x.FP.CFA.2324.Part_3DEXP_Documentation.AllOS.2-2.zip
+    MD5:  14302f863baea1dffac15772d2dce9dd
+    Size: 2.2 GB
+
+
+
