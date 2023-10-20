@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"  class=" language_zh ">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="">
+    
+    
+    <meta name="description" content="">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/search/style.css" type="text/css"/>
+        
+        <meta name="blog-generator" content="teedoc-plugin-blog">
+        
+        <link rel="stylesheet" href="/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>Knowledge Base</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": null, "update": [], "ts": 0, "author": "", "brief": "", "cover": ""}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/">
+                
+                    <img class="site_logo" src="/static/image/logo.png" alt="my_site logo">
+                
+                
+                    <h2>知识库</h2>
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/get_started/zh/">安装使用</a></li>
+<li class="active"><a  href="/blog/">博客</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class=""><a target="_blank" href="https://github.com/hsucode">github</a></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">搜索</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">输入关键词，多关键词空格隔开</span>
+                                <span id="search_loading_hint">正在加载，请稍候。。。</span>
+                                <span id="search_download_err_hint">下载文件失败，请刷新重试或检查网络</span>
+                                <span id="search_other_docs_result_hint">来自其它文档的结果</span>
+                                <span id="search_curr_doc_result_hint">当前文档搜索结果</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="">
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1></h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                                <span class="article_date" title="最后修改日期： 2022-04-27">
+                                    2022-04-27
+                                </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                            <div id="source_link">
+                                <a href="https://github.com/my_name/my_name.github.io/blob/main/blog/DS-CATIA/KAC应用发布流程/KAC应用发布流程.MD" target="_blank">
+                                    编辑本页
+                                </a>
+                            </div>
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <span id="blog_start"></span><p>应用发布流程</p>
+<p>数据完备性检查</p>
+<p>应用发布流程需要考虑如下要点：</p>
+<ul>
+<li><p>数据完整性：在应用发布前需要检查所有数据引用状态是否完整</p>
+<ul>
+<li>调用的用户对话框是否已完全定义<ul>
+<li>用户对话框需要的资源是否完全定义—图片、翻译文件是否已经完成定义并存放在知识组件相伴的资源文件的指定位置</li>
+<li>对话框输入，输出的用户自定义变量是否已关联到正确的控件，关联的方向是否正确？</li>
+<li>对话框需要的事件触发脚本是否已经定义完备？</li>
+</ul>
+</li>
+<li>组件是否已完全定义<ul>
+<li>组件中引用的模板，库，专业库，数表等是否已经在资源表中完全定义？</li>
+<li>组件中引用的对话框是否已经完全定义？</li>
+<li>组件技术对象中数据流是否完整？<ul>
+<li>单元控件之间数据流完成链接？方向是否正确</li>
+<li>单元控件有无悬空未定义的输入输出？</li>
+</ul>
+</li>
+<li>组件中定义的应用资源是否完全定义<ul>
+<li>程序工具栏的命令图标是否完全定义？并存放到知识组件相伴的资源文件的指定位置</li>
+<li>程序工具栏命令提示文件是否完全定义？并存放到知识组件相伴的资源文件的指定位置</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>应用程序是否已经完全定义<ul>
+<li>应用程序所需的组件是否已经定义完成？</li>
+<li>依赖的组件是否已经关联到主组件上？</li>
+<li>应用程序在罗盘上的图标与翻译是否定义完整</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>数据生命周期：</p>
+<ul>
+<li>资源表中声明的资源模板，库等3DE中标准类型的元素是否完成生命周期定义<ul>
+<li>是否采用了正确的版本？</li>
+<li>该版本是否处于发布状态？</li>
+<li>该版本是否已经转移至合适的所有者与正确的协作空间？</li>
+</ul>
+</li>
+<li>组件/依赖的资源；自定义函数库；应用；应用包是否完成生命周期定义<ul>
+<li>是否采用到了正确版本？</li>
+<li>该版本是否处于发布状态？</li>
+<li>发布的版本是否已经转移至合适的所有者与正确的协作空间？</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>数据保密性：</p>
+<ul>
+<li>组件是否已经加密？</li>
+</ul>
+<blockquote>
+<p>对象的规范要求</p>
+</blockquote>
+<ul>
+<li>对话框：<ul>
+<li>对话框定义在知识工程组件（kcp）中。<ul>
+<li>对话框资源文件，对话框同名的CATNls CATRes。翻译文件在CATNls中定义，图标定义在CATRes中进行</li>
+<li>图标定义：对话框所用的媒体图片存放在<code>OS-Independant-RunTimeView/resources/graphic/icons</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>组件：<ul>
+<li>组件相关资源<ul>
+<li>工具栏资源，与应用同名的CATNls CATRes。翻译文件在CATNls中定义，图标定义在CATRes中进行</li>
+<li>图标定义：大小为32<em>32 64</em>64 png/bmp格式存放<code>OS-Independant-RunTimeView/resources/graphic/icons</code>  大小为24<em>24 png/bmp格式存放在<code>OS-Independant-RunTimeView/resources/graphic/icons/normal</code>  大小为18</em>18 png/bmp格式存放在<code>OS-Independant-RunTimeView/resources/graphic/icons/small</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>其它资源<ul>
+<li>技术对象等的索引文件<code>OS-Independant-RunTimeView/resources/knowledge</code>  中的  CATKweIdx</li>
+<li>工作台文件<code>OS-Independant-RunTimeView/resources/knowledge/workbench</code>  中的xml</li>
+<li>web应用文件<code>OS-Independant-RunTimeView/webapps</code></li>
+<li>其他需要放入的资源</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>生命周期</p>
+</blockquote>
+<ul>
+<li>基础操作：<ul>
+<li>查找对象<ul>
+<li>组件关键字kcp，配套资源关键字appdata，应用关键字kapp，知识包关键子kconf，用户自定义库关键字klib</li>
+</ul>
+</li>
+<li>版本变更<ul>
+<li>在搜索结果框中选中对象</li>
+<li>切换到生命周期管理应用</li>
+<li>点选新修订版</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>This content is only supported in a Docs.</p>
+
+<pre class="language-none"><code class="language-none">    - 成熟度变更
+
+
+
+
+    - 转换所有权与协同空间
+        - 在搜索结果框中选中对象
+        - 切换到生命周期管理应用
+        - 点选转移所有权
+
+
+
+    - 数据保护
+        - 数据保护发生在冻结状态
+
+</code></pre>
+<blockquote>
+<p>数据发布</p>
+</blockquote>
+<p>以owner权限绑定标准空间的包到该协同空间</p>
+<blockquote>
+<p>数据删除</p>
+</blockquote>
+<ul>
+<li>发布数据不宜删除</li>
+<li>在搜索结果框中选中对象</li>
+<li>切换到生命周期管理应用</li>
+<li>点选删除</li>
+</ul>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                    </div>
+                    <div id="next">
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a></a>
+</li>
+<li><a>源码</a><ul><li><a target="_blank" href="https://github.com/neutree/teedoc">github</a></li>
+<li><a target="_blank" href="https://gitee.com/teedoc/teedoc">gitee</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a></a>
+</li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/static/js/theme_default/main.js"></script>
+    
+        <script src="/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/static/js/search/search_main.js"></script>
+    
+        <script src="/static/js/plugin_blog/main.js"></script>
+    
+        <script src="/static/js/custom.js"></script>
+    
+        <script type="text/javascript" src="/static/js/live.js"></script>
+    
+</body>
+
+</html>

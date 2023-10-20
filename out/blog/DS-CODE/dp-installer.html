@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"  class=" language_zh ">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="">
+    
+    
+    <meta name="description" content="">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/search/style.css" type="text/css"/>
+        
+        <meta name="blog-generator" content="teedoc-plugin-blog">
+        
+        <link rel="stylesheet" href="/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>Knowledge Base</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": null, "update": [], "ts": 0, "author": "", "brief": "", "cover": ""}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/">
+                
+                    <img class="site_logo" src="/static/image/logo.png" alt="my_site logo">
+                
+                
+                    <h2>知识库</h2>
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/get_started/zh/">安装使用</a></li>
+<li class="active"><a  href="/blog/">博客</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class=""><a target="_blank" href="https://github.com/hsucode">github</a></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">搜索</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">输入关键词，多关键词空格隔开</span>
+                                <span id="search_loading_hint">正在加载，请稍候。。。</span>
+                                <span id="search_download_err_hint">下载文件失败，请刷新重试或检查网络</span>
+                                <span id="search_other_docs_result_hint">来自其它文档的结果</span>
+                                <span id="search_curr_doc_result_hint">当前文档搜索结果</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="">
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1></h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                                <span class="article_date" title="最后修改日期： 2022-09-14">
+                                    2022-09-14
+                                </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                            <div id="source_link">
+                                <a href="https://github.com/my_name/my_name.github.io/blob/main/blog/DS-CODE/dp-installer.md" target="_blank">
+                                    编辑本页
+                                </a>
+                            </div>
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <span id="blog_start"></span>
+<pre class="language-python"><code class="language-python">
+#encoding=utf-8
+
+import os,time,sys
+import win32com.client as client
+import pythoncom
+import winshell  
+import linecache
+import re
+
+# media path
+# print(os.path.dirname(os.path.realpath(sys.executable)))
+# print(os.path.dirname(os.path.realpath(sys.argv[0])))  
+currentpath=os.path.dirname(os.path.realpath(sys.argv[0]))
+#print(currentpath)
+GApath=currentpath+'\\GT_B27_GA'+'\\WIN64\\StartB'
+SPpath=currentpath+'\\GT_B27_SP6'+'\\WIN64\\StartSPKB'
+HFpath=currentpath+'\\GT_B27_SP6HF40'+'\\WIN64\\StartHFXB'
+DPpath=currentpath+'\\GT_B27_DP'
+#install target path
+CATInstallTarget='C:\\Program Files\\Dassault Systemes\\B27_GT'
+DPInstallpath=CATInstallTarget+''
+iconpath= DPInstallpath+'\\GTR5\\win_b64\\resources\\graphic\\icons\\GT_desktop_icon-v1.ico'
+
+
+def InstallCATIA_GA(GApath):
+
+    catGAcmd=GApath+' -u '+ '&quot;' +CATInstallTarget+'&quot;' +' -newdir ' + ' -D ' + '&quot;' +CATInstallTarget+&quot;\\CATEnv&quot;+'&quot;' + ' -ident &quot;GTDP&quot; -all -v -noStartMenuIcon -noStartMenuTools -noDesktopIcon' 
+    os.system(catGAcmd)
+
+    print(&quot;01-GA|   &quot;+catGAcmd)
+    print(&quot;CATIA-GA installation is complete! &quot;)
+
+def InstallCATIA_SP(SPpath):
+
+    catSPcmd=SPpath+ ' -bC -killprocess -v' + &quot; -u &quot; + '&quot;C:\Program Files\Dassault Systemes\B27_GT&quot; '
+    os.system(catSPcmd)
+
+    print(&quot;02-SP|   &quot;+catSPcmd)
+    print(&quot;CATIA-SP installation is complete! &quot;)
+
+def InstallCATIA_HF(HFpath):
+
+    catHFCmd=HFpath+ ' -u ' + ' &quot;C:\Program Files\Dassault Systemes\B27_GT&quot; ' + &quot; -killprocess  -v&quot;
+    os.system(catHFCmd)
+    print(&quot;03-HF|   &quot;+catHFCmd)
+    print(&quot;CATIA-HF installation is complete! &quot;)
+
+
+def copy_dir(src_path, target_path):
+    if os.path.isdir(src_path) and os.path.isdir(target_path):		
+    	filelist_src = os.listdir(src_path)							
+    	for file in filelist_src:
+    		path = os.path.join(os.path.abspath(src_path), file)	
+    		if os.path.isdir(path):
+    			path1 = os.path.join(os.path.abspath(target_path), file)	
+    			if not os.path.exists(path1):						
+    				os.mkdir(path1)
+    			copy_dir(path,path1)			
+    		else:								
+    			with open(path, 'rb') as read_stream:
+    				contents = read_stream.read()
+    				path1 = os.path.join(target_path, file)
+    				with open(path1, 'wb') as write_stream:
+    					write_stream.write(contents)
+    	return 	True	
+    					
+    else:
+    	return False
+
+def mkdir(path):
+    path=path.strip()
+    path=path.rstrip(&quot;\\&quot;)
+    isExists=os.path.exists(path)
+    if not isExists:
+        os.makedirs(path)
+        print(path+' Created successfully. ')
+        return True
+    else:
+        print(path+' Directory already exists. ')
+        return False
+
+
+
+def InstallDP():
+    mkdir(DPInstallpath)
+    copy_dir(DPpath,DPInstallpath)
+    print(&quot;Digital Project Copy successfully! &quot;)
+
+#&quot;C:\Program Files\Dassault Systemes\B27\win_b64\code\bin\CATSTART.exe&quot; -run &quot;DigitalProject.exe&quot; -env DigitalProject.V1R5.64 -direnv &quot;D:\001_Apps\GT_DP\APPS\TST\CATEnv&quot; -nowindow
+
+def CreateShortCut():
+
+    destDir = winshell.desktop()  
+    filename = &quot;Digital Project V1,R5(B27)&quot;  
+    target = CATInstallTarget +'\\win_b64\\code\\bin\\CATSTART.exe'
+    winshell.CreateShortcut(
+        Path = os.path.join(destDir, os.path.basename(filename)+&quot;.lnk&quot;),  
+        Target =target, 
+        Arguments= ' -run ' + '&quot;' +'DigitalProject.exe'+ '&quot;' + ' -env ' +'DigitalProject.V1R5.64' + ' -direnv ' + '&quot;' + DPInstallpath +'\\CATEnv' + '&quot;' + ' -nowindow',
+        Icon = (iconpath, 0),  
+        Description = &quot;Design, engineering, and fabrication BIM for the world’s most demanding projects&quot;)  
+
+def CreateStartShortCut():
+    fld = 'C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Digital Project V1,R5(B27)'
+    mkdir(fld)
+    destDir = fld  
+    filename = &quot;Digital Project V1,R5(B27)&quot;  
+    target = CATInstallTarget +'\\win_b64\\code\\bin\\CATSTART.exe' 
+    winshell.CreateShortcut(  
+        Path = os.path.join(destDir, os.path.basename(filename)+&quot;.lnk&quot;),  
+        Target = target,  
+        Arguments= ' -run ' + '&quot;' +'DigitalProject.exe'+ '&quot;' + ' -env ' +'DigitalProject.V1R5.64' + ' -direnv ' + '&quot;' + DPInstallpath +'\\CATEnv' + '&quot;' + ' -nowindow',
+        Icon = (iconpath, 0),  
+        Description = &quot;Design, engineering, and fabrication BIM for the world’s most demanding projects&quot;)
+
+def CreateShortCut_Admin():
+    # &quot;C:\Program Files\Gehry Technologies\Digital Project V1,R5\DSB22\win_b64\code\bin\CATSTART.exe&quot; -run &quot;DigitalProject.exe -admin&quot; -env DigitalProject.V1R5.64 -direnv &quot;C:\ProgramData\Gehry Technologies\CATEnv&quot; -nowindow
+    fld = 'C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Digital Project V1,R5(B27)'
+    mkdir(fld)
+    destDir = fld  
+    filename = &quot;Digital Project V1,R5(B27) Administrator&quot;  
+    target = CATInstallTarget +'\\win_b64\\code\\bin\\CATSTART.exe' 
+    winshell.CreateShortcut(
+        Path = os.path.join(destDir, os.path.basename(filename)+&quot;.lnk&quot;),  
+        Target = target,  
+        Arguments= ' -run ' + '&quot;' +'DigitalProject.exe -admin'+ '&quot;' + ' -env ' +'DigitalProject.V1R5.64' + ' -direnv ' + '&quot;' + DPInstallpath +'\\CATEnv' + '&quot;' + ' -nowindow',
+        Icon = (iconpath, 0),  
+        Description = &quot;Design, engineering, and fabrication BIM for the world’s most demanding projects&quot;)
+
+def CreateShortCut_cmdCATUTIL():
+    # cmdCATUTIL  = '&quot;'+ CATInstallTarget+'\\win_b64\\code\\bin\\CATUTIL.exe' +'&quot;' + ' -env DigitalProject.V1R5.64 -direnv ' + '&quot;' + CATInstallTarget + '\\CATEnv' +'&quot;'
+    # print('CMD-A|   '+ cmdCATUTIL)
+    fld = 'C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Digital Project V1,R5(B27)\\Tools'
+    mkdir(fld)
+    destDir = fld  
+    filename = &quot;Batch Management V5-6R2017&quot;   
+    target = CATInstallTarget +'\\win_b64\\code\\bin\\CATUTIL.exe' 
+    winshell.CreateShortcut(  
+        Path = os.path.join(destDir, os.path.basename(filename)+&quot;.lnk&quot;),  
+        Target = target, 
+        Arguments=' -env DigitalProject.V1R5.64 -direnv ' + '&quot;' + CATInstallTarget + '\\CATEnv' +'&quot;',        
+        Icon = (DPInstallpath+'\\GTR5\\win_b64\\resources\\graphic\\icons\\GT_desktop_icon-v1.ico', 0),  
+        Description = &quot;Batch Management V5-6R2017&quot;)
+
+
+def CreateShortCut_cmdCATIAENV():
+    # cmdCATIAENV = CATInstallTarget+'\\win_b64\\code\\bin\\CATIAENV.exe' + ' -env DigitalProject.V1R5.64 -direnv ' + CATInstallTarget + '\\CATEnv' 
+    # print('CMD-B|   '+ cmdCATIAENV)
+    fld = 'C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Digital Project V1,R5(B27)\\Tools'
+    mkdir(fld)
+    destDir = fld  
+    filename = &quot;Environment Editor V5-6R2017&quot;  
+    target = CATInstallTarget +'\\win_b64\\code\\bin\\CATIAENV.exe'     
+    winshell.CreateShortcut(  
+        Path = os.path.join(destDir, os.path.basename(filename)+&quot;.lnk&quot;),  
+        Target = target,  
+        Arguments=' -env DigitalProject.V1R5.64 -direnv ' + '&quot;' + CATInstallTarget + '\\CATEnv'+'&quot;',
+        Icon = (DPInstallpath+'\\GTR5\\win_b64\\resources\\graphic\\icons\\GT_desktop_icon-v1.ico', 0),  
+        Description = &quot;Environment Editor V5-6R2017&quot;)    
+
+
+def CreateShortCut_cmdDSLicMgt():
+    # cmdDSLicMgt = CATInstallTarget+'\\win_b64\\code\\bin\\DSLicMgt.exe' + ' -env DigitalProject.V1R5.64 -direnv ' + CATInstallTarget + '\\CATEnv'  
+    # print('CMD-C|   '+ cmdDSLicMgt)
+
+    fld = 'C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Digital Project V1,R5(B27)\\Tools'
+    mkdir(fld)
+    destDir = fld  
+    filename = &quot;Nodelock Key Management V5-6R2017&quot;  
+    target = CATInstallTarget +'\\win_b64\\code\\bin\\DSLicMgt.exe'     
+    winshell.CreateShortcut(  
+        Path = os.path.join(destDir, os.path.basename(filename)+&quot;.lnk&quot;),  
+        Target = target,
+        Arguments=' -env DigitalProject.V1R5.64 -direnv ' + '&quot;' + CATInstallTarget + '\\CATEnv'+'&quot;',        
+        Icon = (DPInstallpath+'\\GTR5\\win_b64\\resources\\graphic\\icons\\GT_desktop_icon-v1.ico', 0),  
+        Description = &quot;Nodelock Key Management V5-6R2017&quot;)    
+
+
+def CreateShortCut_cmdCATNodelockMgt():
+    # cmdCATNodelockMgt = CATInstallTarget+'\\win_b64\\code\\bin\\CATNodelockMgt.exe' + ' -env DigitalProject.V1R5.64 -direnv ' + CATInstallTarget + '\\CATEnv'  
+    # print('CMD-D|   '+ cmdCATNodelockMgt)
+
+    fld = 'C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Digital Project V1,R5(B27)\\Tools'
+    mkdir(fld)
+    destDir = fld  
+    filename = &quot;Nodelock Key Management V5-6R2017&quot;  
+    target = CATInstallTarget +'\\win_b64\\code\\bin\\CATNodelockMgt.exe'  
+    winshell.CreateShortcut(  
+        Path = os.path.join(destDir, os.path.basename(filename)+&quot;.lnk&quot;),  
+        Target = target,
+        Arguments=' -env DigitalProject.V1R5.64 -direnv ' + '&quot;' + CATInstallTarget + '\\CATEnv'+'&quot;',
+        Icon = (DPInstallpath+'\\GTR5\\win_b64\\resources\\graphic\\icons\\GT_desktop_icon-v1.ico', 0),  
+        Description = &quot;Nodelock Key Management V5-6R2017&quot;)    
+
+
+def CreateShortCut_cmdCATPrinterManager():
+    # cmdCATPrinterManager = CATInstallTarget+'\\win_b64\\code\\bin\\CATPrinterManager.exe' + ' -env DigitalProject.V1R5.64 -direnv ' + CATInstallTarget + '\\CATEnv' 
+    # print('CMD-E|   '+ cmdCATPrinterManager)
+
+    fld = 'C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Digital Project V1,R5(B27)\\Tools'
+    mkdir(fld)
+    destDir = fld  
+    filename = &quot;Printers V5-6R2017&quot;  
+    target = CATInstallTarget +'\\win_b64\\code\\bin\\CATPrinterManager.exe'   
+    winshell.CreateShortcut(
+        Path = os.path.join(destDir, os.path.basename(filename)+&quot;.lnk&quot;),  
+        Target = target,  
+        Arguments=' -env DigitalProject.V1R5.64 -direnv ' + '&quot;' + CATInstallTarget + '\\CATEnv'+'&quot;',
+        Icon = (DPInstallpath+'\\GTR5\\win_b64\\resources\\graphic\\icons\\GT_desktop_icon-v1.ico', 0),  
+        Description = &quot;Printers V5-6R2017&quot;)    
+
+
+
+def CreateShortCut_cmdCATOptionsMgt():
+    # cmdCATOptionsMgt = CATInstallTarget+'\\win_b64\\code\\bin\\CATOptionsMgt.exe' + ' -env DigitalProject.V1R5.64 -direnv ' + CATInstallTarget + '\\CATEnv'  
+    # print('CMD-F|   '+ cmdCATOptionsMgt)  
+
+    fld = 'C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Digital Project V1,R5(B27)\\Tools'
+    mkdir(fld)
+    destDir = fld  
+    filename = &quot;Settings Management V5-6R2017&quot;  
+    target = CATInstallTarget +'\\win_b64\\code\\bin\\CATOptionsMgt.exe'   
+    winshell.CreateShortcut(  
+        Path = os.path.join(destDir, os.path.basename(filename)+&quot;.lnk&quot;),  
+        Target = target,  
+        Arguments=' -env DigitalProject.V1R5.64 -direnv ' + '&quot;'+CATInstallTarget + '\\CATEnv'+'&quot;',
+        Icon = (DPInstallpath+'\\GTR5\\win_b64\\resources\\graphic\\icons\\GT_desktop_icon-v1.ico', 0),  
+        Description = &quot;Settings Management V5-6R2017&quot;)    
+
+
+def CreateShortCut_cmdCATSoftwareMgt():
+    # cmdCATSoftwareMgt = CATInstallTarget+'\\win_b64\\code\\bin\\CATSoftwareMgt.exe' + ' -env DigitalProject.V1R5.64 -direnv ' + CATInstallTarget + '\\CATEnv'   
+    # print('CMD-G|   '+ cmdCATSoftwareMgt) 
+
+    fld = 'C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Digital Project V1,R5(B27)\\Tools'
+    mkdir(fld)
+    destDir = fld  
+    filename = &quot;Software Management V5-6R2017&quot;  
+    target = CATInstallTarget +'\\win_b64\\code\\bin\\CATSoftwareMgt.exe'   
+    winshell.CreateShortcut(  
+        Path = os.path.join(destDir, os.path.basename(filename)+&quot;.lnk&quot;),  
+        Target = target,  
+        Arguments= ' -env DigitalProject.V1R5.64 -direnv ' + '&quot;' + CATInstallTarget + '\\CATEnv'+'&quot;',
+        Icon = (DPInstallpath+'\\GTR5\\win_b64\\resources\\graphic\\icons\\GT_desktop_icon-v1.ico', 0),  
+        Description = &quot;Software Management V5-6R2017&quot;)    
+
+
+def CreateShortCut_cmdVaultClientSetup():
+    # cmdVaultClientSetup  = CATInstallTarget+'\\win_b64\\code\\bin\\CATSTART.exe' + ' -run VaultClientSetup.EXE -env DigitalProject.V1R5.64 -direnv ' + CATInstallTarget + '\\CATEnv'   
+    # print('CMD-H|   '+ cmdVaultClientSetup) 
+    fld = 'C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Digital Project V1,R5(B27)\\Tools'
+    mkdir(fld)
+    destDir = fld  
+    filename = &quot;Vault Client Setup V5-6R2017&quot;  
+    target = CATInstallTarget +'\\win_b64\\code\\bin\\CATSTART.exe' 
+    winshell.CreateShortcut(  
+        Path = os.path.join(destDir, os.path.basename(filename)+&quot;.lnk&quot;),  
+        Target = target,  
+        Arguments=' -run VaultClientSetup.EXE -env DigitalProject.V1R5.64 -direnv ' + '&quot;' + CATInstallTarget + '\\CATEnv' +'&quot;' ,
+        Icon = (DPInstallpath+'\\GTR5\\win_b64\\resources\\graphic\\icons\\GT_desktop_icon-v1.ico', 0),  
+        Description = &quot;Vault Client Setup V5-6R2017&quot;)    
+
+
+dpenvtxt= DPInstallpath+'\\CATEnv\\DigitalProject.V1R5.64.txt'
+#获取指定行内容
+def get_line(file, nums_line):
+    return linecache.getline(file, nums_line).strip()   
+
+print(get_line(dpenvtxt,9))
+print(get_line(dpenvtxt,10))
+
+
+
+#InstallCATIA(GApath,SPpath,HFpath)
+InstallCATIA_GA(GApath)
+InstallCATIA_SP(SPpath)
+InstallCATIA_HF(HFpath)
+
+InstallDP()
+CreateShortCut()
+CreateStartShortCut()
+CreateShortCut_Admin()
+
+CreateShortCut_cmdCATUTIL()
+CreateShortCut_cmdCATIAENV()
+CreateShortCut_cmdCATNodelockMgt()
+CreateShortCut_cmdCATPrinterManager()
+CreateShortCut_cmdCATSoftwareMgt()
+CreateShortCut_cmdDSLicMgt()
+CreateShortCut_cmdVaultClientSetup()
+CreateShortCut_cmdCATOptionsMgt()
+
+print(&quot;Digital Project installation is complete! &quot;)
+time.sleep(3)
+
+
+#&quot;C:\Program Files\Dassault Systemes\B27\win_b64\code\bin\CATSTART.exe&quot; -run &quot;CNEXT.exe&quot; -env DigitalProject.V1R6.64 -direnv &quot;%~dp0\CATEnv&quot; -nowindow
+#&quot;C:\Program Files\Dassault Systemes\B27\win_b64\code\bin\CATSTART.exe&quot; -run &quot;DigitalProject.exe&quot; -env DigitalProject.V1R5.64 -direnv &quot;D:\001_Apps\GT_DP\APPS\TST\CATEnv&quot; -nowindow
+
+#&quot;C:\Program Files\Dassault Systemes\B22\win_b64\code\bin\CATUTIL.exe&quot;  -env CATIA_P3.V5-6R2012.B22 -direnv &quot;C:\ProgramData\DassaultSystemes\CATEnv&quot; 
+#&quot;C:\Program Files\Dassault Systemes\B22\win_b64\code\bin\CATIAENV.exe&quot;  -env CATIA_P3.V5-6R2012.B22 -direnv &quot;C:\ProgramData\DassaultSystemes\CATEnv&quot; 
+#&quot;C:\Program Files\Dassault Systemes\B22\win_b64\code\bin\DSLicMgt.exe&quot;  -env CATIA_P3.V5-6R2012.B22 -direnv &quot;C:\ProgramData\DassaultSystemes\CATEnv&quot; 
+#&quot;C:\Program Files\Dassault Systemes\B22\win_b64\code\bin\CATNodelockMgt.exe&quot;  -env CATIA_P3.V5-6R2012.B22 -direnv &quot;C:\ProgramData\DassaultSystemes\CATEnv&quot; 
+#&quot;C:\Program Files\Dassault Systemes\B22\win_b64\code\bin\CATPrinterManager.exe&quot;  -env CATIA_P3.V5-6R2012.B22 -direnv &quot;C:\ProgramData\DassaultSystemes\CATEnv&quot; 
+#&quot;C:\Program Files\Dassault Systemes\B22\win_b64\code\bin\CATOptionsMgt.exe&quot;  -env CATIA_P3.V5-6R2012.B22 -direnv &quot;C:\ProgramData\DassaultSystemes\CATEnv&quot; 
+#&quot;C:\Program Files\Dassault Systemes\B22\win_b64\code\bin\CATSoftwareMgt.exe&quot;  -env CATIA_P3.V5-6R2012.B22 -direnv &quot;C:\ProgramData\DassaultSystemes\CATEnv&quot; 
+#&quot;C:\Program Files\Dassault Systemes\B22\win_b64\code\bin\CATSTART.exe&quot;  -run VaultClientSetup.EXE -env CATIA_P3.V5-6R2012.B22 -direnv &quot;C:\ProgramData\DassaultSystemes\CATEnv&quot; -nowindow
+
+</code></pre>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                    </div>
+                    <div id="next">
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a></a>
+</li>
+<li><a>源码</a><ul><li><a target="_blank" href="https://github.com/neutree/teedoc">github</a></li>
+<li><a target="_blank" href="https://gitee.com/teedoc/teedoc">gitee</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a></a>
+</li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/static/js/theme_default/main.js"></script>
+    
+        <script src="/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/static/js/search/search_main.js"></script>
+    
+        <script src="/static/js/plugin_blog/main.js"></script>
+    
+        <script src="/static/js/custom.js"></script>
+    
+        <script type="text/javascript" src="/static/js/live.js"></script>
+    
+</body>
+
+</html>

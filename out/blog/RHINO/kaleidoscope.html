@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"  class=" language_zh ">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="">
+    
+    
+    <meta name="description" content="">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/search/style.css" type="text/css"/>
+        
+        <meta name="blog-generator" content="teedoc-plugin-blog">
+        
+        <link rel="stylesheet" href="/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>Kaleidoscope - Knowledge Base</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": null, "update": [], "ts": 0, "author": "", "brief": "", "cover": ""}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/">
+                
+                    <img class="site_logo" src="/static/image/logo.png" alt="my_site logo">
+                
+                
+                    <h2>知识库</h2>
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/get_started/zh/">安装使用</a></li>
+<li class="active"><a  href="/blog/">博客</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class=""><a target="_blank" href="https://github.com/hsucode">github</a></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">搜索</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">输入关键词，多关键词空格隔开</span>
+                                <span id="search_loading_hint">正在加载，请稍候。。。</span>
+                                <span id="search_download_err_hint">下载文件失败，请刷新重试或检查网络</span>
+                                <span id="search_other_docs_result_hint">来自其它文档的结果</span>
+                                <span id="search_curr_doc_result_hint">当前文档搜索结果</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="">
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>Kaleidoscope</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                                <span class="article_date" title="最后修改日期： 2022-06-20">
+                                    2022-06-20
+                                </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                            <div id="source_link">
+                                <a href="https://github.com/my_name/my_name.github.io/blob/main/blog/RHINO/kaleidoscope.md" target="_blank">
+                                    编辑本页
+                                </a>
+                            </div>
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <span id="blog_start"></span><h2 id="description">description</h2>
+<p>This study is based on the principle of kaleidoscopic mirroring patterns. The evolution of the patterns is developed by the use of multiple mirrors along different mirror planes.<br />
+With a very simplistic input set, that is, an object curve, a mirror line and a point, this algorithm generates enumourous patterns by using parameters. These parameters include the input angle and scale factor. Also, one of the intentions is to create fractal geometry with the help of mirrorring.<br />
+This 3-dimensional object projected below is a very intricate, volumetric form of pattern which has been developed from a very simplistic 2-dimensional pattern.</p>
+<p>design team : Shengkan Zhang, Batul Tinwala, Ram Annamalai Thennaapan, Sameeha Rajendra Joshi, Ryan Kane<br />
+FORM AND ALGORITHM, PennDesign 2014<br />
+Instructor: Cecil Balmond, Ezio Blasetti</p>
+<p>boards</p>
+<p>code for mirrored mirrors</p>
+<p>&quot;&quot;&quot;</p>
+<p>design team : Shengkan Zhang, Batul Tinwala, Ram Annamalai Thennaapan, Sameeha Rajendra Joshi, Ryan Kane</p>
+<p>FORM AND ALGORITHM, PennDesign 2014</p>
+<p>Instructor: Cecil Balmond, Ezio Blasetti</p>
+<p>code developed in python for rhinoceros beta 5.0</p>
+<p>&quot;&quot;&quot;</p>
+
+<pre class="language-python"><code class="language-python">import rhinoscriptsyntax as rs
+
+def Main():
+
+    curve = rs.GetObject(&quot;please select a curve&quot;,rs.filter.curve)
+    line  = rs.GetObject(&quot;Select a mirror line&quot;)
+    pt    = rs.GetObject(&quot;please select a point&quot;, rs.filter.point)
+    limitscale = rs.GetReal(&quot;please input a limit scale factor&quot;, 0.3)
+    angle      = rs.GetReal(&quot;please input a rotate angle&quot;, 10)
+    len        = rs.CurveLength(curve)
+    list       = []
+    lenlimit=limitscale*len
+    while (len&gt;lenlimit):
+        if len&lt;=lenlimit: break
+        curve = rs.ScaleObject(curve,pt,[0.9,0.9,0.9], True)
+        curve = rs.RotateObject(curve,pt,angle)
+        len   = rs.CurveLength(curve)
+        list.append(curve)
+        view = rs.CurrentView()
+        rs.ViewCPlane( view, rs.WorldZXPlane() )
+        Mirror1(line, list)
+
+def Mirror1(line, list):
+    objs = list
+    for i in range(12):
+        line1   = rs.RotateObject(line, rs.CurveEndPoint(line), 15, None, copy=False)
+        Mirror1 = rs.MirrorObjects( objs, rs.CurveStartPoint(line), rs.CurveEndPoint(line), True )
+        list1 = []
+        #rs.ScaleObjects(line1, rs.CurveEndPoint(line), [scale, scale, scale], True)
+        list1.append(Mirror1)
+        line = line1
+        #rs.RotateObject( line1, rs.CurveStartPoint(line1), 30, None, True)
+        view = rs.CurrentView()
+        rs.ViewCPlane( view, rs.WorldYZPlane() )
+        rs.HideObjects(line)
+        Mirror2(line1, list1)
+
+def Mirror2(line1, list1):
+    objs = list1
+    for i in range(12):
+        line2 = rs.RotateObject(line1, rs.CurveEndPoint(line1), 15, None, copy=False)
+
+        Mirror2 = rs.MirrorObjects( line1, rs.CurveStartPoint(line1), rs.CurveEndPoint(line1), True )
+        list2 = []
+        list2.append(Mirror2)
+        line1 = line2
+        Mirror3(line2, list2, line1)
+def Mirror3(line2, list2, line1):
+    objs = list2
+    for i in range(15):
+        line3 = rs.RotateObject(line2, rs.CurveEndPoint(line2), 15, None, copy=False)
+
+        Mirror3 = rs.MirrorObjects( line2, rs.CurveStartPoint(line2), rs.CurveEndPoint(line2), True )
+
+        list3 = []
+        list3.append(Mirror3)
+        line2 = line3
+        view = rs.CurrentView()
+        rs.ViewCPlane( view, rs.WorldZXPlane() )
+        RotateMirrors(line1, line2, line3)
+
+def RotateMirrors(line1, line2, line3):
+    rs.RotateObjects( [line1, line2, line3], rs.CurveStartPoint(line3), 30, None, True)
+    view = rs.CurrentView()
+    rs.ViewCPlane( view, rs.WorldYZPlane() )
+
+Main()
+
+code for mirrored fractals
+
+&quot;&quot;&quot;
+
+design team : Shengkan Zhang, Batul Tinwala, Ram Annamalai Thennaapan, Sameeha Rajendra Joshi, Ryan Kane
+
+FORM AND ALGORITHM, PennDesign 2014
+
+Instructor: Cecil Balmond, Ezio Blasetti
+
+code developed in python for rhinoceros beta 5.0
+
+&quot;&quot;&quot;
+
+
+
+import rhinoscriptsyntax as rs
+import scriptcontext as sc
+
+def aaa(objs,pt0,pt1,pt2):
+    rs.EnableRedraw(False)
+    plane=rs.PlaneFromPoints(pt0,pt1,pt2)
+    xform=rs.XformMirror(plane.Origin,plane.Normal)
+    newobjs=rs.TransformObjects(objs,xform,True)
+    return newobjs
+
+def craked(pls,gens2):
+    deleteobj=[]
+    for i in range (gens2):
+        newpl=[]
+        for pl in pls:
+            ptset=rs.CurvePoints(pl)
+            pta=ptset[0]
+            ptb=ptset[1]
+            ptc=ptset[2]
+            ptd=ptset[3]
+            ptx =((pta[0]+ptb[0]+ptc[0]+ptd[0])/4)
+            pty =((pta[1]+ptb[1]+ptc[1]+ptd[1])/4)
+            ptz =((pta[2]+ptb[2]+ptc[2]+ptd[2])/4)
+
+            ptcenter=[]
+            ptcenter.append(ptx)
+            ptcenter.append(pty)
+            ptcenter.append(ptz)
+            ptcenter=rs.AddPoint(ptcenter)
+
+            rs.AddLine(ptcenter,pta)
+            rs.AddLine(ptcenter,ptb)
+            rs.AddLine(ptcenter,ptc)
+            rs.AddLine(ptcenter,ptd)
+
+            ptset1=[]
+            ptset1.append(pta)
+            ptset1.append(ptb)
+            ptset1.append(ptc)
+            ptset1.append(ptcenter)
+            pline2=rs.AddPolyline(ptset1)
+
+            ptset2=[]
+            ptset2.append(ptb)
+            ptset2.append(ptc)
+            ptset2.append(ptd)
+            ptset2.append(ptcenter)
+            pline3=rs.AddPolyline(ptset2)
+
+
+            ptset3=[]
+            ptset3.append(pta)
+            ptset3.append(ptc)
+            ptset3.append(ptd)
+            ptset3.append(ptcenter)
+            pline4=rs.AddPolyline(ptset3)
+
+
+
+            ptset4=[]
+            ptset4.append(pta)
+            ptset4.append(ptb)
+            ptset4.append(ptd)
+            ptset4.append(ptcenter)
+            pline5=rs.AddPolyline(ptset4)
+
+            newpl.append(pline2)
+            newpl.append(pline3)
+            newpl.append(pline4)
+            newpl.append(pline5)
+
+
+            deleteobj.append(ptcenter)
+            deleteobj.extend(newpl)
+
+        pls=newpl
+    rs.DeleteObjects(deleteobj)
+
+def main():
+
+    curve=rs.GetObject(&quot;open curve&quot;,rs.filter.curve)
+
+    line=rs.GetObject(&quot;3-d curve&quot;, rs.filter.curve)
+
+    pt = rs.GetPoint(&quot;point&quot;)
+
+    angle = rs.GetReal(&quot;please input a rotate angle&quot;, 30)
+
+    gens = rs.GetInteger(&quot;please type how many generations&quot;,4)
+
+    curmirs=[]
+
+    curmirs.append(line)
+
+    curves=[]
+
+    curves.append(curve)
+
+
+
+
+
+    for i in range (gens):
+
+        #nextgens=[]
+
+        nextmirs=[]
+
+        curve=rs.ScaleObject(curve,pt,[0.9,0.9,0.9])
+
+        curve=rs.RotateObject(curve,pt,angle)
+
+        newmirs=rs.RotateObjects(curmirs,pt,angle)
+
+        nextmirs.extend(newmirs)
+
+
+
+        for j in range (len(curmirs)):
+
+            mirline=curmirs[j]
+
+            pt0=rs.CurveStartPoint(mirline)
+
+            pt1=rs.CurveMidPoint(mirline)
+
+            pt2=rs.CurveEndPoint(mirline)
+
+            curve=aaa(curve,pt0,pt1,pt2)
+
+            othermirs=curmirs[:]
+
+            othermirs.pop(j)
+
+            miredmirs=aaa(othermirs,pt0,pt1,pt2)
+
+            curves.append(curve)
+
+            nextmirs.extend(miredmirs)
+
+        curmirs=[]
+
+        curmirs.extend(nextmirs)
+
+    rs.DeleteObjects(curmirs)
+
+
+
+    for i in range (len(curves)-1):
+        lin1=curves[i]
+        lin2=curves[i+1]
+        pta=rs.CurveStartPoint(lin1)
+        ptb=rs.CurveEndPoint(lin1)
+        ptc=rs.CurveStartPoint(lin2)
+        ptd=rs.CurveEndPoint(lin2)
+        pts=[]
+        pts.append(pta)
+        pts.append(ptb)
+
+        pts.append(ptc)
+
+        pts.append(ptd)
+
+        pline1=rs.AddPolyline(pts)
+
+        pls=[]
+
+        pls.append(pline1)
+
+        craked(pls,3)
+
+
+
+
+
+
+
+
+
+main()
+
+Kaleidoscope 
+
+
+</code></pre>
+<p><img src="kaleidoscope_1.jpg" alt="" /><br />
+<img src="kaleidoscope_2.jpg" alt="" /><br />
+<img src="kaleidoscope_3.jpg" alt="" /><br />
+<img src="kaleidoscope_4.jpg" alt="" /><br />
+<img src="kaleidoscope_5.jpg" alt="" /><br />
+<img src="kaleidoscope_6.jpg" alt="" /><br />
+<img src="kaleidoscope_7.jpg" alt="" /><br />
+<img src="kaleidoscope_8.jpg" alt="" /><br />
+<img src="kaleidoscope_9.jpg" alt="" /><br />
+<img src="kaleidoscope_10.jpg" alt="" /></p>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                    </div>
+                    <div id="next">
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a></a>
+</li>
+<li><a>源码</a><ul><li><a target="_blank" href="https://github.com/neutree/teedoc">github</a></li>
+<li><a target="_blank" href="https://gitee.com/teedoc/teedoc">gitee</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a></a>
+</li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/static/js/theme_default/main.js"></script>
+    
+        <script src="/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/static/js/search/search_main.js"></script>
+    
+        <script src="/static/js/plugin_blog/main.js"></script>
+    
+        <script src="/static/js/custom.js"></script>
+    
+        <script type="text/javascript" src="/static/js/live.js"></script>
+    
+</body>
+
+</html>

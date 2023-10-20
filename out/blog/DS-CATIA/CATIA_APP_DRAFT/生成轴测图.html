@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"  class=" language_zh ">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="">
+    
+    
+    <meta name="description" content="">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/search/style.css" type="text/css"/>
+        
+        <meta name="blog-generator" content="teedoc-plugin-blog">
+        
+        <link rel="stylesheet" href="/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>生成轴测图 - Knowledge Base</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": null, "update": [], "ts": 0, "author": "", "brief": "", "cover": ""}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/">
+                
+                    <img class="site_logo" src="/static/image/logo.png" alt="my_site logo">
+                
+                
+                    <h2>知识库</h2>
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/get_started/zh/">安装使用</a></li>
+<li class="active"><a  href="/blog/">博客</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class=""><a target="_blank" href="https://github.com/hsucode">github</a></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">搜索</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">输入关键词，多关键词空格隔开</span>
+                                <span id="search_loading_hint">正在加载，请稍候。。。</span>
+                                <span id="search_download_err_hint">下载文件失败，请刷新重试或检查网络</span>
+                                <span id="search_other_docs_result_hint">来自其它文档的结果</span>
+                                <span id="search_curr_doc_result_hint">当前文档搜索结果</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="">
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>生成轴测图</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                                <span class="article_date" title="最后修改日期： 2022-10-21">
+                                    2022-10-21
+                                </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                            <div id="source_link">
+                                <a href="https://github.com/my_name/my_name.github.io/blob/main/blog/DS-CATIA/CATIA_APP_DRAFT/生成轴测图.md" target="_blank">
+                                    编辑本页
+                                </a>
+                            </div>
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <span id="blog_start"></span><p>点选等轴测命令后，回到3D空间中点击模型中的任意位置，之后自动回到图纸平面，生成轴测图预览，点击图纸空白处，则可生成轴测图。</p>
+<p><img src="%E7%94%9F%E6%88%90%E8%BD%B4%E6%B5%8B%E5%9B%BE%5C2022-10-01-23-13-51.png" alt="" /></p>
+<p>可在右键单击视图的属性当中对轴测图的视图生成模式进行修改</p>
+<p><img src="%E7%94%9F%E6%88%90%E8%BD%B4%E6%B5%8B%E5%9B%BE%5C2022-10-01-23-14-00.png" alt="" /></p>
+<p>如图所示，选择了光栅和带边线着色模式，此种模式轴测图相当于一个照片，加不了标注。</p>
+<p><img src="%E7%94%9F%E6%88%90%E8%BD%B4%E6%B5%8B%E5%9B%BE%5C2022-10-01-23-14-09.png" alt="" /></p>
+<p>如选取其他视图生成模式，则可对轴测图添加标注。<br />
+另外，在生成轴测图前，如需对模型在3D空间的摆放角度进行精确定位，则需要照相机功能：</p>
+<p><img src="%E7%94%9F%E6%88%90%E8%BD%B4%E6%B5%8B%E5%9B%BE%5C2022-10-01-23-14-24.png" alt="" /></p>
+<p>在照相机编辑界面对视角的位置。角度、模式进行编辑，然后进行添加照相机。<br />
+添加照相机完毕之后，会在结构树上出现一个照相机节点。<br />
+每次想要生成精确视角位置的轴测图前，可直接在结构树上点击提前定义好的照相机位置，然后再点击生成轴测图。</p>
+<p><img src="%E7%94%9F%E6%88%90%E8%BD%B4%E6%B5%8B%E5%9B%BE%5C2022-10-01-23-14-34.png" alt="" /></p>
+<p>或者也可使用视图当中的视图选择工具进行视角选择。</p>
+<p><img src="%E7%94%9F%E6%88%90%E8%BD%B4%E6%B5%8B%E5%9B%BE%5C2022-10-01-23-14-41.png" alt="" /></p>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                    </div>
+                    <div id="next">
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a></a>
+</li>
+<li><a>源码</a><ul><li><a target="_blank" href="https://github.com/neutree/teedoc">github</a></li>
+<li><a target="_blank" href="https://gitee.com/teedoc/teedoc">gitee</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a></a>
+</li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/static/js/theme_default/main.js"></script>
+    
+        <script src="/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/static/js/search/search_main.js"></script>
+    
+        <script src="/static/js/plugin_blog/main.js"></script>
+    
+        <script src="/static/js/custom.js"></script>
+    
+        <script type="text/javascript" src="/static/js/live.js"></script>
+    
+</body>
+
+</html>

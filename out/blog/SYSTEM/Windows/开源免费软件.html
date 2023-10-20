@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"  class=" language_zh ">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="">
+    
+    
+    <meta name="description" content="">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/search/style.css" type="text/css"/>
+        
+        <meta name="blog-generator" content="teedoc-plugin-blog">
+        
+        <link rel="stylesheet" href="/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>常用软件集合 - Knowledge Base</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": null, "update": [], "ts": 0, "author": "", "brief": "", "cover": ""}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/">
+                
+                    <img class="site_logo" src="/static/image/logo.png" alt="my_site logo">
+                
+                
+                    <h2>知识库</h2>
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/get_started/zh/">安装使用</a></li>
+<li class="active"><a  href="/blog/">博客</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class=""><a target="_blank" href="https://github.com/hsucode">github</a></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">搜索</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">输入关键词，多关键词空格隔开</span>
+                                <span id="search_loading_hint">正在加载，请稍候。。。</span>
+                                <span id="search_download_err_hint">下载文件失败，请刷新重试或检查网络</span>
+                                <span id="search_other_docs_result_hint">来自其它文档的结果</span>
+                                <span id="search_curr_doc_result_hint">当前文档搜索结果</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="">
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>常用软件集合</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                                <span class="article_date" title="最后修改日期： 2022-11-24">
+                                    2022-11-24
+                                </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                            <div id="source_link">
+                                <a href="https://github.com/my_name/my_name.github.io/blob/main/blog/SYSTEM/Windows/开源免费软件.md" target="_blank">
+                                    编辑本页
+                                </a>
+                            </div>
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <span id="blog_start"></span><h2 id="%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6">管理软件</h2>
+<p>由于每个app 版本不同，系统不同等因素，希望将同系列app 放在一个文件夹内管理，可以通过以下命令让每个app在自己的文件夹内。</p>
+<p>mvapp.bat</p>
+
+<pre class="language-batch"><code class="language-batch">@echo off
+title mvapp
+echo Please type you app name:
+set /p TypeAppName=
+md %TypeAppName%
+move *%TypeAppName%* %TypeAppName%
+</code></pre>
+<h2 id="APP">APP</h2>
+<p><a href="https://git-scm.com/download/win"  target="_blank">git</a><br />
+<a href="https://filezilla-project.org/"  target="_blank">FileZilla</a><br />
+<a href="https://www.7-zip.org"  target="_blank">7z</a><br />
+<a href="https://www.mozilla.org/en-US/firefox/all/#product-desktop-release"  target="_blank">firefox</a><br />
+<a href=""  >free download manager</a><br />
+<a href=""  >neat download manager</a><br />
+<a href=""  >aria2</a><br />
+<a href=""  >xmind</a><br />
+[Everything]<br />
+[mdbook]<br />
+[vim]</p>
+<h2 id="CAD">CAD</h2>
+<p><a href=""  >FreeCAD</a><br />
+[blender]</p>
+<h2 id="VR">VR</h2>
+<p><a href=""  >EpicInstaller</a><br />
+<a href=""  >Unity</a></p>
+<h2 id="picture">picture</h2>
+<p><a href=""  >captura</a><br />
+<a href=""  >ffmpeg</a><br />
+<a href=""  >Snipaste</a><br />
+<a href=""  >ShareX</a><br />
+<a href=""  >Flameshot</a><br />
+<a href=""  >LosslessCut</a></p>
+<h2 id="net">net</h2>
+<p><a href=""  >cpolar</a></p>
+<h2 id="editor">editor</h2>
+<p><a href=""  >sublime_text</a><br />
+<a href=""  >notepad++</a><br />
+<a href=""  >vs code</a></p>
+<h2 id="code-IDE">code IDE</h2>
+<p><a href=""  >node.js</a><br />
+<a href=""  >hugo</a><br />
+<a href=""  >jetbrains</a><br />
+<a href=""  >Visual Studio</a><br />
+<a href="https://www.fosshub.com/Code-Blocks.html"  target="_blank">codeblocks</a></p>
+<h2 id="terminal">terminal</h2>
+<p><a href=""  >tabby</a><br />
+<a href=""  >WindTerm</a><br />
+<a href=""  >MobaXterm</a><br />
+<a href=""  >windows terminal</a><br />
+[powershell]</p>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                    </div>
+                    <div id="next">
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a></a>
+</li>
+<li><a>源码</a><ul><li><a target="_blank" href="https://github.com/neutree/teedoc">github</a></li>
+<li><a target="_blank" href="https://gitee.com/teedoc/teedoc">gitee</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a></a>
+</li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/static/js/theme_default/main.js"></script>
+    
+        <script src="/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/static/js/search/search_main.js"></script>
+    
+        <script src="/static/js/plugin_blog/main.js"></script>
+    
+        <script src="/static/js/custom.js"></script>
+    
+        <script type="text/javascript" src="/static/js/live.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,1645 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"  class=" language_zh ">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="">
+    
+    
+    <meta name="description" content="">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/search/style.css" type="text/css"/>
+        
+        <meta name="blog-generator" content="teedoc-plugin-blog">
+        
+        <link rel="stylesheet" href="/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>Knowledge Base</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": null, "update": [], "ts": 0, "author": "", "brief": "", "cover": ""}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/">
+                
+                    <img class="site_logo" src="/static/image/logo.png" alt="my_site logo">
+                
+                
+                    <h2>知识库</h2>
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/get_started/zh/">安装使用</a></li>
+<li class="active"><a  href="/blog/">博客</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class=""><a target="_blank" href="https://github.com/hsucode">github</a></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">搜索</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">输入关键词，多关键词空格隔开</span>
+                                <span id="search_loading_hint">正在加载，请稍候。。。</span>
+                                <span id="search_download_err_hint">下载文件失败，请刷新重试或检查网络</span>
+                                <span id="search_other_docs_result_hint">来自其它文档的结果</span>
+                                <span id="search_curr_doc_result_hint">当前文档搜索结果</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="">
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1></h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                                <span class="article_date" title="最后修改日期： 2023-02-20">
+                                    2023-02-20
+                                </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                            <div id="source_link">
+                                <a href="https://github.com/my_name/my_name.github.io/blob/main/blog/DS-CODE/全ての寸法に番号バルーンを付ける.md" target="_blank">
+                                    编辑本页
+                                </a>
+                            </div>
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <span id="blog_start"></span><p>CATIA V5です。<br />
+先日、絶対座標での寸法値位置の取得が出来ました。<br />
+Drawの寸法値に四角を描く - C#ATIA</p>
+<p>これを元に連番となる番号バルーンを作ります。<br />
+・・・バルーンはDrawingTextオブジェクトなのですが、<br />
+DrawingTextsオブジェクトにはバルーンを作る為のメソッドが<br />
+無さそうです。<br />
+r1 DrawingTexts (Collection)</p>
+<p>となると、最後の手段はコピペです。<br />
+目的のビューにバルーンさえあれば、バルーンはX/Yプロパティで<br />
+r1 DrawingText (Object)<br />
+引き出し線はModifyPointメソッドで移動可能だと分かりました。<br />
+r1 DrawingLeader (Object)<br />
+（後に海外サイトで検索したところ、バルーンはやはりコピペで行うようです）</p>
+<p>取りあえず、通常のシートでも構わないのですが、意図したものでは無い<br />
+と言う意味を込めてテンプレートとして使うバルーンを、ディテールシートに<br />
+ビューを作り入れておきます。</p>
+<p>続いて、目的のシートをアクティブにしこちらのマクロを実行します。</p>
+
+<pre class="language-vb"><code class="language-vb">
+'vba using-'KCL0.1.0'  by Kantoku
+'アクティブなシートの全寸法に番号バルーンを付ける
+
+'バルーンレポートビュー名
+Private Const BALLOON_VIEW_NAME = &quot;BALLOON&quot;
+
+'テンプレートバルーン名
+Private Const TEMPLATE_SHEET_NAME = &quot;template&quot;
+Private Const TEMPLATE_BALLOON_NAME = &quot;balloon&quot;
+
+'true/false　vbaとCATIA API食い違い代案
+Private Enum BOOL
+    boolFalse = 0
+    boolTrue = 1
+End Enum
+
+Option Explicit
+
+Sub CATMain()
+
+    Dim dDoc As DrawingDocument
+    Set dDoc = CATIA.ActiveDocument
+
+    Dim sheet As DrawingSheet
+    Set sheet = dDoc.sheets.ActiveSheet
+
+    KCL.SW_Start
+
+    Dim balloonInfo As Variant
+    balloonInfo = get_template_balloon()
+    If UBound(balloonInfo) &lt; 2 Then
+        Exit Sub
+    End If
+
+    'test
+    Dim baseView As DrawingView
+    Set baseView = sheet.views.item(3)
+
+    Dim baseBalloon As DrawingText
+    Set baseBalloon = copy_and_paste(balloonInfo, baseView)
+
+    Dim templateIndex As Long
+    templateIndex = baseView.texts.count
+
+    Dim baseInfo As Variant
+    baseInfo = Array( _
+        sheet, _
+        baseView, _
+        baseBalloon _
+    )
+
+    Dim drawDims As Variant
+
+    Dim balloonView As DrawingView
+    Set balloonView = get_view_by_name( _
+        BALLOON_VIEW_NAME)
+
+    Dim view As DrawingView
+    Dim i As Long
+    Dim balloon As DrawingText
+    Dim center As Variant
+
+    Dim sel As Selection
+    Set sel = dDoc.Selection
+    sel.Clear
+    sel.Add baseBalloon
+    sel.Copy
+    sel.Clear
+
+    CATIA.HSOSynchronized = False
+
+    Dim balloonIdx As Long
+    balloonIdx = 1
+
+    For Each view In sheet.views
+
+        drawDims = get_dimensions_by_view(view)
+        If UBound(drawDims) &lt; 1 Then
+            GoTo continue
+        End If
+
+        For i = 0 To UBound(drawDims)
+            center = get_center_of_boundary_box( _
+                get_boundary_box_by_dimension( _
+                    drawDims(i) _
+                ) _
+            )
+
+            Set balloon = pre_copide_and_paste(balloonView)
+
+            move_balloon _
+                balloon, _
+                Array( _
+                    center(0) + 10#, _
+                    center(1) + 10# _
+                ), _
+                center
+
+            balloon.text = CStr(balloonIdx)
+            balloonIdx = balloonIdx + 1
+        Next
+        CATIA.RefreshDisplay = True
+
+
+continue:
+    Next
+
+    baseView.texts.Remove templateIndex
+
+    CATIA.HSOSynchronized = True
+
+    MsgBox &quot;Done : &quot; &amp; KCL.SW_GetTime
+
+End Sub
+
+
+'寸法文字の範囲取得
+Private Function get_boundary_box_by_dimension( _
+    ByVal drawDim As DrawingDimension) _
+    As Variant
+
+    Dim view As DrawingView
+    Set view = KCL.GetParent_Of_T(drawDim, &quot;DrawingView&quot;)
+
+    Dim viewX As Double
+    viewX = view.xAxisData
+
+    Dim viewY As Double
+    viewY = view.yAxisData
+
+    Dim viewScale As Double
+    viewScale = view.Scale
+
+    Dim valDim As Variant
+    Set valDim = drawDim
+
+    Dim bBox(7) As Variant
+    valDim.GetBoundaryBox bBox
+
+    Dim bBoxCount As Long
+    bBoxCount = UBound(bBox) \ 2
+
+    Dim i As Long
+    For i = 0 To bBoxCount
+        bBox(i * 2) = bBox(i * 2) * viewScale + viewX
+        bBox(i * 2 + 1) = bBox(i * 2 + 1) * viewScale + viewY
+    Next
+
+    get_boundary_box_by_dimension = bBox
+
+End Function
+
+
+'検索し配列で取得
+Private Function get_search_items( _
+    ByVal searchWord As String, _
+    Optional selectEntity = Nothing) _
+    As Variant
+
+    Dim dDoc As DrawingDocument
+    Set dDoc = CATIA.ActiveDocument
+
+    Dim sel As Selection
+    Set sel = dDoc.Selection
+
+    CATIA.HSOSynchronized = False
+
+    sel.Clear
+    If Not selectEntity Is Nothing Then
+        sel.Add selectEntity
+    End If
+
+    sel.Search searchWord
+
+    If sel.Count2 &lt; 1 Then
+        get_search_items = Array()
+        Exit Function
+    End If
+
+    Dim drawDims() As Variant
+    ReDim drawDims(sel.Count2 - 1)
+
+    Dim i As Long
+    For i = 1 To sel.Count2
+        Set drawDims(i - 1) = sel.item(i).value
+    Next
+
+    sel.Clear
+
+    CATIA.HSOSynchronized = True
+
+    get_search_items = drawDims
+
+End Function
+
+
+'ビュー内の寸法取得
+Private Function get_dimensions_by_view( _
+    ByVal view As DrawingView) _
+    As Variant
+
+    get_dimensions_by_view = get_search_items( _
+        &quot;CATDrwSearch.DrwDimension,sel&quot;, _
+        view _
+    )
+
+End Function
+
+
+'ビューを名前で取得
+'Optional isCreate - true:なきゃ作る false:なきゃnothing
+Private Function get_view_by_name( _
+    ByVal name As String, _
+    Optional isCreate = True) _
+    As DrawingView
+
+    Dim dDoc As DrawingDocument
+    Set dDoc = CATIA.ActiveDocument
+
+    Dim views As DrawingViews
+    Set views = dDoc.sheets.ActiveSheet.views
+
+    Dim view As DrawingView
+    For Each view In views
+        If Not view.name = name Then
+            GoTo continue
+        End If
+
+        Set get_view_by_name = view
+        Exit Function
+
+continue:
+    Next
+
+    If isCreate Then
+        Set get_view_by_name = views.Add(name)
+    Else
+        Set get_view_by_name = Nothing
+    End If
+
+End Function
+
+
+'シートを名前で取得
+Private Function get_sheet_by_name( _
+    ByVal name As String, _
+    Optional isDetail As Integer) _
+    As DrawingSheet
+
+    Dim dDoc As DrawingDocument
+    Set dDoc = CATIA.ActiveDocument
+
+    Dim sheets As DrawingSheets
+    Set sheets = dDoc.sheets
+
+    Dim sheet As DrawingSheet
+    For Each sheet In sheets
+        If Not sheet.name = name Then
+            GoTo continue
+        End If
+
+        If sheet.isDetail &lt;&gt; isDetail Then
+            GoTo continue
+        End If
+
+        Set get_sheet_by_name = sheet
+        Exit Function
+
+continue:
+    Next
+
+    Set get_sheet_by_name = Nothing
+
+End Function
+
+
+'テンプレートバルーンの取得
+'return array(DrawingSheet, DrawingView, drawingtext)
+Private Function get_template_balloon() _
+    As Variant
+
+    get_template_balloon = Array()
+
+    Dim dDoc As DrawingDocument
+    Set dDoc = CATIA.ActiveDocument
+
+    Dim backupSheet As DrawingSheet
+    Set backupSheet = dDoc.sheets.ActiveSheet.views
+
+    Dim sheet As DrawingSheet
+    Set sheet = get_sheet_by_name(TEMPLATE_SHEET_NAME, BOOL.boolTrue)
+    If sheet Is Nothing Then
+        MsgBox &quot;テンプレートディテールシートがありません&quot;
+        Exit Function
+    End If
+    sheet.Activate
+
+    Dim view As DrawingView
+    Set view = get_view_by_name(TEMPLATE_BALLOON_NAME)
+    If view Is Nothing Then
+        MsgBox &quot;テンプレートビューがありません&quot;
+        backupSheet.Activate
+        Exit Function
+    End If
+
+    view.Activate
+    Dim items As Variant
+    items = get_search_items( _
+        &quot;CATDrwSearch.DrwBalloon,sel&quot;, _
+        view _
+    )
+
+    If UBound(items) &lt; 0 Then
+        MsgBox &quot;テンプレートバルーンがありません&quot;
+        backupSheet.Activate
+        Exit Function
+    End If
+
+    '最初にHitしたバルーン
+    get_template_balloon = Array(sheet, view, items(0))
+
+    backupSheet.Activate
+
+End Function
+
+
+'コピー済みの状態からペースト
+Private Function pre_copide_and_paste( _
+    ByVal targetView As DrawingView) _
+    As DrawingText
+
+    Dim targetSheet As DrawingSheet
+    Set targetSheet = KCL.GetParent_Of_T(targetView, &quot;DrawingSheet&quot;)
+
+    Dim dDoc As DrawingDocument
+    Set dDoc = CATIA.ActiveDocument
+
+    Dim sel As Selection
+    Set sel = dDoc.Selection
+
+    targetSheet.Activate
+    'targetView.Activate
+
+    sel.Add targetView
+    sel.Paste
+
+    Set pre_copide_and_paste = sel.Item2(1).value
+    sel.Clear
+
+End Function
+
+
+'バルーン情報からターゲットにコピペ
+Private Function copy_and_paste( _
+    ByVal balloonInfo As Variant, _
+    ByVal targetView As DrawingView) _
+    As DrawingText
+
+    Dim targetSheet As DrawingSheet
+    Set targetSheet = KCL.GetParent_Of_T(targetView, &quot;DrawingSheet&quot;)
+
+    Dim sheet As DrawingSheet
+    Set sheet = balloonInfo(0)
+
+    Dim view As DrawingView
+    Set view = balloonInfo(1)
+
+    Dim balloon As DrawingText
+    Set balloon = balloonInfo(2)
+
+    Dim dDoc As DrawingDocument
+    Set dDoc = CATIA.ActiveDocument
+
+    Dim sel As Selection
+    Set sel = dDoc.Selection
+
+    sel.Clear
+    sheet.Activate
+    view.Activate
+    sel.Add balloon
+    sel.Copy
+    sel.Clear
+
+    Set copy_and_paste = pre_copide_and_paste( _
+        targetView _
+    )
+
+    sel.Clear
+
+End Function
+
+
+'バルーンの移動
+Private Sub move_balloon( _
+    ByVal balloon As DrawingText, _
+    textPos As Variant, _
+    leaderPos As Variant)
+
+    Dim drawLeader As DrawingLeader
+    Set drawLeader = balloon.leaders.item(1)
+
+    balloon.x = textPos(0)
+    balloon.y = textPos(1)
+
+    drawLeader.ModifyPoint 1, leaderPos(0), leaderPos(1)
+
+End Sub
+
+
+'バウンダリボックスの中心
+Private Function get_center_of_boundary_box( _
+    bBox As Variant) _
+    As Variant
+
+    get_center_of_boundary_box = Array( _
+        (bBox(0) + bBox(6)) * 0.5, _
+        (bBox(1) + bBox(3)) * 0.5 _
+    )
+
+End Function
+
+</code></pre>
+<p>正直な所、無駄な所が有る事に気が付いている上、とにかく汚いので<br />
+直したい所なのですが、紛失しそうなのでUpしておきます・・・。</p>
+<p>耐え切れず、自作ライブラリを使用しています。<br />
+試したい方は、こちらからダウンロードやコピペし、<br />
+同じプロジェクト内に&quot;kcl&quot;と言う名前の標準モジュールを<br />
+置いておいてください。</p>
+<p>こちらの続きです。<br />
+全ての寸法に番号バルーンを付ける1 - C#ATIA<br />
+取りあえず試すことが出来る状態となりましたが、まだまだ・・・。</p>
+<p>個人的な用途として、こんな感じの参照寸法にはバルーンを作りたく<br />
+無いです。えぇ作りたくないんです。</p>
+<p>寸法を参照寸法に変更したりするマクロがブログの中にあったはず<br />
+なのですが見つからない・・・こんな感じの状態を作ってます。</p>
+<p>寸法テキスト-関連テキストのメイン値の前後に丸カッコを<br />
+付けて表現しています。</p>
+<p>これが付いている状態のものは参照寸法として判断し、<br />
+バルーンを作らないようにします。<br />
+今後の除外するものが増える可能性もある為、除外する為の<br />
+フィルターを用意し、簡単に変更出来るようにしました。</p>
+
+<pre class="language-vb"><code class="language-vb">
+'vba using-'KCL0.0.12'  by Kantoku
+'アクティブなシートの全寸法に番号バルーンを付ける
+
+'バルーンレポートビュー名
+Private Const BALLOON_VIEW_NAME = &quot;BALLOON&quot;
+
+'テンプレートバルーン名
+Private Const TEMPLATE_SHEET_NAME = &quot;template&quot;
+Private Const TEMPLATE_BALLOON_NAME = &quot;balloon&quot;
+
+'true/false　vbaとCATIA API食い違い代案
+Private Enum BOOL
+    boolFalse = 0
+    boolTrue = 1
+End Enum
+
+'関連テキスト用
+Private Enum Dimension_Value
+    Main_Value = 1
+    Dual_Value = 2
+End Enum
+
+Option Explicit
+
+Sub CATMain()
+
+    '除外する関連テキストフィルター
+    'Before, After, Upper, Lower
+    Dim blackList As Variant
+    blackList = Array( _
+        Array(&quot;(&quot;, &quot;)&quot;, &quot;&quot;, &quot;&quot;) _
+    )
+
+    Dim dDoc As DrawingDocument
+    Set dDoc = CATIA.ActiveDocument
+
+    Dim sheet As DrawingSheet
+    Set sheet = dDoc.sheets.ActiveSheet
+
+    KCL.SW_Start
+
+    'バルーンテンプレート
+    Dim balloonInfo As Variant
+    balloonInfo = get_template_balloon()
+    If UBound(balloonInfo) &lt; 2 Then
+        Exit Sub
+    End If
+
+    'コピー
+    copy_entity balloonInfo
+    sheet.Activate
+
+    Dim balloonView As DrawingView
+    Set balloonView = get_view_by_name( _
+        BALLOON_VIEW_NAME)
+
+    Dim drawDims As Variant
+    Dim view As DrawingView
+    Dim i As Long
+    Dim balloon As DrawingText
+    Dim center As Variant
+
+    CATIA.HSOSynchronized = False
+
+    Dim balloonIdx As Long
+    balloonIdx = 1
+
+    For Each view In sheet.views
+
+        drawDims = get_dimensions_by_view(view, blackList)
+        If UBound(drawDims) &lt; 1 Then
+            GoTo continue
+        End If
+
+        For i = 0 To UBound(drawDims)
+            center = get_center_of_boundary_box( _
+                get_boundary_box_by_dimension( _
+                    drawDims(i) _
+                ) _
+            )
+
+            Set balloon = pre_copide_and_paste(balloonView)
+
+            move_balloon _
+                balloon, _
+                Array( _
+                    center(0) + 10#, _
+                    center(1) + 10# _
+                ), _
+                center
+
+            balloon.text = CStr(balloonIdx)
+            balloonIdx = balloonIdx + 1
+        Next
+        CATIA.RefreshDisplay = True
+
+
+continue:
+    Next
+
+    CATIA.HSOSynchronized = True
+
+    MsgBox &quot;Done : &quot; &amp; KCL.SW_GetTime
+
+End Sub
+
+
+'寸法文字の範囲取得
+Private Function get_boundary_box_by_dimension( _
+    ByVal drawDim As DrawingDimension) _
+    As Variant
+
+    Dim view As DrawingView
+    Set view = KCL.GetParent_Of_T(drawDim, &quot;DrawingView&quot;)
+
+    Dim viewX As Double
+    viewX = view.xAxisData
+
+    Dim viewY As Double
+    viewY = view.yAxisData
+
+    Dim viewScale As Double
+    viewScale = view.Scale
+
+    Dim valDim As Variant
+    Set valDim = drawDim
+
+    Dim bBox(7) As Variant
+    valDim.GetBoundaryBox bBox
+
+    Dim bBoxCount As Long
+    bBoxCount = UBound(bBox) \ 2
+
+    Dim i As Long
+    For i = 0 To bBoxCount
+        bBox(i * 2) = bBox(i * 2) * viewScale + viewX
+        bBox(i * 2 + 1) = bBox(i * 2 + 1) * viewScale + viewY
+    Next
+
+    get_boundary_box_by_dimension = bBox
+
+End Function
+
+
+'検索し配列で取得
+Private Function get_search_items( _
+    ByVal searchWord As String, _
+    Optional selectEntity = Nothing) _
+    As Variant
+
+    Dim dDoc As DrawingDocument
+    Set dDoc = CATIA.ActiveDocument
+
+    Dim sel As Selection
+    Set sel = dDoc.Selection
+
+    CATIA.HSOSynchronized = False
+
+    sel.Clear
+    If Not selectEntity Is Nothing Then
+        sel.Add selectEntity
+    End If
+
+    sel.Search searchWord
+
+    If sel.Count2 &lt; 1 Then
+        get_search_items = Array()
+        Exit Function
+    End If
+
+    Dim drawDims() As Variant
+    ReDim drawDims(sel.Count2 - 1)
+
+    Dim i As Long
+    For i = 1 To sel.Count2
+        Set drawDims(i - 1) = sel.Item(i).value
+    Next
+
+    sel.Clear
+
+    CATIA.HSOSynchronized = True
+
+    get_search_items = drawDims
+
+End Function
+
+
+'ビュー内の寸法取得-フィルター付き
+Private Function get_dimensions_by_view( _
+    ByVal view As DrawingView, _
+    ByVal filterBlack As Variant) _
+    As Variant
+
+    Dim dims As Variant
+    dims = get_search_items( _
+        &quot;CATDrwSearch.DrwDimension,sel&quot;, _
+        view _
+    )
+
+    Dim lst As Collection
+    Set lst = New Collection
+
+    Dim i As Long
+    For i = 0 To UBound(dims)
+        If Not is_match_bault_text(dims(i), filterBlack) Then
+            lst.Add dims(i)
+        End If
+    Next
+
+    get_dimensions_by_view = collection_to_array_by_obj(lst)
+
+End Function
+
+
+'関連テキストのメイン値でフィルターと一致するか？
+Private Function is_match_bault_text( _
+    ByVal drawDim As DrawingDimension, _
+    ByVal filterList As Variant) _
+    As Boolean
+
+    Dim dimValue As Variant 'DrawingDimValue
+    Set dimValue = drawDim.GetValue()
+
+    Dim before, after, upper, lower
+    dimValue.GetBaultText _
+        Dimension_Value.Main_Value, _
+        before, _
+        after, _
+        upper, _
+        lower
+
+    Dim stateBaultText As String
+    stateBaultText = Join( _
+        Array(before, after, upper, lower), _
+        &quot;@&quot; _
+    )
+
+    Dim i As Long
+    Dim filter As String
+    For i = 0 To UBound(filterList)
+        filter = Join( _
+            filterList(i), _
+            &quot;@&quot; _
+        )
+        If stateBaultText = filter Then
+            is_match_bault_text = True
+            Exit Function
+        End If
+    Next
+
+    is_match_bault_text = False
+
+End Function
+
+
+'ビューを名前で取得
+'Optional isCreate - true:なきゃ作る false:なきゃnothing
+Private Function get_view_by_name( _
+    ByVal name As String, _
+    Optional isCreate = True) _
+    As DrawingView
+
+    Dim dDoc As DrawingDocument
+    Set dDoc = CATIA.ActiveDocument
+
+    Dim views As DrawingViews
+    Set views = dDoc.sheets.ActiveSheet.views
+
+    Dim view As DrawingView
+    For Each view In views
+        If Not view.name = name Then
+            GoTo continue
+        End If
+
+        Set get_view_by_name = view
+        Exit Function
+
+continue:
+    Next
+
+    If isCreate Then
+        Set get_view_by_name = views.Add(name)
+    Else
+        Set get_view_by_name = Nothing
+    End If
+
+End Function
+
+
+'シートを名前で取得
+Private Function get_sheet_by_name( _
+    ByVal name As String, _
+    Optional isDetail As Integer) _
+    As DrawingSheet
+
+    Dim dDoc As DrawingDocument
+    Set dDoc = CATIA.ActiveDocument
+
+    Dim sheets As DrawingSheets
+    Set sheets = dDoc.sheets
+
+    Dim sheet As DrawingSheet
+    For Each sheet In sheets
+        If Not sheet.name = name Then
+            GoTo continue
+        End If
+
+        If sheet.isDetail &lt;&gt; isDetail Then
+            GoTo continue
+        End If
+
+        Set get_sheet_by_name = sheet
+        Exit Function
+
+continue:
+    Next
+
+    Set get_sheet_by_name = Nothing
+
+End Function
+
+
+'テンプレートバルーンの取得
+'return array(DrawingSheet, DrawingView, drawingtext)
+Private Function get_template_balloon() _
+    As Variant
+
+    get_template_balloon = Array()
+
+    Dim dDoc As DrawingDocument
+    Set dDoc = CATIA.ActiveDocument
+
+    Dim backupSheet As DrawingSheet
+    Set backupSheet = dDoc.sheets.ActiveSheet.views
+
+    Dim sheet As DrawingSheet
+    Set sheet = get_sheet_by_name(TEMPLATE_SHEET_NAME, BOOL.boolTrue)
+    If sheet Is Nothing Then
+        MsgBox &quot;テンプレートディテールシートがありません&quot;
+        Exit Function
+    End If
+    sheet.Activate
+
+    Dim view As DrawingView
+    Set view = get_view_by_name(TEMPLATE_BALLOON_NAME)
+    If view Is Nothing Then
+        MsgBox &quot;テンプレートビューがありません&quot;
+        backupSheet.Activate
+        Exit Function
+    End If
+
+    view.Activate
+    Dim items As Variant
+    items = get_search_items( _
+        &quot;CATDrwSearch.DrwBalloon,sel&quot;, _
+        view _
+    )
+
+    If UBound(items) &lt; 0 Then
+        MsgBox &quot;テンプレートバルーンがありません&quot;
+        backupSheet.Activate
+        Exit Function
+    End If
+
+    '最初にHitしたバルーン
+    get_template_balloon = Array(sheet, view, items(0))
+
+    backupSheet.Activate
+
+End Function
+
+
+'コピー済みの状態からペースト
+Private Function pre_copide_and_paste( _
+    ByVal targetView As DrawingView) _
+    As DrawingText
+
+    Dim targetSheet As DrawingSheet
+    Set targetSheet = KCL.GetParent_Of_T(targetView, &quot;DrawingSheet&quot;)
+
+    Dim dDoc As DrawingDocument
+    Set dDoc = CATIA.ActiveDocument
+
+    Dim sel As Selection
+    Set sel = dDoc.Selection
+
+    targetSheet.Activate
+    'targetView.Activate
+
+    sel.Add targetView
+    sel.Paste
+
+    Set pre_copide_and_paste = sel.Item2(1).value
+    sel.Clear
+
+End Function
+
+
+'バルーン情報から要素をコピーのみ
+Private Sub copy_entity( _
+    ByVal balloonInfo As Variant)
+
+    Dim sheet As DrawingSheet
+    Set sheet = balloonInfo(0)
+
+    Dim view As DrawingView
+    Set view = balloonInfo(1)
+
+    Dim balloon As DrawingText
+    Set balloon = balloonInfo(2)
+
+    Dim dDoc As DrawingDocument
+    Set dDoc = CATIA.ActiveDocument
+
+    Dim sel As Selection
+    Set sel = dDoc.Selection
+
+    sel.Clear
+    sheet.Activate
+    view.Activate
+    sel.Add balloon
+    sel.Copy
+    sel.Clear
+
+End Sub
+
+
+'バルーンの移動
+Private Sub move_balloon( _
+    ByVal balloon As DrawingText, _
+    textPos As Variant, _
+    leaderPos As Variant)
+
+    Dim drawLeader As DrawingLeader
+    Set drawLeader = balloon.leaders.Item(1)
+
+    balloon.x = textPos(0)
+    balloon.y = textPos(1)
+
+    drawLeader.ModifyPoint 1, leaderPos(0), leaderPos(1)
+
+End Sub
+
+
+'バウンダリボックスの中心
+Private Function get_center_of_boundary_box( _
+    bBox As Variant) _
+    As Variant
+
+    get_center_of_boundary_box = Array( _
+        (bBox(0) + bBox(6)) * 0.5, _
+        (bBox(1) + bBox(3)) * 0.5 _
+    )
+
+End Function
+
+
+'オブジェクトコレクション-&gt;配列
+Private Function collection_to_array_by_obj( _
+    lst As Collection) _
+    As Variant
+
+    If lst.count &lt; 1 Then
+        collection_to_array_by_obj = Array()
+        Exit Function
+    End If
+
+    Dim ary() As Variant
+    ReDim ary(lst.count - 1)
+
+    Dim i As Long
+    For i = 1 To lst.count
+        Set ary(i - 1) = lst(i)
+    Next
+
+    collection_to_array_by_obj = ary
+
+End Function
+
+</code></pre>
+<p>前回 &quot;イマイチ無駄” と思っていた部分は修正しましたが、<br />
+未だにCATMainが汚い！　もっとリファクタリングが必要なの<br />
+ですが、今は時間が無い。</p>
+<p>実行結果はこんな感じです。</p>
+<p>大丈夫です。</p>
+<p>そろそろ役目を終える時が来た気がするのですが、とりあえず<br />
+これ一連のマクロは完成させ、githubにupするまでは続けます。</p>
+<p>こちらの続きです。<br />
+全ての寸法に番号バルーンを付ける2 - C#ATIA<br />
+時間がかかりましたね・・・。</p>
+<p>前回の物を実行するとこんな感じです。</p>
+<p>確かに寸法上にバルーンが配置されています。<br />
+しかし、バルーンのテキスト部分が、全て同じような右上方向ですよね？<br />
+ここがイマイチなんです。</p>
+<p>そこで、もうちょっとそれっぽい位置に配置されるように考えました。</p>
+
+<pre class="language-vb"><code class="language-vb">
+'vba using-'KCL0.1.0'  by Kantoku
+'アクティブなシートの全寸法に番号バルーンを付ける
+
+'バルーンレポートビュー名
+Private Const BALLOON_VIEW_NAME = &quot;BALLOON&quot;
+
+'テンプレートバルーン名
+Private Const TEMPLATE_SHEET_NAME = &quot;template&quot;
+Private Const TEMPLATE_BALLOON_NAME = &quot;balloon&quot;
+
+'true/false　vbaとCATIA API食い違い代案
+Private Enum BOOL
+    boolFalse = 0
+    boolTrue = 1
+End Enum
+
+'関連テキスト用
+Private Enum Dimension_Value
+    Main_Value = 1
+    Dual_Value = 2
+End Enum
+
+Option Explicit
+
+
+Sub CATMain()
+
+    '除外する関連テキストフィルター
+    'Before, After, Upper, Lower
+    Dim blackList As Variant
+    blackList = Array( _
+        Array(&quot;(&quot;, &quot;)&quot;, &quot;&quot;, &quot;&quot;) _
+    )
+
+    Dim dDoc As DrawingDocument
+    Set dDoc = CATIA.ActiveDocument
+
+    Dim sheet As DrawingSheet
+    Set sheet = dDoc.sheets.ActiveSheet
+
+    KCL.SW_Start
+
+    'バルーンテンプレート
+    Dim balloonInfo As Variant
+    balloonInfo = get_template_balloon()
+    If UBound(balloonInfo) &lt; 2 Then
+        Exit Sub
+    End If
+
+    'コピー
+    copy_entity balloonInfo
+    sheet.Activate
+
+    Dim balloonView As DrawingView
+    Set balloonView = get_view_by_name( _
+        BALLOON_VIEW_NAME)
+
+    Dim drawDims As Variant
+    Dim view As DrawingView
+    Dim i As Long
+    Dim balloon As DrawingText
+
+    Dim balloonIdx As Long 'ナンバリング用インデックス
+    balloonIdx = 1
+
+    Dim dimBBox As BBox2D
+    Dim viewBBox As BBox2D
+    Dim viewVec As Vec2D
+    Dim textVec As Vec2D
+    Dim textPnt As Pnt2D
+
+    CATIA.HSOSynchronized = True
+
+    For Each view In sheet.views
+        '寸法検索
+        drawDims = get_dimensions_by_view(view, blackList)
+        If UBound(drawDims) &lt; 1 Then
+            GoTo continue
+        End If
+
+        'ビューバウンダリボックス
+        Set viewBBox = GeoFactry.create_boundary_box_by_view( _
+            view _
+        )
+        Set viewVec = viewBBox.origin_point().as_vector()
+
+        For i = 0 To UBound(drawDims)
+            '寸法バウンダリボックス
+            Set dimBBox = GeoFactry.create_boundary_box_by_dimension( _
+                drawDims(i) _
+            )
+            dimBBox.translate_by viewVec
+
+            'バルーンのペースト
+            Set balloon = pre_copide_and_paste(balloonView)
+
+            'テキスト位置算出
+            Set textPnt = dimBBox.center_point.clone()
+            Set textVec = viewBBox.center_point.vector_to(textPnt)
+            textVec.normalize
+            textVec.scale_by 20
+            textPnt.translate_by textVec
+
+            'バルーン位置調整
+            move_balloon _
+                balloon, _
+                textPnt, _
+                dimBBox.center_point
+
+            'バルーンテキスト修正
+            balloon.Text = CStr(balloonIdx)
+
+            'カウンタ更新
+            balloonIdx = balloonIdx + 1
+        Next
+
+        CATIA.RefreshDisplay = True
+
+continue:
+    Next
+
+    CATIA.HSOSynchronized = False
+
+    MsgBox &quot;Done : &quot; &amp; KCL.SW_GetTime
+
+End Sub
+
+
+'検索し配列で取得
+Private Function get_search_items( _
+    ByVal searchWord As String, _
+    Optional selectEntity = Nothing) _
+    As Variant
+
+    Dim dDoc As DrawingDocument
+    Set dDoc = CATIA.ActiveDocument
+
+    Dim sel As Selection
+    Set sel = dDoc.Selection
+
+    sel.Clear
+    If Not selectEntity Is Nothing Then
+        sel.add selectEntity
+    End If
+
+    sel.Search searchWord
+
+    If sel.Count2 &lt; 1 Then
+        get_search_items = Array()
+        Exit Function
+    End If
+
+    Dim drawDims() As Variant
+    ReDim drawDims(sel.Count2 - 1)
+
+    Dim i As Long
+    For i = 1 To sel.Count2
+        Set drawDims(i - 1) = sel.Item(i).value
+    Next
+
+    sel.Clear
+
+    get_search_items = drawDims
+
+End Function
+
+
+'ビュー内の寸法取得-フィルター付き
+Private Function get_dimensions_by_view( _
+    ByVal view As DrawingView, _
+    ByVal filterBlack As Variant) _
+    As Variant
+
+    Dim dims As Variant
+    dims = get_search_items( _
+        &quot;CATDrwSearch.DrwDimension,sel&quot;, _
+        view _
+    )
+
+    Dim lst As Collection
+    Set lst = New Collection
+
+    Dim i As Long
+    For i = 0 To UBound(dims)
+        If Not is_match_bault_text(dims(i), filterBlack) Then
+            lst.add dims(i)
+        End If
+    Next
+
+    get_dimensions_by_view = collection_to_array_by_obj(lst)
+
+End Function
+
+
+'関連テキストのメイン値でフィルターと一致するか？
+Private Function is_match_bault_text( _
+    ByVal drawDim As DrawingDimension, _
+    ByVal filterList As Variant) _
+    As Boolean
+
+    Dim dimValue As Variant 'DrawingDimValue
+    Set dimValue = drawDim.GetValue()
+
+    Dim before, after, upper, lower
+    dimValue.GetBaultText _
+        Dimension_Value.Main_Value, _
+        before, _
+        after, _
+        upper, _
+        lower
+
+    Dim stateBaultText As String
+    stateBaultText = Join( _
+        Array(before, after, upper, lower), _
+        &quot;@&quot; _
+    )
+
+    Dim i As Long
+    Dim filter As String
+    For i = 0 To UBound(filterList)
+        filter = Join( _
+            filterList(i), _
+            &quot;@&quot; _
+        )
+        If stateBaultText = filter Then
+            is_match_bault_text = True
+            Exit Function
+        End If
+    Next
+
+    is_match_bault_text = False
+
+End Function
+
+
+'ビューを名前で取得
+'Optional isCreate - true:なきゃ作る false:なきゃnothing
+Private Function get_view_by_name( _
+    ByVal name As String, _
+    Optional isCreate = True) _
+    As DrawingView
+
+    Dim dDoc As DrawingDocument
+    Set dDoc = CATIA.ActiveDocument
+
+    Dim views As DrawingViews
+    Set views = dDoc.sheets.ActiveSheet.views
+
+    Dim view As DrawingView
+    For Each view In views
+        If Not view.name = name Then
+            GoTo continue
+        End If
+
+        Set get_view_by_name = view
+        Exit Function
+
+continue:
+    Next
+
+    If isCreate Then
+        Set get_view_by_name = views.add(name)
+    Else
+        Set get_view_by_name = Nothing
+    End If
+
+End Function
+
+
+'シートを名前で取得
+Private Function get_sheet_by_name( _
+    ByVal name As String, _
+    Optional isDetail As Integer) _
+    As DrawingSheet
+
+    Dim dDoc As DrawingDocument
+    Set dDoc = CATIA.ActiveDocument
+
+    Dim sheets As DrawingSheets
+    Set sheets = dDoc.sheets
+
+    Dim sheet As DrawingSheet
+    For Each sheet In sheets
+        If Not sheet.name = name Then
+            GoTo continue
+        End If
+
+        If sheet.isDetail &lt;&gt; isDetail Then
+            GoTo continue
+        End If
+
+        Set get_sheet_by_name = sheet
+        Exit Function
+
+continue:
+    Next
+
+    Set get_sheet_by_name = Nothing
+
+End Function
+
+
+'テンプレートバルーンの取得
+'return array(DrawingSheet, DrawingView, drawingtext)
+Private Function get_template_balloon() _
+    As Variant
+
+    get_template_balloon = Array()
+
+    Dim dDoc As DrawingDocument
+    Set dDoc = CATIA.ActiveDocument
+
+    Dim backupSheet As DrawingSheet
+    Set backupSheet = dDoc.sheets.ActiveSheet.views
+
+    Dim sheet As DrawingSheet
+    Set sheet = get_sheet_by_name(TEMPLATE_SHEET_NAME, BOOL.boolTrue)
+    If sheet Is Nothing Then
+        MsgBox &quot;テンプレートディテールシートがありません&quot;
+        Exit Function
+    End If
+    sheet.Activate
+
+    Dim view As DrawingView
+    Set view = get_view_by_name(TEMPLATE_BALLOON_NAME)
+    If view Is Nothing Then
+        MsgBox &quot;テンプレートビューがありません&quot;
+        backupSheet.Activate
+        Exit Function
+    End If
+
+    view.Activate
+    Dim items As Variant
+    items = get_search_items( _
+        &quot;CATDrwSearch.DrwBalloon,sel&quot;, _
+        view _
+    )
+
+    If UBound(items) &lt; 0 Then
+        MsgBox &quot;テンプレートバルーンがありません&quot;
+        backupSheet.Activate
+        Exit Function
+    End If
+
+    '最初にHitしたバルーン
+    get_template_balloon = Array(sheet, view, items(0))
+
+    backupSheet.Activate
+
+End Function
+
+
+'コピー済みの状態からペースト
+Private Function pre_copide_and_paste( _
+    ByVal targetView As DrawingView) _
+    As DrawingText
+
+    Dim targetSheet As DrawingSheet
+    Set targetSheet = KCL.GetParent_Of_T(targetView, &quot;DrawingSheet&quot;)
+
+    Dim dDoc As DrawingDocument
+    Set dDoc = CATIA.ActiveDocument
+
+    Dim sel As Selection
+    Set sel = dDoc.Selection
+
+    targetSheet.Activate
+
+    sel.add targetView
+    sel.Paste
+
+    Set pre_copide_and_paste = sel.Item2(1).value
+    sel.Clear
+
+End Function
+
+
+'バルーン情報から要素をコピーのみ
+Private Sub copy_entity( _
+    ByVal balloonInfo As Variant)
+
+    Dim sheet As DrawingSheet
+    Set sheet = balloonInfo(0)
+
+    Dim view As DrawingView
+    Set view = balloonInfo(1)
+
+    Dim balloon As DrawingText
+    Set balloon = balloonInfo(2)
+
+    Dim dDoc As DrawingDocument
+    Set dDoc = CATIA.ActiveDocument
+
+    Dim sel As Selection
+    Set sel = dDoc.Selection
+
+    sel.Clear
+    sheet.Activate
+    view.Activate
+    sel.add balloon
+    sel.Copy
+    sel.Clear
+
+End Sub
+
+
+'バルーンの移動
+Private Sub move_balloon( _
+    ByVal balloon As DrawingText, _
+    textPnt As Pnt2D, _
+    leaderPnt As Pnt2D)
+
+    Dim drawLeader As DrawingLeader
+    Set drawLeader = balloon.leaders.Item(1)
+
+    balloon.x = textPnt.x
+    balloon.y = textPnt.y
+
+    drawLeader.ModifyPoint 1, leaderPnt.x, leaderPnt.y
+
+End Sub
+
+
+'オブジェクトコレクション-&gt;配列
+Private Function collection_to_array_by_obj( _
+    lst As Collection) _
+    As Variant
+
+    If lst.count &lt; 1 Then
+        collection_to_array_by_obj = Array()
+        Exit Function
+    End If
+
+    Dim ary() As Variant
+    ReDim ary(lst.count - 1)
+
+    Dim i As Long
+    For i = 1 To lst.count
+        Set ary(i - 1) = lst(i)
+    Next
+
+    collection_to_array_by_obj = ary
+
+End Function
+</code></pre>
+<p>&quot;KCL&quot; についてはこちら<br />
+GitHub - kantoku-code/KCL: CATIA Library for personal CATVBA (CATIA macro)</p>
+<p>&quot;BBox2D&quot; &quot;GeoFactry&quot; &quot;Pnt2D&quot; &quot;Vec2D&quot; についてはこちら<br />
+GitHub - kantoku-code/CATIA_V5_Geometry_used_for_balloon_adjustment: これは将来削除します</p>
+<p>が同じプロジェクト内に必要です。</p>
+<p>バルーンテキストの配置位置は、この様に考えました。</p>
+<p>ビューの中心から寸法の中心位置への方向を求め、寸法中心位置から<br />
+その方向に少しずらした位置にバルーンテキストを配置する事に<br />
+しました。<br />
+実際に実行した結果はこの様な感じです。</p>
+<p>前回の物に比べ それっぽい状態になりました。<br />
+とは言え、手動で位置調整は必要になると思いますが。</p>
+<p>繰り返しておきますが、</p>
+<p>バルーンテキストを青色の位置から赤色の位置に移動させたい<br />
+だけの為にあれらのクラスを作りました。<br />
+あれだけの為にですよ！</p>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                    </div>
+                    <div id="next">
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a></a>
+</li>
+<li><a>源码</a><ul><li><a target="_blank" href="https://github.com/neutree/teedoc">github</a></li>
+<li><a target="_blank" href="https://gitee.com/teedoc/teedoc">gitee</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a></a>
+</li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/static/js/theme_default/main.js"></script>
+    
+        <script src="/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/static/js/search/search_main.js"></script>
+    
+        <script src="/static/js/plugin_blog/main.js"></script>
+    
+        <script src="/static/js/custom.js"></script>
+    
+        <script type="text/javascript" src="/static/js/live.js"></script>
+    
+</body>
+
+</html>

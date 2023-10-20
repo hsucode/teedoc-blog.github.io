@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"  class=" language_zh ">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="">
+    
+    
+    <meta name="description" content="">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/search/style.css" type="text/css"/>
+        
+        <meta name="blog-generator" content="teedoc-plugin-blog">
+        
+        <link rel="stylesheet" href="/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>SDW快速出图技术路线 - Knowledge Base</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": null, "update": [], "ts": 0, "author": "", "brief": "", "cover": ""}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/">
+                
+                    <img class="site_logo" src="/static/image/logo.png" alt="my_site logo">
+                
+                
+                    <h2>知识库</h2>
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/get_started/zh/">安装使用</a></li>
+<li class="active"><a  href="/blog/">博客</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class=""><a target="_blank" href="https://github.com/neutree/teedoc">github</a></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">搜索</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">输入关键词，多关键词空格隔开</span>
+                                <span id="search_loading_hint">正在加载，请稍候。。。</span>
+                                <span id="search_download_err_hint">下载文件失败，请刷新重试或检查网络</span>
+                                <span id="search_other_docs_result_hint">来自其它文档的结果</span>
+                                <span id="search_curr_doc_result_hint">当前文档搜索结果</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="">
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>SDW快速出图技术路线</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                                <span class="article_date" title="最后修改日期： 2022-10-21">
+                                    2022-10-21
+                                </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                            <div id="source_link">
+                                <a href="https://github.com/my_name/my_name.github.io/blob/main/blog/catia/CATIA_APP_STR/SDW快速出图技术路线.md" target="_blank">
+                                    编辑本页
+                                </a>
+                            </div>
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <span id="blog_start"></span><!-- 
+# 目录
+
+[1 ASD线路出图 [3](#asd线路出图)](#asd线路出图)
+
+[1.1 简介 [3](#简介)](#简介)
+
+[1.2 配置资源集 [3](#配置资源集)](#配置资源集)
+
+[1.3 图框模板 [4](#图框模板)](#图框模板)
+
+[1.4 标题栏模板 [7](#标题栏模板)](#标题栏模板)
+
+[1.5 图纸模板 [11](#图纸模板)](#图纸模板)
+SDW快速出图技术路线0f7ba6a5-d34e-4d1a-bebb-d74b757a6296
+[1.6 路线平曲线 [12](#路线平曲线)](#路线平曲线)
+
+[1.6.1 直线段标注 [12](#直线段标注)](#直线段标注)
+
+[1.6.2 圆弧段标注 [13](#圆弧段标注)](#圆弧段标注)
+
+[1.6.3 缓和曲线端点标注 [14](#缓和曲线端点标注)](#缓和曲线端点标注)
+
+[1.6.4 圆弧中点标注 [16](#圆弧中点标注)](#圆弧中点标注)
+
+[1.6.5 主里程点标注 [17](#主里程点标注)](#主里程点标注)
+
+[1.6.6 次里程点标注 [18](#次里程点标注)](#次里程点标注)
+
+[1.6.7 水平曲线规则集 [19](#水平曲线规则集)](#水平曲线规则集)
+
+[1.6.8 水平视图 [21](#水平视图)](#水平视图)
+
+[1.7 线路纵曲线 [22](#线路纵曲线)](#线路纵曲线)
+
+[1.7.1 直线段标注 [22](#直线段标注-1)](#直线段标注-1)
+
+[1.7.2 圆弧段标注 [23](#圆弧段标注-1)](#圆弧段标注-1)
+
+[1.7.3 竖直曲线规则集 [25](#竖直曲线规则集)](#竖直曲线规则集)
+
+[1.7.4 垂直试图 [26](#垂直试图)](#垂直试图)
+
+[1.8 线路出图 [28](#线路出图)](#线路出图)
+
+[1.8.1 添加环境变量 [28](#线路出图)](#线路出图)
+
+[1.8.2 线路出图 [28](#线路出图-1)](#线路出图-1)
+ -->
+<h2 id="ASD%E7%BA%BF%E8%B7%AF%E5%87%BA%E5%9B%BE">ASD线路出图</h2>
+<h3 id="%E7%AE%80%E4%BB%8B">简介</h3>
+<p>3D体验平台（2021XPF3以上）中针对土木工程行业具有专业的出图模块，其中的Drafting<br />
+Template Design应用模块，有专业的线路出图功能。线路出图功能可通过对Civil<br />
+3D<br />
+Design的水平线路和纵面线路进行平总曲线的出图。平台中默认的出图标注方式是根据国外出图规范定义的，无法满足中国本地应用需求，针对国内出图规范，对相应的模板进行自定义，以使平台满足本地化线路出图的专业要求。</p>
+<h3 id="%E9%85%8D%E7%BD%AE%E8%B5%84%E6%BA%90%E9%9B%86">配置资源集</h3>
+<p>导入出图模板以及目录Alignment drawing templates和NewAlignment view<br />
+drawing templates A.1，切换到所有者角色，进入Data<br />
+Setup模块设置出图模板资源</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image1..png" alt="image1..png" /></p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image2..png" alt="image2..png" /></p>
+<p>点开ASD工程制图资源，编辑各模板所对应的目录</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image3..png" alt="image3..png" /></p>
+<p>把资源绑定到合作区，保存并切换到领导角色。</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image4..png" alt="image4..png" /></p>
+<h3 id="%E5%9B%BE%E6%A1%86%E6%A8%A1%E6%9D%BF">图框模板</h3>
+<p>新建ASD工程图模板，进入到Drafting Template<br />
+Design模块，在工具栏智能模板管理下，点击框架模板新建框架模板。</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image5..png" alt="image5..png" /></p>
+<p>用草图轮廓命令，画出矩形轮廓，在注释栏选用标注命令，约束好矩形框的长、宽</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image6..png" alt="image6..png" /></p>
+<p>约束完成之后，双击尺寸约束选择驱动几何图形；在结构树模板参数和规则下，插入actions，编辑脚本：</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image7..png" alt="image7..png" /></p>
+<p>其中ASDSheet.Orientation为图纸的方向，当输出为'1'时，图纸为纵向，输出为'2'时，图纸为横向；</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image8..png" alt="image8..png" /></p>
+<p>在确定了图纸的类型之后，图纸的长宽尺寸是固定的，我们只需要提取到宽度和高度尺寸，赋予到标注即可</p>
+<p>ASDSheet. Height<br />
+-------------------//图纸高度（长度参数）</p>
+<p>ASDSheet. Width<br />
+-------------------//图纸宽度（长度参数）</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image9..png" alt="image9..png" /></p>
+<p>ASDSheet.MarginBottom-------------------//图纸工作区的底边距</p>
+<p>ASDSheet.MarginLeft-------------------//图纸工作区的左边距</p>
+<p>ASDSheet.MarginRight-------------------//图纸工作区的右边距</p>
+<p>ASDSheet.MarginTop-------------------//图纸工作区的左顶边距</p>
+<p>完成之后隐藏标注尺寸，保存并把框架模板加入到图框模板catalog</p>
+<p>上述为通用参数化框架，如果需要特殊框架，可以新建框架模板之后，用草绘功能根据纸张尺寸画出所需要的框架。</p>
+<h3 id="%E6%A0%87%E9%A2%98%E6%A0%8F%E6%A8%A1%E6%9D%BF">标题栏模板</h3>
+<p>在刚才的Drafting Template<br />
+Design模块继续编辑标题栏模板，点击标题块模板图标，新建标题栏模板；利用草图轮廓命令，草绘完成大致标题栏的样式。</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image10..png" alt="image10..png" /></p>
+<p>在结构树上添加需要的参数</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image11..png" alt="image11..png" /></p>
+<p>在设计好的标题栏相应位置，新建文本，并根据图框的需求输入文本内容</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image12..png" alt="image12..png" /></p>
+<p>文本框内的内容分为固定文本和参数文本，其中固定文本只需要双击文本框填写好相应文本即可，参数文本需要链接到结构树上的参数，下面以页数为例：</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image13..png" alt="image13..png" /></p>
+<p>双击文本框，弹出文本编辑器，右键文本框，弹出插入属性链接对话框</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image14..png" alt="image14..png" /></p>
+<p>在结构树上选择需要链接的参数，把此参数选择到插入属性链接对话框，再次单击选中对话框中的参数，点击确定，把结构树上的参数和文本框中的文本相结合</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image15..png" alt="image15..png" /></p>
+<p>参数链接完成之后，在模板和参数规则下插入actions脚本，让参数受图纸约束</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image16..png" alt="image16..png" /></p>
+<p>DateFormat(&quot;%Y&quot;)为系统时间年</p>
+<p>DateFormat(&quot;%m&quot;)为系统时间月</p>
+<p>My_sheet.SheetScale 为当前的图纸比例</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image17..png" alt="image17..png" /></p>
+<p>mySheet.IsCurrentSheet==True-------------------//当前页</p>
+<p>上述脚本旨在控制结构树上的用户参数，进而通过脚本链接控制文本内容，比如在实例化的时候，文本内容会判断出当前的图纸在工程图的位置，检测出系统当前的时间等，节省了相关人员处理标题栏的时间。</p>
+<p>设置完成之后保存到标题栏目录。</p>
+<h3 id="%E5%9B%BE%E7%BA%B8%E6%A8%A1%E6%9D%BF">图纸模板</h3>
+<p>完成图框模板和标题栏模板之后，建立图纸模板，打开图纸模板定义，对话框中定义和工作区中的内容，我们在编辑图框和标题栏时，已经把相应参数通过脚本提取出来，并关联到参数中</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image18..png" alt="image18..png" /></p>
+<p>在修饰工作区内选择目录，会弹出在全局资源中加载到ASD中的目录，选择需要设置的模板，放置规则根据需求设置在图纸的位置。设置完成之后保存图纸模板，添加到图纸模板目录。</p>
+<h2 id="%E8%B7%AF%E7%BA%BF%E5%B9%B3%E6%9B%B2%E7%BA%BF">路线平曲线</h2>
+<h3 id="%E7%9B%B4%E7%BA%BF%E6%AE%B5%E6%A0%87%E6%B3%A8">直线段标注</h3>
+<p>进入Drafting Template<br />
+Design模块，新建详图，建立注释模板，在注释栏下创建文本，文本内容R-∞</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image19..png" alt="image19..png" /></p>
+<p>设置文字标注相应字体DS ISO 1，定位点为中部居中，参考为父级零部件</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image20..png" alt="image20..png" /></p>
+<p>新建actions并编辑脚本</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image21..png" alt="image21..png" /></p>
+<p>输入条件HATangent :<br />
+AECHorizontalTangent为平曲线直线段，&quot;长度&quot;&quot;设计时速&quot;为隐藏的文本注释，在新建平曲线出图的时候，只显示R-∞</p>
+<h3 id="%E5%9C%86%E5%BC%A7%E6%AE%B5%E6%A0%87%E6%B3%A8">圆弧段标注</h3>
+<p>新建详图，建立注释模板，在注释栏下创建文本，文本内容R-0m</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image22..png" alt="image22..png" /></p>
+<p>文本设置参照直线段文字标注，新建actions并编辑脚本</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image23..png" alt="image23..png" /></p>
+<p>输入条件HAArc :<br />
+AECHorizontalArc为平曲线圆弧段，HAArc-&gt;GetRadius()为获取平曲线曲线段半径</p>
+<h3 id="%E7%BC%93%E5%92%8C%E6%9B%B2%E7%BA%BF%E7%AB%AF%E7%82%B9%E6%A0%87%E6%B3%A8">缓和曲线端点标注</h3>
+<p>新建详图，建立注释模板，添加字符串参数sAheadStation、'关键点符号'，绘制箭头并添加文本注释如下：</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image24..png" alt="image24..png" /></p>
+<p>文本注释添加参数链接，添加方式同标题栏，添加actions并编辑脚本</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image25..png" alt="image25..png" /></p>
+<p>Input-&gt;GetKeyPointAcronym-------------------//关键点首字母缩略词</p>
+<p>因脚本函数只能获取固定字符，且此字符不符合国内标注习惯，所以添加判断语句if---else<br />
+if---else if---让标注形式符合国内使用习惯</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image26..png" alt="image26..png" /></p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image27..png" alt="image27..png" /></p>
+<p>输入Input : AECAlignment2DHorizontal为平曲线</p>
+<p>新建注释模板为缓和曲线端点，建立子注释模板，并选择刚才建立的注释模板为子模板，以此缓和曲线端点为特征加入到目录并保存。</p>
+<h3 id="%E5%9C%86%E5%BC%A7%E4%B8%AD%E7%82%B9%E6%A0%87%E6%B3%A8">圆弧中点标注</h3>
+<p>新建详图，建立注释模板，添加字符串参数sAheadStation，绘制直线并添加文本注释如下：</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image28..png" alt="image28..png" /></p>
+<p>文本注释添加参数链接，添加方式同标题栏，添加actions并编辑脚本</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image29..png" alt="image29..png" /></p>
+<dl>
+<dt>圆弧中点标注曲中点QZ固定，不必设置参数，直接建立文本标注QZ即可，输入Input</dt>
+<dd>AECAlignment2DHorizontal为平曲线，Input-&gt;GetAheadStation获取里程。</dd>
+</dl>
+<p>新建注释模板为圆弧中点，建立子注释模板，并选择刚才建立的注释模板为子模板，以此圆弧中点为特征加入到目录并保存。</p>
+<h3 id="%E4%B8%BB%E9%87%8C%E7%A8%8B%E7%82%B9%E6%A0%87%E6%B3%A8">主里程点标注</h3>
+<p>新建详图，建立注释模板，添加字符串参数DistanceToReference、sStationing，绘制直线并添加文本注释如下：</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image30..png" alt="image30..png" /></p>
+<p>文本注释添加参数链接，添加方式同标题栏，添加actions并编辑脚本</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image31..png" alt="image31..png" /></p>
+<p>输入Input : AECAlignment2DHorizontal为平曲线</p>
+<p>新建规则，根据文本标注的框架定义直线的位置：</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image32..png" alt="image32..png" /></p>
+<p>Point1_H（长度）：第一个点的水平坐标</p>
+<p>Point1_V（长度）：第一个点的垂直坐标</p>
+<p>Point2_H（长度）：第二个点的水平坐标</p>
+<p>Point2_V（长度）：第二个点的垂直坐标</p>
+<p>Point3_H（长度）：第三个点的水平坐标</p>
+<p>Point3_V（长度）：第三个点的垂直坐标</p>
+<p>Point4_H（长度）：第四个点的水平坐标</p>
+<p>Point4_V（长度）：第四个点的垂直坐标</p>
+<p>新建注释模板为主里程点，建立子注释模板，添加参数Major<br />
+Interval=200m，Minor<br />
+Interval=100m，并选择刚才建立的注释模板为子模板，以此主里程点为特征加入到目录并保存。</p>
+<h3 id="%E6%AC%A1%E9%87%8C%E7%A8%8B%E7%82%B9%E6%A0%87%E6%B3%A8">次里程点标注</h3>
+<p>新建详图，建立注释模板，添加字符串参数DistanceToReference、sStationing，绘制直线并添加文本注释如下：</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image33..png" alt="image33..png" /></p>
+<p>文本注释添加参数链接，添加方式同标题栏，添加actions并编辑脚本</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image34..png" alt="image34..png" /></p>
+<p>输入Input : AECAlignment2DHorizontal为平曲线</p>
+<p>新建规则，根据文本标注的框架定义直线的位置：</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image35..png" alt="image35..png" /></p>
+<p>新建注释模板为主里程点，建立子注释模板，并选择刚才建立的注释模板为子模板，以此主里程点为特征加入到目录并保存。</p>
+<h3 id="%E6%B0%B4%E5%B9%B3%E6%9B%B2%E7%BA%BF%E8%A7%84%E5%88%99%E9%9B%86">水平曲线规则集</h3>
+<p>新建规则集模板，并修改名称为道路水平规则集，右键规则集选择对象添加注释规则模板，定义名称Tangent</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image36..png" alt="image36..png" /></p>
+<p>在条件栏添加脚本</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image37..png" alt="image37..png" /></p>
+<p>Input.IsASortOf(&quot;AECHorizontalTangent&quot;)选择输入为直线时，注释为真；</p>
+<p>选择注释类型为参数，编辑参数注释，选择模板为保存的直线段注释模板</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image38..png" alt="image38..png" /></p>
+<p>定义放置策略为沿项目</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image39..png" alt="image39..png" /></p>
+<p>同样的方式，定义规则集内的圆弧段标注、缓和曲线拐点标注、圆弧中点标注、主里程点标注、次里程点标注等。</p>
+<h3 id="%E6%8C%87%E5%8C%97%E9%92%88">指北针</h3>
+<p>进入工程制图模板设计模块，打开Alignment view drawing<br />
+templates图纸文件，新建详图，新建2D部件，在此2D部件上画出所需要的指北针样式，如下图</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image40..png" alt="image40..png" /></p>
+<p>新建标签模板，把此2D部件转换为标签模板，在智能模板注释工具条下，新建注释模板，定义模板名称，在注释工具条下选择初始化标签</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image41..png" alt="image41..png" /></p>
+<p>，把标签模板实例化到注释模板内，并定义角度参数Angle_N</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image42..png" alt="image42..png" /></p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image43..png" alt="image43..png" /></p>
+<p>在关系集下添加规则，定义规则内容，使2D部件角度和Angle_N关联起来</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image44..png" alt="image44..png" /></p>
+<p>保存，把模板添加到Alignment drawing templates目录。</p>
+<h3 id="%E4%BF%AE%E6%94%B9%E4%BA%A4%E7%82%B9%E8%A1%A8%E8%A1%A8%E5%A4%B4">修改交点表表头</h3>
+<p>打开文件win_b64\resources\Civil\Alignment\PITableFormat.xsl，修改表头</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image45..png" alt="image45..png" /></p>
+<h3 id="%E6%B0%B4%E5%B9%B3%E8%A7%86%E5%9B%BE">水平视图</h3>
+<p>新建视图模板，根据需求定义缩放比例为1：1000、1：200等；</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image46..png" alt="image46..png" /></p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image47..png" alt="image47..png" /></p>
+<p>定义视图更新规则，添加规则集内的直线、圆弧等规则集</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image48..png" alt="image48..png" /></p>
+<p>定义指南针</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image49..png" alt="image49..png" /></p>
+<p>保存视图模板并加入到目录。</p>
+<h2 id="%E7%BA%BF%E8%B7%AF%E7%BA%B5%E6%9B%B2%E7%BA%BF">线路纵曲线</h2>
+<h3 id="%E7%9B%B4%E7%BA%BF%E6%AE%B5%E6%A0%87%E6%B3%A8">直线段标注</h3>
+<p>新建详图，建立注释模板，在注释栏下创建文本，文本内容String</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image50..png" alt="image50..png" /></p>
+<p>新建actions并编辑脚本</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image51..png" alt="image51..png" /></p>
+<p>输入TangentGrade :<br />
+AECTangentGrade为纵曲线直线段，TangentGrade-&gt;GetGrade()为坡度，以下内容是把&quot;%_angle&quot;换成&quot;%&quot;。</p>
+<p>保存并加入到目录。</p>
+<h3 id="%E5%9C%86%E5%BC%A7%E6%AE%B5%E6%A0%87%E6%B3%A8">圆弧段标注</h3>
+<p>新建详图，建立注释模板，在注释栏下创建文本，文本内容为纵曲线圆弧段的关键参数R、T、E，用草绘功能按照国内标注样式画出下图所示线段；新建参数R、T、E，并链接到文本标注；并把圆弧端点2D模板实例化到注释模板</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image52..png" alt="image52..png" /></p>
+<p>添加并编辑actions；</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image53..png" alt="image53..png" /></p>
+<p>输入VerticalCurve: AECVerticalCurve为纵曲线圆弧段；</p>
+<p>VertCurve.GetVerticalAlignmentSegmentInfo-------------------//检索有关垂直对齐线段的相关信息，输出半径R；</p>
+<p>VertCurve.GetVPIElevation()----------------//获取交点标高</p>
+<p>VertCurve.GetExtremumPointElevation<br />
+()----------------//获取曲线极值点标高</p>
+<p>判断曲线弧度，上弧隐藏下半部分线段，反之隐藏上半部分曲线；</p>
+<p>VertCurve.GetVPI(x1,y1) ----------------//交点坐标</p>
+<p>VertCurve.GetStartPosition(x2,y2)<br />
+----------------//起点坐标</p>
+<p>T=sqrt((x1/1mm-x2/1mm)<strong>2+(y1/1mm-y2/1mm)</strong>2)*1mm----------------//获取切线长。</p>
+<p>保存并加入到目录。</p>
+<h3 id="%E6%B1%89%E5%8C%96%E7%AB%96%E6%9B%B2%E7%BA%BF%E8%A1%A8%E8%A1%A8%E5%A4%B4">汉化竖曲线表表头</h3>
+<p>打开win_b64\resources\Civil\Alignment下***<br />
+Format.xsl文件，修改文件title text</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image54..png" alt="image54..png" /></p>
+<h3 id="%E7%AB%96%E7%9B%B4%E6%9B%B2%E7%BA%BF%E8%A7%84%E5%88%99%E9%9B%86">竖直曲线规则集</h3>
+<p>新建规则集模板，并修改名称为道路竖直规则集，右键规则集选择对象添加注释规则模板，定义名称Tangent</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image55..png" alt="image55..png" /></p>
+<p>在条件栏添加脚本</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image56..png" alt="image56..png" /></p>
+<p>Input.IsASortOf(&quot;AECTangentGrade&quot;)输入为竖曲线直线段时，标注为真；</p>
+<p>选择注释类型为参数，编辑参数注释，选择模板为保存的直线段注释模板</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image57..png" alt="image57..png" /></p>
+<p>定义放置策略为沿项目</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image58..png" alt="image58..png" /></p>
+<p>同样的方式，定义规则集内的圆弧段标注。</p>
+<h3 id="%E5%9E%82%E7%9B%B4%E8%AF%95%E5%9B%BE">垂直试图</h3>
+<p>新建视图模板，根据需求定义缩放比例为1：1000、1：200等；</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image59..png" alt="image59..png" /></p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image47.%201.png" alt="image47..png" /></p>
+<p>定义视图更新规则，添加规则集内的直线、圆弧规则集</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image60..png" alt="image60..png" /></p>
+<p>保存视图模板并加入到目录。</p>
+<h1 id="%E7%BA%BF%E8%B7%AF%E5%87%BA%E5%9B%BE">线路出图</h1>
+<h2 id="%E6%B7%BB%E5%8A%A0%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F">添加环境变量</h2>
+<p>找到文件B423\CATEnv\<br />
+Env.txt并打开，添加以下环境变量，保存文件重启客户端。</p>
+
+<pre class="language-xml"><code class="language-xml">CEG_SUBGRADE=1
+CEG_DRAINAGE=1
+SDW_ALIGNMENT_VIEW_LA=1
+DRW_ALLOW_AITACMODELER=1
+SDW_VA_ANNOTATIONS_LA=1
+SDW_STATIONING_GRID_LA=1
+SDW_TRANSCRV_KEYPOINT_ANNOTATION_LA=1
+ASD_VERTICAL_ALIGNMENT_VIEW_LA=1
+CEG_HorizontalViewMargin=1
+SDW_VA_GRID_LA=1
+SDW_BRIDGE_GRID_LA=1
+SDW_SECTIONING_LA=1
+SDW_AUTOMATION_ALIGNMENT_LA=1
+set SDW_BATCH_LA=1
+CATDX_IFC_Alignment=1
+CEG_CAA_Alignments=1
+CEG_REBAR_DRAWING=1
+SddSteelConnection=1
+
+</code></pre>
+<h2 id="%E7%BA%BF%E8%B7%AF%E5%87%BA%E5%9B%BE">线路出图</h2>
+<p>新建ASD工程图，点击创建对齐视图</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image61..png" alt="image61..png" /></p>
+<p>，</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image62..png" alt="image62..png" /></p>
+<p>到模型窗口选择水平对齐</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image63..png" alt="image63..png" /></p>
+<p>点击目录，选择视图模板</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image64..png" alt="image64..png" /></p>
+<p>确定，创建平曲线图纸</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image65..png" alt="image65..png" /></p>
+<p>再次创建对齐视图，选择垂直对齐</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image66..png" alt="image66..png" /></p>
+<p>点击目录，选择视图模板</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image67..png" alt="image67..png" /></p>
+<p>确定，创建竖曲线图纸</p>
+<p><img src="SDW%E5%BF%AB%E9%80%9F%E5%87%BA%E5%9B%BE%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF/image68..png" alt="image68..png" /></p>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                    </div>
+                    <div id="next">
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a></a>
+</li>
+<li><a>源码</a><ul><li><a target="_blank" href="https://github.com/neutree/teedoc">github</a></li>
+<li><a target="_blank" href="https://gitee.com/teedoc/teedoc">gitee</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a></a>
+</li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/static/js/theme_default/main.js"></script>
+    
+        <script src="/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/static/js/search/search_main.js"></script>
+    
+        <script src="/static/js/plugin_blog/main.js"></script>
+    
+        <script src="/static/js/custom.js"></script>
+    
+        <script type="text/javascript" src="/static/js/live.js"></script>
+    
+</body>
+
+</html>

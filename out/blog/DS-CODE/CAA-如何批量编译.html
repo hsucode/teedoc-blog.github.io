@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"  class=" language_zh ">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="">
+    
+    
+    <meta name="description" content="">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/search/style.css" type="text/css"/>
+        
+        <meta name="blog-generator" content="teedoc-plugin-blog">
+        
+        <link rel="stylesheet" href="/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>CAA-如何批量编译 - Knowledge Base</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": null, "update": [], "ts": 0, "author": "", "brief": "", "cover": ""}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/">
+                
+                    <img class="site_logo" src="/static/image/logo.png" alt="my_site logo">
+                
+                
+                    <h2>知识库</h2>
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/get_started/zh/">安装使用</a></li>
+<li class="active"><a  href="/blog/">博客</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class=""><a target="_blank" href="https://github.com/hsucode">github</a></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">搜索</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">输入关键词，多关键词空格隔开</span>
+                                <span id="search_loading_hint">正在加载，请稍候。。。</span>
+                                <span id="search_download_err_hint">下载文件失败，请刷新重试或检查网络</span>
+                                <span id="search_other_docs_result_hint">来自其它文档的结果</span>
+                                <span id="search_curr_doc_result_hint">当前文档搜索结果</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="">
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>CAA-如何批量编译</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                                <span class="article_date" title="最后修改日期： 2023-08-17">
+                                    2023-08-17
+                                </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                            <div id="source_link">
+                                <a href="https://github.com/my_name/my_name.github.io/blob/main/blog/DS-CODE/CAA-如何批量编译.md" target="_blank">
+                                    编辑本页
+                                </a>
+                            </div>
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <span id="blog_start"></span><h2 id="VS-CONFIG">VS CONFIG</h2>
+<p><a href="./CAA-VS/DS-CAA-VS2017.vsconfig"  >VS2017</a><br />
+<a href="./CAA-VS/DS-CAA-VS2019.vsconfig"  >VS2019</a><br />
+<a href="./CAA-VS/DS-CAA-VS2022.vsconfig"  >VS2022</a></p>
+<h2 id="%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8C">如何运行</h2>
+<p>V5版本请运行 CAA_Build_B27.cmd<br />
+V6版本请运行 CAA_Build_B42x.cmd</p>
+<h2 id="%E7%89%88%E6%9C%AC%E5%8F%82%E8%80%83">版本参考</h2>
+<p>如下文件，请根据需要修改相应的版本号和项目文件夹的路径<br />
+    <code>bash V5_6R2017_B27 V6R2019x_B421 V6R2020x_B422 V6R2021x_B423</code></p>
+<h2 id="%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%81%E7%A8%8B">自动化流程</h2>
+<p>先自动编译，在复制或者更新win_b64 之远程仓库或者团队文件夹</p>
+<p>=== &quot;cmd自动编译&quot;</p>
+
+<pre class="language-none"><code class="language-none">```batch
+
+title BUILD-CAA
+@echo off
+cd /d %~dp0
+@REM CALL ipconfig
+@echo ==============================================================
+CALL &quot;C:\Program Files\Dassault Systemes\T27\win_b64\code\command\tck_init.bat&quot;
+CALL tck_list
+CALL Tck_list V5_6R2017_B27 -all
+CALL tck_profile V5_6R2017_B27
+CALL mkmk  -a -g -u  -brief &amp;&amp; mkrtv
+
+
+```
+
+</code></pre>
+<p>=== &quot;提交修改的代码之仓库备份&quot;</p>
+
+<pre class="language-none"><code class="language-none">```batch
+
+@echo off
+set date=%date:~0,4%%date:~5,2%%date:~8,2%%time:~0,2%%time:~3,2%%time:~6,2%
+
+cd /d %~dp0
+rem git pull
+rem git status
+@REM git config --global --add safe.directory E:/200-CODE/Dassault_Systemes/3DEXPERIENCE_Automation
+@REM git remote add origin git@gitee.com:xuscode/all_catia_code.git
+@REM git add B27 B421 B422 B423 B27_功能定义 V6功能定义
+rem git rm --cached -r 3DEXPERIENCE_Release B27
+@rem git add .
+
+rem git add *.md *.vb *.cs *.catvba *.CATScript *.bas  *.py *.cpp *.h *.DSGen *.tsrc *.osm   *.CATNls *.CATRsc *.mk *.ico *.rc *.afr *.xml *.cmd *.bat *.png *.bmp *.ico
+git add *.cpp *.h   *.CATNls *.CATRsc *.mk *.bmp  *.catvba *.CATScript *.bat *.txt
+git push --set-upstream origin master
+@echo WRITE UPDATE AND PRESS ENTER:
+::set /p GetYourLog=
+git commit -m &quot;%date%&quot;
+git push -u origin master
+pause
+
+```
+
+
+
+
+</code></pre>
+<h2 id="%E6%89%8B%E5%8A%A8cmd%E7%BC%96%E8%AF%91">手动cmd编译</h2>
+<p>=== &quot;手动V5&quot;</p>
+
+<pre class="language-none"><code class="language-none">```Batch
+Cd C:\CATAECObjectModeler
+&quot;C:\Program Files\Dassault Systemes\B27\win_b64\code\command\tck_init.bat&quot;
+tck_profile V5_6R2017_B27
+mkmk  -a -g -u  -brief &amp;&amp; mkrtv
+```
+
+</code></pre>
+<p>=== &quot;手动V6&quot;</p>
+
+<pre class="language-none"><code class="language-none">``` Batch
+@echo off
+cd /d %~dp0
+rem echo &quot;&lt;Install&gt; compatible&quot; &gt;Install_config_win_b64
+rem echo &quot;C:\Program Files\Dassault Systemes\B423&quot; &gt;&gt;Install_config_win_b64	
+call &quot;C:\Program Files\Dassault Systemes\T423\win_b64\code\command\tck_init.bat&quot;
+call tck_profile V6R2021x_B423
+mkmk  -a -g -u  -brief &amp;&amp; mkrtv
+```
+
+</code></pre>
+<h2 id="%E8%87%AA%E5%8A%A8%E7%BC%96%E8%AF%91">自动编译</h2>
+<p>=== &quot;自动V6&quot;</p>
+
+<pre class="language-none"><code class="language-none">```BATCH
+@echo off
+cd /d %~dp0
+CALL ipconfig
+echo &quot;&lt;Install&gt; compatible&quot; &gt;Install_config_win_b64
+echo &quot;C:\Program Files\Dassault Systemes\B423&quot; &gt;&gt;Install_config_win_b64	
+set PATH=%PATH%;C:\Program Files\Dassault Systemes\B423_RADE\win_b64\TCK\command
+CALL &quot;C:\Program Files\Dassault Systemes\B423_RADE\win_b64\code\command\tck_init.bat&quot;
+CALL tck_profile V6R2021x_B423
+CALL mkmk  -a -g -u  -brief 
+CALL mkrtv
+
+```
+
+</code></pre>
+<p>=== &quot;自动V5&quot;</p>
+
+<pre class="language-none"><code class="language-none">```batch
+@echo off
+cd /d %~dp0
+CALL ipconfig
+CALL &quot;C:\Program Files\Dassault Systemes\B27\win_b64\code\command\tck_init.bat&quot;
+CALL tck_profile V5_6R2017_B27
+CALL mkmk  -a -g -u  -brief 
+CALL mkrtv
+```
+
+</code></pre>
+<h2 id="%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%82%E8%80%83">命令行参考</h2>
+<p>Before being able to run the written application, you must build your programs with the appropriate compiler and linker. This is not a simple task especially when you must take into account various locations of source files, multiple operating systems, several languages, multiple compilers with different and numerous options, and so on. Those who have experienced makefiles management know the problem.</p>
+<p>With mkmk, C++ Interactive Dashboard proposes a single tool to compile and link applications wherever you are working and whatever the programming language you use.</p>
+<p>The first time you compile your program, use the mkmk builder which not only compiles your program but also generates information that used afterwards to accelerate compilations or to compile just one file.</p>
+<h3 id="Build-All-with-mkmk">Build All with mkmk</h3>
+
+<pre class="language-bash"><code class="language-bash">mkmk -a ...
+</code></pre>
+<p>Link All</p>
+
+<pre class="language-bash"><code class="language-bash">mklnk or mklnk -a
+</code></pre>
+<p>Link Module	Runs mklink upon the selected module to link-edit it.</p>
+
+<pre class="language-bash"><code class="language-bash">mklnk
+</code></pre>
+<p>Build ID Cards	Runs mkCi upon the selected framework or workspace to build the identity cards.</p>
+
+<pre class="language-bash"><code class="language-bash">mkCi or mkCi -a
+</code></pre>
+<p>Clean Build	Runs mkRemoveDo upon the selected framework or workspace to remove all the derived objects.</p>
+
+<pre class="language-bash"><code class="language-bash">mkRemoveDo or mkRemoveDo -a
+</code></pre>
+<h3 id="The-table-below-gives-you-a-view-on-what-could-be-used%3A">The table below gives you a view on what could be used:</h3>
+<table>
+<thead>
+<tr>
+  <th>Option	</th>
+  <th>	Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>-a</td>
+  <td>If run in a workspace folder, build all the modules of all the frameworks of the current workspace, or if run in a framework folder, build all the modules of this framework.</td>
+</tr>
+<tr>
+  <td>-bsc</td>
+  <td>Create browser information files .bsc while compiling/linking.</td>
+</tr>
+<tr>
+  <td>-dev</td>
+  <td>Disable the optimization mode while compiling.</td>
+</tr>
+<tr>
+  <td>-g</td>
+  <td>Activate the debug mode while compiling.</td>
+</tr>
+<tr>
+  <td>-ge</td>
+  <td>Activate the editor and continue with the debug mode while compiling.</td>
+</tr>
+<tr>
+  <td>-h</td>
+  <td>-help</td>
+  <td>-?</td>
+  <td>Display the command help.</td>
+</tr>
+<tr>
+  <td>-idcard</td>
+  <td>Intend to recompile only the (embedding) framework identity card. No modules are built. This is not the default.</td>
+</tr>
+<tr>
+  <td>-javadoc</td>
+  <td>Generate Java documentation.</td>
+</tr>
+<tr>
+  <td>-jobs #</td>
+  <td>Multiprocessing mode. # is the maximum number of parallel tasks mkmk forks. Useful to limit the number of tasks when the machine is heavily used. Default is 5.</td>
+</tr>
+<tr>
+  <td>-keeptemp</td>
+  <td>Keep the temporary files created by mkmk. When this option is not used, these files are deleted when mkmk returns. These files are located in the LocalGenerated folders.</td>
+</tr>
+<tr>
+  <td>-lFW FWlist</td>
+  <td>Build the modules of the frameworks the names of which are listed in the file located at the path FWlist.</td>
+</tr>
+<tr>
+  <td>-lMod MODlist</td>
+  <td>Build the current framework modules the names of which are listed in the file located at the path MODlist.</td>
+</tr>
+<tr>
+  <td>-mkdataonly</td>
+  <td>Regenerate the build time data only.</td>
+</tr>
+<tr>
+  <td>-nobuild</td>
+  <td>Do not start the module build. Useful when coupled with option -u. mkmk then only regenerates the build time data.</td>
+</tr>
+<tr>
+  <td>-noci</td>
+  <td>Do not intend to recompile the (embedding) framework identity card. This is not the default..</td>
+</tr>
+<tr>
+  <td>-nomk</td>
+  <td>Deactivate the build time data update.</td>
+</tr>
+<tr>
+  <td>-showcmd</td>
+  <td>Print command lines before executing them.</td>
+</tr>
+<tr>
+  <td>-u</td>
+  <td>Force the build time data update.</td>
+</tr>
+<tr>
+  <td>-v</td>
+  <td>Verbose mode.</td>
+</tr>
+<tr>
+  <td>-w</td>
+  <td>Activate warning messages while compiling.</td>
+</tr>
+<tr>
+  <td>-W WSPath</td>
+  <td>Path of the workspace to process. Default is the current folder.</td>
+</tr>
+<tr>
+  <td>-xrefdb</td>
+  <td>Generate a framework dependency database. Internal.</td>
+</tr>
+<tr>
+  <td>-zip</td>
+  <td>Create java source archive files .zip while compiling.</td>
+</tr>
+<tr>
+  <td>FW1 [FW2]...</td>
+  <td>Build the modules of FW1, FW2, etc.</td>
+</tr>
+<tr>
+  <td>MOD1 [MOD2]...</td>
+  <td>Build MOD1, MOD2, etc., of the current framework.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="SDK">SDK</h2>
+<h3 id="R2023x-FD02">R2023x FD02</h3>
+<p>Requirements for 3DEXPERIENCE Open Application Development<br />
+Build Time considerations for 3DEXPERIENCE Open Development Toolset for Native Apps<br />
+The following sections identify additional requirements for installation and activation of 3DEXPERIENCE Open Development Toolset for Native Apps on Windows:</p>
+<p>Microsoft Visual Studio 2019 version 16.9.2 including C/C++ compilers.</p>
+<p>Windows 10 SDK 10.0.18362.0 (It can be selected, during Visual Studio installation, in the &quot;Individual components&quot; tab by typing &quot;windows sdk&quot; in the search box and selecting the proper Windows SDK).</p>
+<h3 id="R2022x-FD09">R2022x FD09</h3>
+<p>Build Time considerations for 3DEXPERIENCE Open Development Toolset for Native Apps<br />
+The following sections identify additional requirements for installation and activation of 3DEXPERIENCE Open Development Toolset for Native Apps on Windows:</p>
+<p>Microsoft Visual Studio 2019 version 16.9.2 including C/C++ compilers.</p>
+<p>Windows 10 SDK 10.0.18362.0 (It can be selected, during Visual Studio installation, in the &quot;Individual components&quot; tab by typing &quot;windows sdk&quot; in the search box and selecting the proper Windows SDK).</p>
+<h3 id="R2021x-FD18">R2021x FD18</h3>
+<p>Build Time considerations for 3DEXPERIENCE Open Development Toolset for Native Apps<br />
+The following sections identify additional requirements for installation and activation of 3DEXPERIENCE Open Development Toolset for Native Apps on Windows:</p>
+<p>Microsoft Visual Studio 2017 version 15.9.12 including C/C++ compilers.</p>
+<p>Windows 10 SDK 10.0.16299.0 (It can be selected, during Visual Studio installation, in the &quot;Individual components&quot; tab by typing &quot;windows sdk&quot; in the search box and selecting the proper Windows SDK).</p>
+<h3 id="R2020x-FD19">R2020x FD19</h3>
+<p>Build Time considerations for 3DEXPERIENCE Open Development Toolset for Native Apps<br />
+The following sections identify additional requirements for installation and activation of 3DEXPERIENCE Open Development Toolset for Native Apps on Windows: Microsoft Visual Studio 2017 version 15.9.12 including C/C++ compilers, with Windows 10 SDK 10.0.16299.0.</p>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                    </div>
+                    <div id="next">
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a></a>
+</li>
+<li><a>源码</a><ul><li><a target="_blank" href="https://github.com/neutree/teedoc">github</a></li>
+<li><a target="_blank" href="https://gitee.com/teedoc/teedoc">gitee</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a></a>
+</li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/static/js/theme_default/main.js"></script>
+    
+        <script src="/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/static/js/search/search_main.js"></script>
+    
+        <script src="/static/js/plugin_blog/main.js"></script>
+    
+        <script src="/static/js/custom.js"></script>
+    
+        <script type="text/javascript" src="/static/js/live.js"></script>
+    
+</body>
+
+</html>

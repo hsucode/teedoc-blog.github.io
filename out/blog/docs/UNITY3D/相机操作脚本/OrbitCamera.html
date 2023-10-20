@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"  class=" language_zh ">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="">
+    
+    
+    <meta name="description" content="">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/search/style.css" type="text/css"/>
+        
+        <meta name="blog-generator" content="teedoc-plugin-blog">
+        
+        <link rel="stylesheet" href="/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>﻿ - Knowledge Base</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": null, "update": [], "ts": 0, "author": "", "brief": "", "cover": ""}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/">
+                
+                    <img class="site_logo" src="/static/image/logo.png" alt="my_site logo">
+                
+                
+                    <h2>知识库</h2>
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/get_started/zh/">主页</a></li>
+<li class="active"><a  href="/blog/">博客</a></li>
+<li class=""><a  href="/code/zh/">代码</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class=""><a target="_blank" href="https://github.com/hsucode">github</a></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">搜索</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">输入关键词，多关键词空格隔开</span>
+                                <span id="search_loading_hint">正在加载，请稍候。。。</span>
+                                <span id="search_download_err_hint">下载文件失败，请刷新重试或检查网络</span>
+                                <span id="search_other_docs_result_hint">来自其它文档的结果</span>
+                                <span id="search_curr_doc_result_hint">当前文档搜索结果</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="">
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>﻿</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                                <span class="article_date" title="最后修改日期： 2022-11-10">
+                                    2022-11-10
+                                </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                            <div id="source_link">
+                                <a href="git@github.com:hsucode/xusblog.github.io.git/blog/docs/UNITY3D/相机操作脚本/OrbitCamera.md" target="_blank">
+                                    编辑本页
+                                </a>
+                            </div>
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <span id="blog_start"></span>
+<pre class="language-CSHARP"><code class="language-CSHARP">
+// Copyright (c) 2014 Gold Experience Team
+//
+// Elementals version: 1.1.1
+// Author: Gold Experience TeamDev (http://www.ge-team.com/)
+// Support: geteamdev@gmail.com
+// Please direct any bugs/comments/suggestions to geteamdev@gmail.com
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the &quot;Software&quot;), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+
+/*
+TERMS OF USE - EASING EQUATIONS#
+Open source under the BSD License.
+Copyright (c)2001 Robert Penner
+All rights reserved.
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+Neither the name of the author nor the names of contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+
+#region Namespaces
+
+using UnityEngine;
+using System.Collections;
+
+#endregion
+
+/**************
+* Orbit Camera event handler.
+* It should be attached with Main Camera in Volcanic Rock in Demo scene.
+**************/
+
+public class OrbitCamera : MonoBehaviour
+{
+  #region Variables
+
+    // Target to look at
+    public Transform TargetLookAt;
+
+    // Camera distance variables
+    public float Distance = 10.0f;
+    public float DistanceMin = 5.0f;
+    public float DistanceMax = 15.0f;  
+    float startingDistance = 0.0f;
+    float desiredDistance = 0.0f;
+
+    // Mouse variables
+    float mouseX = 0.0f;
+    float mouseY = 0.0f;
+    public float X_MouseSensitivity = 5.0f;
+    public float Y_MouseSensitivity = 5.0f;
+    public float MouseWheelSensitivity = 5.0f;
+
+    // Axis limit variables
+    public float Y_MinLimit = 15.0f;
+    public float Y_MaxLimit = 70.0f;   
+    public float DistanceSmooth = 0.025f;
+    float velocityDistance = 0.0f; 
+    Vector3 desiredPosition = Vector3.zero;   
+    public float X_Smooth = 0.05f;
+    public float Y_Smooth = 0.1f;
+
+    // Velocity variables
+    float velX = 0.0f;
+    float velY = 0.0f;
+    float velZ = 0.0f;
+    Vector3 position = Vector3.zero;
+
+  #endregion
+
+  // ######################################################################
+  // MonoBehaviour Functions
+  // ######################################################################
+
+  #region Component Segments
+
+    void Start() 
+    {
+    	//Distance = Mathf.Clamp(Distance, DistanceMin, DistanceMax);
+    	Distance = Vector3.Distance(TargetLookAt.transform.position, gameObject.transform.position);
+    	if (Distance &gt; DistanceMax)
+    	  DistanceMax = Distance;
+    	startingDistance = Distance;
+    	Reset(-50,0,300);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+    }
+
+    // LateUpdate is called after all Update functions have been called.
+    void LateUpdate()
+    {
+    	if (TargetLookAt == null)
+    	   return;
+
+    	HandlePlayerInput();
+
+    	CalculateDesiredPosition();
+
+    	UpdatePosition();
+    }
+
+  #endregion
+
+  // ######################################################################
+  // Player Input Functions
+  // ######################################################################
+
+  #region Component Segments
+
+    void HandlePlayerInput()
+    {
+    	// mousewheel deadZone
+    	float deadZone = 0.01f; 
+
+    	if (Input.GetMouseButton(0))
+    	{
+    	   mouseX += Input.GetAxis(&quot;Mouse X&quot;) * X_MouseSensitivity;
+    	   mouseY -= Input.GetAxis(&quot;Mouse Y&quot;) * Y_MouseSensitivity;
+    	}
+     
+    	// this is where the mouseY is limited - Helper script
+    	mouseY = ClampAngle(mouseY, Y_MinLimit, Y_MaxLimit);
+
+    	// get Mouse Wheel Input
+    	if (Input.GetAxis(&quot;Mouse ScrollWheel&quot;) &lt; -deadZone || Input.GetAxis(&quot;Mouse ScrollWheel&quot;) &gt; deadZone)
+    	{
+    	   desiredDistance = Mathf.Clamp(Distance - (Input.GetAxis(&quot;Mouse ScrollWheel&quot;) * MouseWheelSensitivity), 
+    												 DistanceMin, DistanceMax);
+    	}
+    }
+
+  #endregion
+
+  // ######################################################################
+  // Calculation Functions
+  // ######################################################################
+
+  #region Component Segments
+
+    void CalculateDesiredPosition()
+    {
+    	// Evaluate distance
+    	Distance = Mathf.SmoothDamp(Distance, desiredDistance, ref velocityDistance, DistanceSmooth);
+
+    	// Calculate desired position -&gt; Note : mouse inputs reversed to align to WorldSpace Axis
+    	desiredPosition = CalculatePosition(mouseY, mouseX, Distance);
+    }
+
+    Vector3 CalculatePosition(float rotationX, float rotationY, float distance)
+    {
+    	Vector3 direction = new Vector3(0, 0, -distance);
+    	Quaternion rotation = Quaternion.Euler(rotationX, rotationY, 0);
+    	return TargetLookAt.position + (rotation * direction);
+    }
+
+  #endregion
+
+  // ######################################################################
+  // Utilities Functions
+  // ######################################################################
+
+  #region Component Segments
+
+    // update camera position
+    void UpdatePosition()
+    {
+    	float posX = Mathf.SmoothDamp(position.x, desiredPosition.x, ref velX, X_Smooth);
+    	float posY = Mathf.SmoothDamp(position.y, desiredPosition.y, ref velY, Y_Smooth);
+    	float posZ = Mathf.SmoothDamp(position.z, desiredPosition.z, ref velZ, X_Smooth);
+    	position = new Vector3(posX, posY, posZ);
+
+    	transform.position = position;
+
+    	transform.LookAt(TargetLookAt);
+    }
+
+    // Reset Mouse variables
+    public void Reset( float MouseX=-50, float MouseY = 0,float MaxDistance=300,Transform Target=null,float MinDistance=100) 
+    {
+    	mouseX = MouseX;
+    	mouseY = MouseY;
+        DistanceMax = MaxDistance;
+    	DistanceMin = MinDistance;
+
+    	if (Target==null)
+        {
+            //TargetLookAt = CameraControler._CameraControler.原始围绕旋转点.transform;
+        }
+        else
+        {
+            TargetLookAt = Target;
+        }
+
+
+    	//Distance = startingDistance;
+    	Distance = MaxDistance;
+    	desiredDistance = Distance;
+    }
+
+    // Clamps angle between a minimum float and maximum float value
+    float ClampAngle(float angle, float min, float max)
+    {
+    	while (angle &lt; -360.0f || angle &gt; 360.0f)
+    	{
+    	   if (angle &lt; -360.0f)
+    		 angle += 360.0f;
+    	   if (angle &gt; 360.0f)
+    		 angle -= 360.0f;
+    	}
+
+    	return Mathf.Clamp(angle, min, max);
+    }
+
+  #endregion
+}
+
+</code></pre>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                    </div>
+                    <div id="next">
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a></a>
+</li>
+<li><a>源码</a><ul><li><a target="_blank" href="https://github.com/neutree/teedoc">github</a></li>
+<li><a target="_blank" href="https://gitee.com/teedoc/teedoc">gitee</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a></a>
+</li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/static/js/theme_default/main.js"></script>
+    
+        <script src="/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/static/js/search/search_main.js"></script>
+    
+        <script src="/static/js/plugin_blog/main.js"></script>
+    
+        <script src="/static/js/custom.js"></script>
+    
+        <script type="text/javascript" src="/static/js/live.js"></script>
+    
+</body>
+
+</html>

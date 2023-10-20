@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"  class=" language_zh ">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="">
+    
+    
+    <meta name="description" content="">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/search/style.css" type="text/css"/>
+        
+        <meta name="blog-generator" content="teedoc-plugin-blog">
+        
+        <link rel="stylesheet" href="/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>自定义CATIA启动方式 - Knowledge Base</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": null, "update": [], "ts": 0, "author": "", "brief": "", "cover": ""}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/">
+                
+                    <img class="site_logo" src="/static/image/logo.png" alt="my_site logo">
+                
+                
+                    <h2>知识库</h2>
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/get_started/zh/">安装使用</a></li>
+<li class="active"><a  href="/blog/">博客</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class=""><a target="_blank" href="https://github.com/neutree/teedoc">github</a></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">搜索</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">输入关键词，多关键词空格隔开</span>
+                                <span id="search_loading_hint">正在加载，请稍候。。。</span>
+                                <span id="search_download_err_hint">下载文件失败，请刷新重试或检查网络</span>
+                                <span id="search_other_docs_result_hint">来自其它文档的结果</span>
+                                <span id="search_curr_doc_result_hint">当前文档搜索结果</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="">
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>自定义CATIA启动方式</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                                <span class="article_date" title="最后修改日期： 2023-02-10">
+                                    2023-02-10
+                                </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                            <div id="source_link">
+                                <a href="https://github.com/my_name/my_name.github.io/blob/main/blog/catia/自定义CATIA启动方式.md" target="_blank">
+                                    编辑本页
+                                </a>
+                            </div>
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <span id="blog_start"></span><ul>
+<li>使用自定义CATIA 启动的方式的好处是可以加载更多的CAA开发插件，下面的环境变量支持7个插件的一次性部署；</li>
+<li>环境变量的位置就放在与catia.bat同级别下的CATEnv文件夹，方便管理；</li>
+</ul>
+<p>=== &quot;catia.bat&quot;</p>
+
+<pre class="language-none"><code class="language-none">```batch
+
+@echo off
+
+cd /d %~dp0
+
+REM ============================================================================================
+REM CATIA 3DEXPERIENCE installation path
+REM ============================================================================================
+
+set CATPath1=C:\XUS\APP\DS\B27_GT\GTR4
+set CATPath2=C:\XUS\APP\DS\B27_GT\GTR5
+set CATPath3=%~dp0
+set CATPath4=
+set CATPath5=
+set CATPath6=
+
+REM ============================================================================================
+REM Start of CATIA
+REM ============================================================================================
+:CATIA
+&quot;%CATPath1%\win_b64\code\bin\CATSTART.exe&quot; -run &quot;CNEXT.exe&quot; -env Env7 -direnv &quot;%~dp0\CATEnv&quot; -nowindow
+:Tools
+REM &quot;%CAT_CODE%\win_b64\code\bin\CATUTIL.exe&quot;  -env Env7 -direnv &quot;%~dp0\CATEnv&quot;
+REM &quot;%CAT_CODE%\win_b64\code\bin\CATIAENV.exe&quot;  -env Env7 -direnv &quot;%~dp0\CATEnv&quot;
+REM &quot;%CAT_CODE%\win_b64\code\bin\DSLicMgt.exe&quot;  -env Env7 -direnv &quot;%~dp0\CATEnv&quot;
+REM &quot;%CAT_CODE%\win_b64\code\bin\CATNodelockMgt.exe&quot;  -env Env7 -direnv &quot;%~dp0\CATEnv&quot;
+REM &quot;%CAT_CODE%\win_b64\code\bin\CATPrinterManager.exe&quot;  -env Env7 -direnv &quot;%~dp0\CATEnv&quot;
+REM &quot;%CAT_CODE%\win_b64\code\bin\CATOptionsMgt.exe&quot;  -env Env7 -direnv &quot;%~dp0\CATEnv&quot;
+REM &quot;%CAT_CODE%\win_b64\code\bin\CATSoftwaREMgt.exe&quot;  -env Env7 -direnv &quot;%~dp0\CATEnv&quot;
+REM &quot;%CAT_CODE%\win_b64\code\bin\CATSTART.exe&quot;  -run VaultClientSetup.EXE -env Env7 -direnv &quot;%~dp0\CATEnv&quot; -nowindow
+
+```
+
+</code></pre>
+<p>=== &quot;CATEnv&quot;</p>
+
+<pre class="language-none"><code class="language-none">```batch
+
+!----------------------------------------------------------
+!   DASSAULT SYSTEMES  -  V5 ENVIRONMENT FILE
+!----------------------------------------------------------
+! MODE : User
+! TYPE : CATIA_P3
+! TMSTMP : 1656736355
+! ARGS : -icon no -menu no -desktop no -cs CATIA_P3 -a user 
+!----------------------------------------------------------
+GTCProjectStandards=%CATPath2%\Project Standards
+GTCProjectData=%CATPath2%\Project Data
+GTCUserData=CSIDL_APPDATA\DassaultSystemes
+
+CATInstallPath=%CATPath7%\win_b64;%CATPath6%\win_b64;%CATPath5%\win_b64;%CATPath4%\win_b64;%CATPath3%\win_b64;%CATPath2%\win_b64;%CATPath1%\win_b64
+CATDLLPath=%CATPath7%\win_b64\code\bin;%CATPath6%\win_b64\code\bin;%CATPath5%\win_b64\code\bin;%CATPath4%\win_b64\code\bin;%CATPath3%\win_b64\code\bin;%CATPath2%\win_b64\code\bin;%CATPath1%\win_b64\code\bin
+CATICPath=%CATPath7%\win_b64\code\productIC;%CATPath6%\win_b64\code\productIC;%CATPath5%\win_b64\code\productIC;%CATPath4%\win_b64\code\productIC;%CATPath3%\win_b64\code\productIC;%CATPath2%\win_b64\code\productIC;%CATPath1%\win_b64\code\productIC
+CATCommandPath=%CATPath7%\win_b64\code\command;%CATPath6%\win_b64\code\command;%CATPath5%\win_b64\code\command;%CATPath4%\win_b64\code\command;%CATPath3%\win_b64\code\command;%CATPath2%\win_b64\code\command;%CATPath1%\win_b64\code\command
+CATDictionaryPath=%CATPath7%\win_b64\code\dictionary;%CATPath6%\win_b64\code\dictionary;%CATPath5%\win_b64\code\dictionary;%CATPath4%\win_b64\code\dictionary;%CATPath3%\win_b64\code\dictionary;%CATPath2%\win_b64\code\dictionary;%CATPath1%\win_b64\code\dictionary
+CATDocView=%CATPath7%\win_b64\doc;%CATPath6%\win_b64\doc;%CATPath5%\win_b64\doc;%CATPath4%\win_b64\doc;%CATPath3%\win_b64\doc;%CATPath2%\win_b64\doc;%CATPath1%\win_b64\doc
+CATReffilesPath=%CATPath7%\win_b64\reffiles;%CATPath6%\win_b64\reffiles;%CATPath5%\win_b64\reffiles;%CATPath4%\win_b64\reffiles;%CATPath3%\win_b64\reffiles;%CATPath2%\win_b64\reffiles;%CATPath1%\win_b64\reffiles
+CATFontPath=%CATPath7%\win_b64\resources\fonts;%CATPath6%\win_b64\resources\fonts;%CATPath5%\win_b64\resources\fonts;%CATPath4%\win_b64\resources\fonts;%CATPath3%\win_b64\resources\fonts;%CATPath2%\win_b64\resources\fonts;%CATPath1%\win_b64\resources\fonts
+CATGalaxyPath=%CATPath7%\win_b64\resources\galaxy;%CATPath6%\win_b64\resources\galaxy;%CATPath5%\win_b64\resources\galaxy;%CATPath4%\win_b64\resources\galaxy;%CATPath3%\win_b64\resources\galaxy;%CATPath2%\win_b64\resources\galaxy;%CATPath1%\win_b64\resources\galaxy
+CATGraphicPath=%GTCProjectStandards%\customstartup\Dictionaries;%GTCProjectStandards%\customstartup\Dictionaries\icons;%GTCProjectStandards%\startup\Dictionaries;%GTCProjectStandards%\startup\Dictionaries\icons;%CATPath7%\win_b64\resources\graphic;%CATPath7%\win_b64\resources\graphic\icons;%CATPath7%\win_b64\resources\graphic\figures;%CATPath7%\win_b64\resources\graphic\splashscreens;%CATPath7%\win_b64\resources\graphic\symbols;%CATPath7%\win_b64\resources\graphic\textures;%CATPath6%\win_b64\resources\graphic;%CATPath6%\win_b64\resources\graphic\icons;%CATPath6%\win_b64\resources\graphic\figures;%CATPath6%\win_b64\resources\graphic\splashscreens;%CATPath6%\win_b64\resources\graphic\symbols;%CATPath6%\win_b64\resources\graphic\textures;%CATPath5%\win_b64\resources\graphic;%CATPath5%\win_b64\resources\graphic\icons;%CATPath5%\win_b64\resources\graphic\figures;%CATPath5%\win_b64\resources\graphic\splashscreens;%CATPath5%\win_b64\resources\graphic\symbols;%CATPath5%\win_b64\resources\graphic\textures;%CATPath4%\win_b64\resources\graphic;%CATPath4%\win_b64\resources\graphic\icons;%CATPath4%\win_b64\resources\graphic\figures;%CATPath4%\win_b64\resources\graphic\splashscreens;%CATPath4%\win_b64\resources\graphic\symbols;%CATPath4%\win_b64\resources\graphic\textures;%CATPath3%\win_b64\resources\graphic;%CATPath3%\win_b64\resources\graphic\icons;%CATPath3%\win_b64\resources\graphic\figures;%CATPath3%\win_b64\resources\graphic\splashscreens;%CATPath3%\win_b64\resources\graphic\symbols;%CATPath3%\win_b64\resources\graphic\textures;%CATPath2%\win_b64\resources\graphic;%CATPath2%\win_b64\resources\graphic\icons;%CATPath2%\win_b64\resources\graphic\figures;%CATPath2%\win_b64\resources\graphic\splashscreens;%CATPath2%\win_b64\resources\graphic\symbols;%CATPath2%\win_b64\resources\graphic\textures;%CATPath1%\win_b64\resources\graphic;%CATPath1%\win_b64\resources\graphic\icons;%CATPath1%\win_b64\resources\graphic\figures;%CATPath1%\win_b64\resources\graphic\splashscreens;%CATPath1%\win_b64\resources\graphic\symbols;%CATPath1%\win_b64\resources\graphic\textures
+CATMsgCatalogPath=%GTCProjectStandards%\customstartup\Dictionaries\msgCatalog;%GTCProjectStandards%\startup\Dictionaries\msgCatalog;%CATPath7%\win_b64\resources\msgcatalog;%CATPath6%\win_b64\resources\msgcatalog;%CATPath5%\win_b64\resources\msgcatalog;%CATPath4%\win_b64\resources\msgcatalog;%CATPath3%\win_b64\resources\msgcatalog;%CATPath2%\win_b64\resources\msgcatalog;%CATPath1%\win_b64\resources\msgcatalog
+CATFeatureCatalogPath=%CATPath7%\win_b64\resources\featurecatalog;%CATPath6%\win_b64\resources\featurecatalog;%CATPath5%\win_b64\resources\featurecatalog;%CATPath4%\win_b64\resources\featurecatalog;%CATPath3%\win_b64\resources\featurecatalog;%CATPath2%\win_b64\resources\featurecatalog;%CATPath1%\win_b64\resources\featurecatalog
+CATDefaultCollectionStandard=%GTCProjectStandards%\resources\standard;%CATPath7%\win_b64\resources\standard;%CATPath6%\win_b64\resources\standard;%CATPath5%\win_b64\resources\standard;%CATPath4%\win_b64\resources\standard;%CATPath3%\win_b64\resources\standard;%CATPath2%\win_b64\resources\standard;%CATPath1%\win_b64\resources\standard
+CATKnowledgePath=%GTCProjectStandards%\resources\knowledge;%CATPath7%\win_b64\resources\knowledge;%CATPath6%\win_b64\resources\knowledge;%CATPath5%\win_b64\resources\knowledge;%CATPath4%\win_b64\resources\knowledge;%CATPath3%\win_b64\resources\knowledge;%CATPath2%\win_b64\resources\knowledge;%CATPath1%\win_b64\resources\knowledge
+CATStartupPath=%GTCProjectStandards%\customstartup;%GTCProjectStandards%\startup;%CATPath7%\win_b64\startup;%CATPath6%\win_b64\startup;%CATPath5%\win_b64\startup;%CATPath4%\win_b64\startup;%CATPath3%\win_b64\startup;%CATPath2%\win_b64\startup;%CATPath1%\win_b64\startup
+CATW3ResourcesPath=%CATPath7%\win_b64\docs;%CATPath6%\win_b64\docs;%CATPath5%\win_b64\docs;%CATPath4%\win_b64\docs;%CATPath3%\win_b64\docs;%CATPath2%\win_b64\docs;%CATPath1%\win_b64\docs
+CATReconcilePath=
+CATReferenceSettingPath=%GTCProjectStandards%\customresources\projectsettings;CATSettings\B27
+CATUserSettingPath=CSIDL_APPDATA\DassaultSystemes\CATSettings\R27
+CATCollectionStandard=%GTCProjectStandards%\customresources\standard
+CATTemp=CSIDL_LOCAL_APPDATA\DassaultSystemes\CATTemp
+CATMetasearchPath=DSKEY_TMPDIR
+CATW3PublishPath=DSKEY_TMPDIR
+CATSharedWorkbookPath=DSKEY_TMPDIR
+CATErrorLog=CSIDL_LOCAL_APPDATA\DassaultSystemes\CATTemp\error.log
+CATReport=CSIDL_LOCAL_APPDATA\DassaultSystemes\CATReport
+CATDisciplinePath=%CATPath2%\win_b64\startup\PRMData
+USER_HOME=CSIDL_PERSONAL
+JAVA_HOME=%JAVA_HOME%
+CLASSPATH_JDBC=
+CLASSPATH=%CLASSPATH_JDBC%;%CLASSPATH%
+PATH=%CATPath7%\win_b64\code\bin;%CATPath7%\win_b64\code\command;%CATPath6%\win_b64\code\bin;%CATPath6%\win_b64\code\command;%CATPath5%\win_b64\code\bin;%CATPath5%\win_b64\code\command;%CATPath4%\win_b64\code\bin;%CATPath4%\win_b64\code\command;%CATPath3%\win_b64\code\bin;%CATPath3%\win_b64\code\command;%CATPath2%\win_b64\code\bin;%CATPath2%\win_b64\code\command;%CATPath1%\win_b64\code\bin;%CATPath1%\win_b64\code\command;%JAVA_HOME%\bin;%PATH%
+LM_LICENSE_FILE=%CATPath2%\FlexLMLicense;@FlexLM_License_Server_Name
+GSD_TOOLSOPTION_AUTOEXPANDATOPEN=1
+CAT_DRW_CAA_SECTIONVIEWCREATION=1
+GTCMultiSelectUserMode=FALSE
+GTCIfcAdvancedExportOptions=TRUE
+BreakRunAtEveryPart=1
+GTCMSProjectFilePath=%GTCUserData%\MicrosoftProject;%GTCProjectData%\MicrosoftProject
+GTC3DDWGFilePath=%GTCUserData%\3D-DWG Import With Link;%GTCProjectData%\3D-DWG Import With Link
+GTCExcelDataSheetFilePath=%GTCUserData%\Datasheets;%GTCProjectData%\Datasheets
+CATNoStartDocument=1
+CNEXTOUTPUT=console
+CATVBAPath=%CATPath3%\win_b64\VBScript
+
+```
+</code></pre>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                    </div>
+                    <div id="next">
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a></a>
+</li>
+<li><a>源码</a><ul><li><a target="_blank" href="https://github.com/neutree/teedoc">github</a></li>
+<li><a target="_blank" href="https://gitee.com/teedoc/teedoc">gitee</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a></a>
+</li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/static/js/theme_default/main.js"></script>
+    
+        <script src="/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/static/js/search/search_main.js"></script>
+    
+        <script src="/static/js/plugin_blog/main.js"></script>
+    
+        <script src="/static/js/custom.js"></script>
+    
+        <script type="text/javascript" src="/static/js/live.js"></script>
+    
+</body>
+
+</html>

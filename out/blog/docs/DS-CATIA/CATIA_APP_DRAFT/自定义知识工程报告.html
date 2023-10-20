@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"  class=" language_zh ">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="">
+    
+    
+    <meta name="description" content="">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/search/style.css" type="text/css"/>
+        
+        <meta name="blog-generator" content="teedoc-plugin-blog">
+        
+        <link rel="stylesheet" href="/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>自定义知识工程报告 - Knowledge Base</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": null, "update": [], "ts": 0, "author": "", "brief": "", "cover": ""}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/">
+                
+                    <img class="site_logo" src="/static/image/logo.png" alt="my_site logo">
+                
+                
+                    <h2>知识库</h2>
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/get_started/zh/">主页</a></li>
+<li class="active"><a  href="/blog/">博客</a></li>
+<li class=""><a  href="/code/zh/">代码</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class=""><a target="_blank" href="https://github.com/hsucode">github</a></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">搜索</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">输入关键词，多关键词空格隔开</span>
+                                <span id="search_loading_hint">正在加载，请稍候。。。</span>
+                                <span id="search_download_err_hint">下载文件失败，请刷新重试或检查网络</span>
+                                <span id="search_other_docs_result_hint">来自其它文档的结果</span>
+                                <span id="search_curr_doc_result_hint">当前文档搜索结果</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="">
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>自定义知识工程报告</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                                <span class="article_date" title="最后修改日期： 2022-10-21">
+                                    2022-10-21
+                                </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                            <div id="source_link">
+                                <a href="git@github.com:hsucode/xusblog.github.io.git/blog/docs/DS-CATIA/CATIA_APP_DRAFT/自定义知识工程报告.md" target="_blank">
+                                    编辑本页
+                                </a>
+                            </div>
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <span id="blog_start"></span><p>由于CATIA Drafting中原生的物料清单报表（BOM – Bill Of Material）在使用平台自带原生功能（标准中对物料清单形式。统计属性等进行订制）进行订制时，可订制的功能和范围非常有限，如需订制程度比较深，往往需要二次开发，成本比较高，而且在平台升级版本后，二次开发的内容非常难迁移到升版的平台上。<br />
+所以达索针对这种情况一般建议客户使用EKL的方式进行订制，也就是这里所说的知识工程报告（Knowledge Report）。这样做的好处是一方面EKL的开发成本远低于CAA二次开发，同时EKL订制内容可以无缝迁移到升版后的平台上。<br />
+知识工程报告是CATIA中更为灵活的报表形式，支持EKL代码扩展，可定义报表模板，存储在平台中，进行随时调用。</p>
+<h2 id="%E5%9C%A8Know-how-Reuse%E5%BA%94%E7%94%A8%E4%B8%AD%E5%AE%9A%E4%B9%89%E7%9F%A5%E8%AF%86%E5%B7%A5%E7%A8%8B%E6%8A%A5%E5%91%8A%E6%A8%A1%E6%9D%BF">在Know-how Reuse应用中定义知识工程报告模板</h2>
+<p><img src="%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%A5%E8%AF%86%E5%B7%A5%E7%A8%8B%E6%8A%A5%E5%91%8A%5C2022-10-01-23-28-11.png" alt="" /></p>
+<p>在 Civil Engineer角色中选择Know-how Reuse应用</p>
+<p>打开该应用界面后，点击报告定义，弹出下列对话框：</p>
+<p><img src="%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%A5%E8%AF%86%E5%B7%A5%E7%A8%8B%E6%8A%A5%E5%91%8A%5C2022-10-01-23-29-07.png" alt="" /></p>
+<p>首先定义报告标题：</p>
+<p><img src="%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%A5%E8%AF%86%E5%B7%A5%E7%A8%8B%E6%8A%A5%E5%91%8A%5C2022-10-01-23-29-18.png" alt="" /></p>
+<p>然后选择报告模板中想要统计的属性：</p>
+<p><img src="%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%A5%E8%AF%86%E5%B7%A5%E7%A8%8B%E6%8A%A5%E5%91%8A%5C2022-10-01-23-29-31.png" alt="" /></p>
+<p><img src="%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%A5%E8%AF%86%E5%B7%A5%E7%A8%8B%E6%8A%A5%E5%91%8A%5C2022-10-01-23-29-39.png" alt="" /></p>
+<p>如果已经实现知道想要统计的属性在哪一种类型中（如管路类型、电气类型、part类型等），则可在类型栏中直接选择那一种类型，然后在属性栏中选择对应属性。<br />
+这种方法的好处是：由于不需要在最顶层节点开始往下遍历属性，直接定位至对应类型中，可减少报表统计时的时间。但是前提是需要用户知道这种属性是在哪一种零件类型下。<br />
+如果实在不知道想要统计的属性在哪种零件类型中，则可在类型栏中直接选择最顶层节点 Product Occurrence，这个节点下包含所有零件类型。然后在属性栏中寻找对应属性。</p>
+<p><img src="%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%A5%E8%AF%86%E5%B7%A5%E7%A8%8B%E6%8A%A5%E5%91%8A%5C2022-10-01-23-29-52.png" alt="" /></p>
+<p>这种方法的好处是不需要对属性所属的零件类型进行精确定位，但是由于选择的最顶层节点，在生成报告时会遍历所有零件类型去寻找特定属性，会增加报表统计的时间。</p>
+<p>选择好属性之后，点击旁边的添加按钮，即可将属性添加至下面一栏中<br />
+并可对添加进来的属性栏进行编辑：</p>
+<p><img src="%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%A5%E8%AF%86%E5%B7%A5%E7%A8%8B%E6%8A%A5%E5%91%8A%5C2022-10-01-23-30-05.png" alt="" /></p>
+<p>如可对管道长度属性添加一个求和运算，可对管道总长度进行统计。</p>
+<p><img src="%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%A5%E8%AF%86%E5%B7%A5%E7%A8%8B%E6%8A%A5%E5%91%8A%5C2022-10-01-23-30-14.png" alt="" /></p>
+<p>对管道Nominal Size属性添加分组依据，即在分组依据栏中选择是。这个意思是将Nominal Size相同的管道零件全部合并到同一行进行统计。</p>
+<p><img src="%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%A5%E8%AF%86%E5%B7%A5%E7%A8%8B%E6%8A%A5%E5%91%8A%5C2022-10-01-23-30-26.png" alt="" /></p>
+<p>对Nominal Size属性添加计数运算，即统计不同Nominal Size值的管道数量。</p>
+<p>另外，也可创建表达式：</p>
+<p><img src="%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%A5%E8%AF%86%E5%B7%A5%E7%A8%8B%E6%8A%A5%E5%91%8A%5C2022-10-01-23-30-36.png" alt="" /></p>
+<p><img src="%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%A5%E8%AF%86%E5%B7%A5%E7%A8%8B%E6%8A%A5%E5%91%8A%5C2022-10-01-23-30-43.png" alt="" /></p>
+<p>选择输出类型，也就是想要用EKL代码提取的属性是哪一种变量：</p>
+<p><img src="%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%A5%E8%AF%86%E5%B7%A5%E7%A8%8B%E6%8A%A5%E5%91%8A%5C2022-10-01-23-30-50.png" alt="" /></p>
+<p>点击创建、编辑表达式：</p>
+<p><img src="%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%A5%E8%AF%86%E5%B7%A5%E7%A8%8B%E6%8A%A5%E5%91%8A%5C2022-10-01-23-31-02.png" alt="" /></p>
+<p>b. 举例：用户有些情况下需要将不同统计属性合并到同一列中，而不是分到不同列中进行统计，这时可以用到创建表达式这一功能<br />
+首先在属性栏中选择管道管道（Piping Pipe）这一类型属性:</p>
+<p><img src="%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%A5%E8%AF%86%E5%B7%A5%E7%A8%8B%E6%8A%A5%E5%91%8A%5C2022-10-01-23-31-14.png" alt="" /></p>
+<p>点击创建表达式，选择字符串类型（选择合并的属性是字符串类型）：</p>
+<p><img src="%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%A5%E8%AF%86%E5%B7%A5%E7%A8%8B%E6%8A%A5%E5%91%8A%5C2022-10-01-23-31-21.png" alt="" /></p>
+<p>点击创建/编辑表达式：</p>
+<p><img src="%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%A5%E8%AF%86%E5%B7%A5%E7%A8%8B%E6%8A%A5%E5%91%8A%5C2022-10-01-23-31-31.png" alt="" /></p>
+<p>代码解释：</p>
+
+<pre class="language-java"><code class="language-java">
+let str1(string)     #创建一个字符串变量
+let str2(string)    #创建一个字符串变量
+let l1(length)   #创建一个长度变量
+str1=ThisObject.V_Standard     #让该变量等于模型中standard这一属性
+str2=ThisObject.V_NominalSize    #让该变量等于模型中NominalSize这一属性
+l1=ThisObject.V_OutsideDiameter      # 让该变量等于模型中OutsideDiameter这一属性
+set Attribute=&quot;标准为&quot;+str1+&quot;,&quot;+&quot;外径D=&quot;+l1+&quot;,&quot;+&quot;公称直径为&quot;+str2         #合并这三个属性到同一列
+
+</code></pre>
+<p>检查是否有错误：</p>
+<p><img src="%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%A5%E8%AF%86%E5%B7%A5%E7%A8%8B%E6%8A%A5%E5%91%8A%5C2022-10-01-23-32-10.png" alt="" /></p>
+<p>点击应用：</p>
+<p><img src="%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%A5%E8%AF%86%E5%B7%A5%E7%A8%8B%E6%8A%A5%E5%91%8A%5C2022-10-01-23-32-21.png" alt="" /></p>
+<p>双击列标题中的选项进行修改，改为“型号与规格”：</p>
+<p><img src="%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%A5%E8%AF%86%E5%B7%A5%E7%A8%8B%E6%8A%A5%E5%91%8A%5C2022-10-01-23-32-33.png" alt="" /></p>
+<p>点击右下角的报告预览：</p>
+<p><img src="%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%A5%E8%AF%86%E5%B7%A5%E7%A8%8B%E6%8A%A5%E5%91%8A%5C2022-10-01-23-32-41.png" alt="" /></p>
+<p>此报告预览是针对于当前页面中的模型进行统计。</p>
+<p>返回报告模板页面，将该报告模板另存：</p>
+<p><img src="%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%A5%E8%AF%86%E5%B7%A5%E7%A8%8B%E6%8A%A5%E5%91%8A%5C2022-10-01-23-32-52.png" alt="" /></p>
+<h2 id="%E5%9C%A8drafting%E4%B8%AD%E8%B0%83%E7%94%A8%E6%8A%A5%E5%91%8A%E6%A8%A1%E6%9D%BF">在drafting中调用报告模板</h2>
+<p>然后在CATIA Drafting中进行调用：</p>
+<p><img src="%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%A5%E8%AF%86%E5%B7%A5%E7%A8%8B%E6%8A%A5%E5%91%8A%5C2022-10-01-23-33-30.png" alt="" /></p>
+<p>点击知识工程报表：</p>
+<p><img src="%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%A5%E8%AF%86%E5%B7%A5%E7%A8%8B%E6%8A%A5%E5%91%8A%5C2022-10-01-23-33-37.png" alt="" /></p>
+<p>一般来说都是选择选定的对象，即某一个视图<br />
+然后选择要使用的报告模板：</p>
+<p><img src="%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%A5%E8%AF%86%E5%B7%A5%E7%A8%8B%E6%8A%A5%E5%91%8A%5C2022-10-01-23-33-45.png" alt="" /></p>
+<p>当报告模板创建好之后，一般来说可能需要过几分钟才能搜到该报告模板</p>
+<p>也可使用高级搜索功能，直接检索所有数据库中已存的所有报告模板：</p>
+<p><img src="%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%A5%E8%AF%86%E5%B7%A5%E7%A8%8B%E6%8A%A5%E5%91%8A%5C2022-10-01-23-33-56.png" alt="" /></p>
+<p>选择好模板之后，再选择某个视图（或之前选好也可以），点选视图当中的空白处，即可基于该视图生成一个知识工程报告：</p>
+<p><img src="%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%A5%E8%AF%86%E5%B7%A5%E7%A8%8B%E6%8A%A5%E5%91%8A%5C2022-10-01-23-34-05.png" alt="" /></p>
+<p>注：<br />
+（1） 知识工程报告中的序号与Drafting中零件序号自动生成命令中的序号并没有对应关系。在OOTB功能下，用户必须使用手动标号的方法与知识工程报告中的序号产生对应关系。<br />
+（2） 也可将报告模板直接挂接在Data Setup中，之后使用时直接调用即可，不再需要搜索</p>
+<p><img src="%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%A5%E8%AF%86%E5%B7%A5%E7%A8%8B%E6%8A%A5%E5%91%8A%5C2022-10-01-23-34-14.png" alt="" /></p>
+<p>选择报告模板定义目录（Report Template Definition Catalog），右键点击创建新的资源表</p>
+<p><img src="%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%A5%E8%AF%86%E5%B7%A5%E7%A8%8B%E6%8A%A5%E5%91%8A%5C2022-10-01-23-34-24.png" alt="" /></p>
+<p>双击资源栏下的 （取消设置），搜索数据库中的报告模板，进行挂接：</p>
+<p><img src="%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%A5%E8%AF%86%E5%B7%A5%E7%A8%8B%E6%8A%A5%E5%91%8A%5C2022-10-01-23-34-33.png" alt="" /></p>
+<p>然后将新建好的资源集挂接到左边一栏中对应的合作区中，ctrl+s保存：</p>
+<p><img src="%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%A5%E8%AF%86%E5%B7%A5%E7%A8%8B%E6%8A%A5%E5%91%8A%5C2022-10-01-23-34-43.png" alt="" /></p>
+<p>这时我们在Drafting中再调用知识工程模板时，已经可以直接调用：</p>
+<p><img src="%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9F%A5%E8%AF%86%E5%B7%A5%E7%A8%8B%E6%8A%A5%E5%91%8A%5C2022-10-01-23-34-51.png" alt="" /></p>
+<p>（3）用EKL代码 创建表达式还有很多案例，这里不作一一详细介绍。</p>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                    </div>
+                    <div id="next">
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a></a>
+</li>
+<li><a>源码</a><ul><li><a target="_blank" href="https://github.com/neutree/teedoc">github</a></li>
+<li><a target="_blank" href="https://gitee.com/teedoc/teedoc">gitee</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a></a>
+</li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/static/js/theme_default/main.js"></script>
+    
+        <script src="/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/static/js/search/search_main.js"></script>
+    
+        <script src="/static/js/plugin_blog/main.js"></script>
+    
+        <script src="/static/js/custom.js"></script>
+    
+        <script type="text/javascript" src="/static/js/live.js"></script>
+    
+</body>
+
+</html>

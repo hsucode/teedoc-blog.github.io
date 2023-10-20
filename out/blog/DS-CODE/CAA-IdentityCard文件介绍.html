@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"  class=" language_zh ">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="">
+    
+    
+    <meta name="description" content="">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/search/style.css" type="text/css"/>
+        
+        <meta name="blog-generator" content="teedoc-plugin-blog">
+        
+        <link rel="stylesheet" href="/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>CAA-IdentityCard文件介绍 - Knowledge Base</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": null, "update": [], "ts": 0, "author": "", "brief": "", "cover": ""}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/">
+                
+                    <img class="site_logo" src="/static/image/logo.png" alt="my_site logo">
+                
+                
+                    <h2>知识库</h2>
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/get_started/zh/">安装使用</a></li>
+<li class="active"><a  href="/blog/">博客</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class=""><a target="_blank" href="https://github.com/hsucode">github</a></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">搜索</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">输入关键词，多关键词空格隔开</span>
+                                <span id="search_loading_hint">正在加载，请稍候。。。</span>
+                                <span id="search_download_err_hint">下载文件失败，请刷新重试或检查网络</span>
+                                <span id="search_other_docs_result_hint">来自其它文档的结果</span>
+                                <span id="search_curr_doc_result_hint">当前文档搜索结果</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="">
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>CAA-IdentityCard文件介绍</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                                <span class="article_date" title="最后修改日期： 2023-08-10">
+                                    2023-08-10
+                                </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                            <div id="source_link">
+                                <a href="https://github.com/my_name/my_name.github.io/blob/main/blog/DS-CODE/CAA-IdentityCard文件介绍.md" target="_blank">
+                                    编辑本页
+                                </a>
+                            </div>
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <span id="blog_start"></span><p>IdentityCard文件介绍：</p>
+<p>IdentityCard.h文件相当于“附加包含目录”,你可能会被用来设置在一个典型的visual studio项目。它是一个目录列表,在CATIA实体的代码驻留它定义它们的属性和行为。当您使用一个类在CAA项目包含头文件,但是编译器需要知道在哪里找到这个头文件，mkmk编译器仍然需要知道它在哪里)。<br />
+IdentityCard.h文件是以以下格式组织在一起：</p>
+
+<pre class="language-cpp"><code class="language-cpp">
+'''CAA Wizard Edition Zone'''
+// DO NOT EDIT :: THE CAA2 WIZARDS WILL ADD CODE HERE
+AddPrereqComponent(&quot;System&quot;,Protected);
+AddPrereqComponent(&quot;CATAnalysisInterfaces&quot;,Protected);
+AddPrereqComponent(&quot;DialogEngine&quot;,Protected);
+AddPrereqComponent(&quot;Mathematics&quot;,Protected);
+AddPrereqComponent(&quot;Dialog&quot;,Protected);
+// END WIZARD EDITION ZONE
+
+*This code is automatically generated by the CAA Wizards and should not be adjusted or changed.
+
+'''User Input Area'''
+AddPrereqComponent(&quot;ApplicationFrame&quot;,Public);
+AddPrereqComponent(&quot;GSMInterfaces&quot;,Public);
+AddPrereqComponent(&quot;SketcherInterfaces&quot;,Public);
+AddPrereqComponent(&quot;MecModInterfaces&quot;,Public);
+AddPrereqComponent(&quot;ObjectSpecsModeler&quot;,Public);
+AddPrereqComponent(&quot;GeometricObjects&quot;,Public);
+AddPrereqComponent(&quot;ObjectModelerBase&quot;,Public);
+
+</code></pre>
+<p>... 每次你用一个新的类对象在您的代码中,您必须确保编译器知道头文件定义在哪里。您必须添加头文件在文件夹驻留此列表。这可以通过如下:<br />
+　　:#打开头文件在Visual Studio关联到一个特定的对象通过强调类对象的名称和按ctrl + T。<br />
+　　:#打开Windows资源管理器显示了当前打开的文件的位置在Visual Studio通过按ctrl + Shift + x。<br />
+:#在显示的文件夹路径复制文件夹名称,是同一级别。</p>
+<p>:# Add”这个词作为函数的第一个输入“AddPrereqComponent”来产生的IdentityCard.h文件:</p>
+
+<pre class="language-cpp"><code class="language-cpp">　　AddPrereqComponent(&quot;Mathematics&quot;,Public);
+</code></pre>
+<p>注:“Public”和“Protected”并没有被很好的理解在这一点上。VC++向导通常的自动添加“受保护的”,然而,你应该使用“Public”当你添加的链接目录。<br />
+　　注:‘记住只是因为你有包括在IdentityCard。h文件，并不意味着个人dll可以看到,他们需要的代码。你必须还包括一个模块在Imakefile使代码可用到每个dll。</p>
+<p>CAA RADE Imakefile<br />
+Imakefile.mk就是在IdentityCard.h文件包含的framework中用到的特定的dll模块被关联到Imakefile。<br />
+'''Wizard Edition Zone'''</p>
+<h1 id="DO-NOT-EDIT-%3A%3A-THE-CAA2-WIZARDS-WILL-ADD-CODE-HERE">DO NOT EDIT :: THE CAA2 WIZARDS WILL ADD CODE HERE</h1>
+<p>WIZARD_LINK_MODULES = JS0GROUP \<br />
+JS0FM JS0GROUP CATAnalysisInterface CATAnalysisInterfacesUUID \<br />
+DI0PANV2 CATMathematics CATDialogEngine</p>
+<h1 id="END-WIZARD-EDITION-ZONE">END WIZARD EDITION ZONE</h1>
+<p>:*This section is generated automatically by CAA RADE wizards. We really don't need to worry about this section.</p>
+<p>'''Link_With Zone'''</p>
+<p>LINK_WITH = $(WIZARD_LINK_MODULES) \<br />
+CATApplicationFrame \<br />
+CATMecModInterfaces \<br />
+CATSketcherInterfaces \<br />
+CATGitInterfaces \<br />
+CATObjectSpecsModeler \<br />
+CATDialogEngine \<br />
+CATMathematics \</p>
+<p>“$(WIZARD_LINK_MODULES)“变量定义在向导版区,不应改变。<br />
+　　每个类的对象可以把它添加到你的代码,你必须添加一个关键字模块名到Imakefile Link_With区域链接类的代码到你的dll。<br />
+　　反斜杠 \ 只不过是一个行连续字符<br />
+　　如果你想让Imakefile中的注释,您必须使用“#”。<br />
+　　最好的办法是每一次使用一个新类对象在您的代码中,添加它所在的模块名在Imakefile中。如果你不做这个的时候,你将无法找出哪些类你忘记做这件事。</p>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                    </div>
+                    <div id="next">
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a></a>
+</li>
+<li><a>源码</a><ul><li><a target="_blank" href="https://github.com/neutree/teedoc">github</a></li>
+<li><a target="_blank" href="https://gitee.com/teedoc/teedoc">gitee</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a></a>
+</li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/static/js/theme_default/main.js"></script>
+    
+        <script src="/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/static/js/search/search_main.js"></script>
+    
+        <script src="/static/js/plugin_blog/main.js"></script>
+    
+        <script src="/static/js/custom.js"></script>
+    
+        <script type="text/javascript" src="/static/js/live.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"  class=" language_zh ">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="">
+    
+    
+    <meta name="description" content="">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/search/style.css" type="text/css"/>
+        
+        <meta name="blog-generator" content="teedoc-plugin-blog">
+        
+        <link rel="stylesheet" href="/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>重置数据库密码 - Knowledge Base</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": null, "update": [], "ts": 0, "author": "", "brief": "", "cover": ""}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/">
+                
+                    <img class="site_logo" src="/static/image/logo.png" alt="my_site logo">
+                
+                
+                    <h2>知识库</h2>
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/get_started/zh/">安装使用</a></li>
+<li class="active"><a  href="/blog/">博客</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class=""><a target="_blank" href="https://github.com/hsucode">github</a></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">搜索</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">输入关键词，多关键词空格隔开</span>
+                                <span id="search_loading_hint">正在加载，请稍候。。。</span>
+                                <span id="search_download_err_hint">下载文件失败，请刷新重试或检查网络</span>
+                                <span id="search_other_docs_result_hint">来自其它文档的结果</span>
+                                <span id="search_curr_doc_result_hint">当前文档搜索结果</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="">
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>重置数据库密码</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                                <span class="article_date" title="最后修改日期： 2023-04-20">
+                                    2023-04-20
+                                </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                            <div id="source_link">
+                                <a href="https://github.com/my_name/my_name.github.io/blob/main/blog/DS-ENOVIA/重置数据库密码.md" target="_blank">
+                                    编辑本页
+                                </a>
+                            </div>
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <span id="blog_start"></span><h3 id="%E6%9F%A5%E8%AF%A2%E9%BB%98%E8%AE%A4%E7%9A%84%E5%AF%86%E7%A0%81%E4%BF%9D%E5%AD%98%E6%97%B6%E9%97%B4">查询默认的密码保存时间</h3>
+
+<pre class="language-sql"><code class="language-sql">SELECT * FROM dba_profiles WHERE profile='DEFAULT' AND resource_name='PASSWORD_LIFE_TIME';
+</code></pre>
+<h3 id="%E4%BF%AE%E6%94%B9%E4%B8%BA%E4%B8%8D%E9%99%90%E6%9C%9F%EF%BC%8C%E8%8B%A5%E6%9C%89%E5%AE%9A%E6%9C%9F%E6%9B%B4%E6%8D%A2%E5%AF%86%E7%A0%81%E7%9A%84%E9%9C%80%E6%B1%82%EF%BC%8C%E5%88%99%E5%8F%AF%E4%BB%A5%E8%AE%BE%E7%BD%AE%E4%B8%BA%E6%AF%8F%E4%B8%AA%E5%AF%86%E7%A0%81%E6%9B%B4%E6%8D%A2%E5%91%A8%E6%9C%9F%E6%89%80%E9%9C%80%E7%9A%84%E5%A4%A9%E6%95%B0%EF%BC%88%E5%A6%82%EF%BC%9A30%3A%EF%BC%8C%E8%A1%A8%E7%A4%BA%E6%AF%8F%E8%BF%8730%E5%A4%A9%E5%B0%B1%E9%9C%80%E8%A6%81%E9%87%8D%E7%BD%AE%E4%B8%80%E6%AC%A1%E5%AF%86%E7%A0%81%EF%BC%89">修改为不限期，若有定期更换密码的需求，则可以设置为每个密码更换周期所需的天数（如：30:，表示每过30天就需要重置一次密码）</h3>
+<p>=== &quot;不限期&quot;<br />
+    <code>sql ALTER PROFILE DEFAULT LIMIT PASSWORD_LIFE_TIME UNLIMITED;</code></p>
+<p>=== &quot;30天的密码有效期&quot;<br />
+    <code>sql ALTER PROFILE DEFAULT LIMIT PASSWORD_LIFE_TIME 30;</code></p>
+<h3 id="%E7%A1%AE%E5%AE%9A%E5%AF%86%E7%A0%81%E8%BF%87%E6%9C%9F%E7%9A%84%E7%94%A8%E6%88%B7%EF%BC%8C%E5%A6%82%E6%9E%9C%E4%B8%8D%E7%A1%AE%E5%AE%9A%EF%BC%8C%E5%8F%AF%E4%BB%A5%E9%80%9A%E8%BF%87%E6%9F%A5%E8%AF%A2%E6%89%80%E6%9C%89%E7%94%A8%E6%88%B7%EF%BC%8C%E5%B9%B6%E7%BB%93%E5%90%88%E7%94%A8%E6%88%B7%E7%9A%84%E5%88%9B%E5%BB%BA%E6%97%B6%E9%97%B4%E5%92%8C%E5%BD%93%E5%89%8D%E6%97%B6%E9%97%B4%E7%9A%84%E6%97%B6%E9%97%B4%E5%B7%AE%EF%BC%8C%E6%8E%A8%E6%B5%8B%E5%87%BA%E5%AF%86%E7%A0%81%E8%BF%87%E6%9C%9F%E7%9A%84%E7%94%A8%E6%88%B7">确定密码过期的用户，如果不确定，可以通过查询所有用户，并结合用户的创建时间和当前时间的时间差，推测出密码过期的用户</h3>
+
+<pre class="language-sql"><code class="language-sql">select * from all_users;
+</code></pre>
+<h3 id="%E6%9F%A5%E7%9C%8B%E7%94%A8%E6%88%B7%E7%8A%B6%E6%80%81">查看用户状态</h3>
+
+<pre class="language-sql"><code class="language-sql">select username,account_status from dba_users;
+</code></pre>
+<h3 id="%E6%95%B0%E6%8D%AE%E5%BA%93%E9%93%BE%E6%8E%A5%E6%96%B9%E6%B3%95">数据库链接方法</h3>
+
+<pre class="language-sql"><code class="language-sql">sqlplus /nolog
+conn /as sysdba;
+ALTER PROFILE DEFAULT LIMIT PASSWORD_LIFE_TIME UNLIMITED;
+alter user x3dpassadmin identified by x3dpassadmin;
+alter user x3dpasstokens identified by x3dpasstokens;
+alter user x3ddashadmin identified by x3ddashadmin;
+alter user X3DSPACE IDENTIFIED BY X3DSPACE;
+</code></pre>
+
+<pre class="language-sql"><code class="language-sql">alter user x3dpassadmin identified by x3dpassadmin;
+alter user x3dpassadmin account unlock;
+
+alter user x3dpasstokens identified by x3dpasstokens;
+alter user x3dpasstokens account unlock;
+
+alter user x3ddashadmin identified by x3ddashadmin;
+alter user x3ddashadmin account unlock;
+
+alter user spaceuser identified by spaceuser;
+alter user spaceuser account unlock;
+</code></pre>
+<h3 id="%E4%B8%8D%E8%BF%87%E6%9C%9F">不过期</h3>
+
+<pre class="language-sql"><code class="language-sql">alter user spaceuser IDENTIFIED BY spaceuser;
+</code></pre>
+<h3 id="%E9%93%BE%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93%EF%BC%8C%E6%A3%80%E6%9F%A5%E4%BA%BA%E5%91%98%E7%8A%B6%E6%80%81">链接数据库，检查人员状态</h3>
+
+<pre class="language-sql"><code class="language-sql">sqlplus / as sysdba
+select username,account_status from dba_users;
+</code></pre>
+<h3 id="%E9%93%BE%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93">链接数据库</h3>
+
+<pre class="language-sql"><code class="language-sql">conn /as sysdba
+</code></pre>
+<p>已连接。</p>
+<h3 id="%E8%A7%A3%E9%94%81%E4%BA%BA%E5%91%98">解锁人员</h3>
+
+<pre class="language-sql"><code class="language-sql">alter user system account unlock;
+</code></pre>
+<h3 id="%E9%80%80%E5%87%BA%E6%95%B0%E6%8D%AE%E5%BA%93">退出数据库</h3>
+
+<pre class="language-sql"><code class="language-sql">exit
+</code></pre>
+<h3 id="%E6%89%B9%E5%A4%84%E7%90%86">批处理</h3>
+
+<pre class="language-sql"><code class="language-sql">alter user xdb identified by Qwer1234;
+alter user xdb account unlock;
+
+alter user x3dpassadmin identified by x3dpassadmin;
+alter user x3dpassadmin account unlock;
+
+alter user x3dpasstokens identified by x3dpasstokens;
+alter user x3dpasstokens account unlock;
+
+alter user x3ddashadmin identified by x3ddashadmin;
+alter user x3ddashadmin account unlock;
+
+alter user spaceuser identified by spaceuser;
+alter user spaceuser account unlock;
+
+alter user xs$null identified by xs$null;
+alter user xs$null account unlock;
+
+alter user ojvmsys identified by ojvmsys;
+alter user ojvmsys account unlock;
+
+alter user lbacsys identified by lbacsys;
+alter user lbacsys account unlock;
+
+alter user outln identified by outln;
+alter user outln account unlock;
+
+alter user sys$umf identified by sys$umf;
+alter user sys$umf account unlock;
+
+alter user dbsnmp identified by dbsnmp;
+alter user dbsnmp account unlock;
+
+alter user appqossys identified by appqossys;
+alter user appqossys account unlock;
+
+alter user dbsfwuser identified by dbsfwuser;
+alter user dbsfwuser account unlock;
+
+alter user ggsys identified by ggsys;
+alter user ggsys account unlock;
+
+alter user anonymous identified by anonymous;
+alter user anonymous account unlock;
+
+alter user ctxsys identified by ctxsys;
+alter user ctxsys account unlock;
+
+alter user si_informtn_schema identified by si_informtn_schema;
+alter user si_informtn_schema account unlock;
+
+alter user dvsys identified by dvsys;
+alter user dvsys account unlock;
+
+alter user dvf identified by dvf;
+alter user dvf account unlock;
+
+alter user gsmadmin_internal identified by gsmadmin_internal;
+alter user gsmadmin_internal account unlock;
+
+alter user ordplugins identified by ordplugins;
+alter user ordplugins account unlock;
+
+alter user mdsys identified by mdsys;
+alter user mdsys account unlock;
+
+alter user olapsys identified by olapsys;
+alter user olapsys account unlock;
+
+alter user orddata identified by orddata;
+alter user orddata account unlock;
+
+alter user wmsys identified by wmsys;
+alter user wmsys account unlock;
+
+alter user ordsys identified by ordsys;
+alter user ordsys account unlock;
+
+alter user gsmcatuser identified by gsmcatuser;
+alter user gsmcatuser account unlock;
+
+alter user mddata identified by mddata;
+alter user mddata account unlock;
+
+alter user sysbackup identified by sysbackup;
+alter user sysbackup account unlock;
+
+alter user remote_scheduler_agent identified by remote_scheduler_agent;
+alter user remote_scheduler_agent account unlock;
+
+alter user gsmuser identified by gsmuser;
+alter user gsmuser account unlock;
+
+alter user sysrac identified by sysrac;
+alter user sysrac account unlock;
+
+alter user audsys identified by audsys;
+alter user audsys account unlock;
+
+alter user dip identified by dip;
+alter user dip account unlock;
+
+alter user syskm identified by syskm;
+alter user syskm account unlock;
+
+alter user oracle_ocm identified by oracle_ocm;
+alter user oracle_ocm account unlock;
+
+alter user sysdg identified by sysdg;
+alter user sysdg account unlock;
+
+alter user spatial_csw_admin_usr identified by spatial_csw_admin_usr;
+alter user spatial_csw_admin_usr account unlock;
+</code></pre>
+<h3 id="batch-old">batch-old</h3>
+
+<pre class="language-sql"><code class="language-sql">alter profile default limit password_life_time unlimited;
+
+ALTER USER XDB IDENTIFIED BY Qwer1234;
+ALTER USER XDB ACCOUNT UNLOCK;
+
+ALTER USER X3DPASSADMIN IDENTIFIED BY X3DPASSADMIN;
+ALTER USER X3DPASSADMIN ACCOUNT UNLOCK;
+
+ALTER USER X3DPASSTOKENS IDENTIFIED BY X3DPASSTOKENS;
+ALTER USER X3DPASSTOKENS ACCOUNT UNLOCK;
+
+ALTER USER X3DDASHADMIN IDENTIFIED BY X3DDASHADMIN;
+ALTER USER X3DDASHADMIN ACCOUNT UNLOCK;
+
+ALTER USER SPACEUSER IDENTIFIED BY SPACEUSER;
+ALTER USER SPACEUSER ACCOUNT UNLOCK;
+
+ALTER USER XS$NULL IDENTIFIED BY XS$NULL;
+ALTER USER XS$NULL ACCOUNT UNLOCK;
+
+ALTER USER OJVMSYS IDENTIFIED BY OJVMSYS;
+ALTER USER OJVMSYS ACCOUNT UNLOCK;
+
+ALTER USER LBACSYS IDENTIFIED BY LBACSYS;
+ALTER USER LBACSYS ACCOUNT UNLOCK;
+
+ALTER USER OUTLN IDENTIFIED BY OUTLN;
+ALTER USER OUTLN ACCOUNT UNLOCK;
+
+ALTER USER SYS$UMF IDENTIFIED BY SYS$UMF;
+ALTER USER SYS$UMF ACCOUNT UNLOCK;
+
+ALTER USER DBSNMP IDENTIFIED BY DBSNMP;
+ALTER USER DBSNMP ACCOUNT UNLOCK;
+
+ALTER USER APPQOSSYS IDENTIFIED BY APPQOSSYS;
+ALTER USER APPQOSSYS ACCOUNT UNLOCK;
+
+ALTER USER DBSFWUSER IDENTIFIED BY DBSFWUSER;
+ALTER USER DBSFWUSER ACCOUNT UNLOCK;
+
+ALTER USER GGSYS IDENTIFIED BY GGSYS;
+ALTER USER GGSYS ACCOUNT UNLOCK;
+
+ALTER USER ANONYMOUS IDENTIFIED BY ANONYMOUS;
+ALTER USER ANONYMOUS ACCOUNT UNLOCK;
+
+ALTER USER CTXSYS IDENTIFIED BY CTXSYS;
+ALTER USER CTXSYS ACCOUNT UNLOCK;
+
+ALTER USER SI_INFORMTN_SCHEMA IDENTIFIED BY SI_INFORMTN_SCHEMA;
+ALTER USER SI_INFORMTN_SCHEMA ACCOUNT UNLOCK;
+
+ALTER USER DVSYS IDENTIFIED BY DVSYS;
+ALTER USER DVSYS ACCOUNT UNLOCK;
+
+ALTER USER DVF IDENTIFIED BY DVF;
+ALTER USER DVF ACCOUNT UNLOCK;
+
+ALTER USER GSMADMIN_INTERNAL IDENTIFIED BY GSMADMIN_INTERNAL;
+ALTER USER GSMADMIN_INTERNAL ACCOUNT UNLOCK;
+
+ALTER USER ORDPLUGINS IDENTIFIED BY ORDPLUGINS;
+ALTER USER ORDPLUGINS ACCOUNT UNLOCK;
+
+ALTER USER MDSYS IDENTIFIED BY MDSYS;
+ALTER USER MDSYS ACCOUNT UNLOCK;
+
+ALTER USER OLAPSYS IDENTIFIED BY OLAPSYS;
+ALTER USER OLAPSYS ACCOUNT UNLOCK;
+
+ALTER USER ORDDATA IDENTIFIED BY ORDDATA;
+ALTER USER ORDDATA ACCOUNT UNLOCK;
+
+ALTER USER WMSYS IDENTIFIED BY WMSYS;
+ALTER USER WMSYS ACCOUNT UNLOCK;
+
+ALTER USER ORDSYS IDENTIFIED BY ORDSYS;
+ALTER USER ORDSYS ACCOUNT UNLOCK;
+
+ALTER USER GSMCATUSER IDENTIFIED BY GSMCATUSER;
+ALTER USER GSMCATUSER ACCOUNT UNLOCK;
+
+ALTER USER MDDATA IDENTIFIED BY MDDATA;
+ALTER USER MDDATA ACCOUNT UNLOCK;
+
+ALTER USER SYSBACKUP IDENTIFIED BY SYSBACKUP;
+ALTER USER SYSBACKUP ACCOUNT UNLOCK;
+
+ALTER USER REMOTE_SCHEDULER_AGENT IDENTIFIED BY REMOTE_SCHEDULER_AGENT;
+ALTER USER REMOTE_SCHEDULER_AGENT ACCOUNT UNLOCK;
+
+ALTER USER GSMUSER IDENTIFIED BY GSMUSER;
+ALTER USER GSMUSER ACCOUNT UNLOCK;
+
+ALTER USER SYSRAC IDENTIFIED BY SYSRAC;
+ALTER USER SYSRAC ACCOUNT UNLOCK;
+
+ALTER USER AUDSYS IDENTIFIED BY AUDSYS;
+ALTER USER AUDSYS ACCOUNT UNLOCK;
+
+ALTER USER DIP IDENTIFIED BY DIP;
+ALTER USER DIP ACCOUNT UNLOCK;
+
+ALTER USER SYSKM IDENTIFIED BY SYSKM;
+ALTER USER SYSKM ACCOUNT UNLOCK;
+
+ALTER USER ORACLE_OCM IDENTIFIED BY ORACLE_OCM;
+ALTER USER ORACLE_OCM ACCOUNT UNLOCK;
+
+ALTER USER SYSDG IDENTIFIED BY SYSDG;
+ALTER USER SYSDG ACCOUNT UNLOCK;
+
+ALTER USER SPATIAL_CSW_ADMIN_USR IDENTIFIED BY SPATIAL_CSW_ADMIN_USR;
+ALTER USER SPATIAL_CSW_ADMIN_USR ACCOUNT UNLOCK;
+
+alter user system account unlock;
+
+select username,PROFILE FROM dba_users;
+select username,account_status from dba_users;
+</code></pre>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                    </div>
+                    <div id="next">
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a></a>
+</li>
+<li><a>源码</a><ul><li><a target="_blank" href="https://github.com/neutree/teedoc">github</a></li>
+<li><a target="_blank" href="https://gitee.com/teedoc/teedoc">gitee</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a></a>
+</li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/static/js/theme_default/main.js"></script>
+    
+        <script src="/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/static/js/search/search_main.js"></script>
+    
+        <script src="/static/js/plugin_blog/main.js"></script>
+    
+        <script src="/static/js/custom.js"></script>
+    
+        <script type="text/javascript" src="/static/js/live.js"></script>
+    
+</body>
+
+</html>
