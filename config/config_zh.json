@@ -2,16 +2,16 @@
     "locale": "zh_CN",
     "class": "language_zh",
     "navbar": {
-        "title": "KnowledgeBase",
+        "title": "知識庫",
         "logo": {
-            "alt": "my_site logo",
+            "alt": "知識庫 logo",
             "src": "/static/image/logo.png"
         },
         "home_url": "/",
         "items": [
             {
                 "url": "/get_started/zh/",
-                "label": "主页",
+                "label": "安装使用",
                 "position": "left"
             },
             {
@@ -20,7 +20,7 @@
                 "position": "left"
             },
             {
-                "url": "https://github.com/hsucode",
+                "url": "https://github.com/neutree/teedoc",
                 "label": "github",
                 "target": "_blank",
                 "position": "right"
@@ -36,27 +36,40 @@
     "footer":{
         "top":[
             {
-               
+                "label": "链接",
+                "items": [
+                    {
+                        "label": "rhino help",
+                        "url": "https://docs.mcneel.com/rhino/7/help/en-us/index.htm",
+                        "target": "_blank"
+                    },
+                    {
+                        "label": "CATIA help",
+                        "url": "https://support.3ds.com/knowledge-base/"
+                    }
+                ]
             },
             {
                 "label": "源码",
                 "items": [
                     {
                         "label": "github",
-                        "url": "https://github.com/neutree/teedoc",
+                        "url": "https://github.com/hsucode/teedoc-blog.github.io",
                         "target": "_blank"
                     },
                     {
-                        "label": "gitee",
-                        "url": "https://gitee.com/teedoc/teedoc",
+                        "label": "本网站源文件",
+                        "url": "https://github.com/teedoc/teedoc.github.io",
                         "target": "_blank"
                     }
-
                 ]
             }
         ],
         "bottom": [
             {
+                "label": "KNOWLEDGE BASE @2023",
+                "url": "https://cn.bing.com/?mkt=zh-CN",
+                "target": "_blank"
             }
         ]
     },

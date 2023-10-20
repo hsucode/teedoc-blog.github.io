@@ -7,10 +7,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta name="keywords" content="keyword1, keyword2">
+    <meta name="keywords" content="install, quick">
     
     
-    <meta name="description" content="article description">
+    <meta name="description" content="Quick Installation">
     
     <meta name="generator" content="teedoc">
     <meta name="theme" content="teedoc-plugin-theme-default">
@@ -46,7 +46,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
         
     
     
-    <title>Article title - Knowledge Base</title>
+    <title>Quick Installation - Knowledge Base</title>
     
     <script type="text/javascript">js_vars = {}</script>
     <script type="text/javascript">metadata = {"tags": [], "date": "2022-09-01", "update": [], "ts": 1661961600, "author": "", "brief": "", "cover": ""}</script>
@@ -59,10 +59,10 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
         <div id="navbar_menu">
             <a class="site_title" href="/en/">
                 
-                    <img class="site_logo" src="/static/image/logo.png" alt="my_site logo">
+                    <img class="site_logo" src="/static/image/logo.png" alt="Knowledge_Base logo">
                 
                 
-                    <h2>Knowledge Base</h2>
+                    <h2>Knowledge_Base</h2>
                 
         </a>
             <a id="navbar_menu_btn"></a>
@@ -77,7 +77,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
             </div>
             <div>
                 <ul id="nav_right">
-<li class=""><a target="_blank" href="https://github.com/hsucode">github</a></li>
+<li class=""><a target="_blank" href="https://github.com/neutree/teedoc">github</a></li>
 <li class="sub_items "><a  >Language: English</a><ul><li class="active"><a  href="/get_started/en/index.html">English</a></li>
 <li class=""><a  href="/get_started/zh/index.html">中文 简体</a></li>
 </ul></li>
@@ -117,7 +117,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_head">
                         <div id="article_title">
                             
-                            <h1>Article title</h1>
+                            <h1>Quick Installation</h1>
                             
                         </div>
                         <div id="article_tags">
@@ -156,21 +156,43 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     </div>
                     <div id="article_content">
                         
-                            <h2 id="Add-article">Add article</h2>
-<ul>
-<li>Create markdown file with file name end with <code>.md</code> in the directory of this file, e.g. <code>first.md</code></li>
-<li>Add link in <code>sidebar.yaml</code></li>
-</ul>
+                            <h1 id="Quick-Installation">Quick Installation</h1>
+<p>Run the code in cmd to quickly deploy the site locally.</p>
 
-<pre class="language-markdown"><code class="language-markdown">items:
--   label: Brief
-    file: README.md
--   label: First
-    file: first.md
+<pre class="language-batch"><code class="language-batch">
+cd /d %~dp0
+
+#### virtual environment can be ignored
+call C:\dev\pyenv\Scripts\activate.bat 
+rem pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
+mkdir KnowledgeBaseTeedoc
+cd KnowledgeBaseTeedoc
+teedoc init
+teedoc -d KnowledgeBaseTeedoc init
+teedoc install
+teedoc serve
+teedoc build
+
+
 </code></pre>
-<h2 id="More-example">More example</h2>
-<p>More visit: <a href="https://teedoc.neucrack.com/"  target="_blank">teedoc.neucrack.com</a> or <a href="https://teedoc.github.io/"  target="_blank">teedoc.github.io</a></p>
-<p>And more example see: <a href="https://github.com/teedoc/teedoc.github.io"  target="_blank">github.com/teedoc/teedoc.github.io</a> and <a href="https://github.com/teedoc/template"  target="_blank">https://github.com/teedoc/template</a> , and <a href="https://github.com/sipeed/sipeed_wiki"  target="_blank">sipeed wiki</a></p>
+<h1 id="Article-Writing">Article Writing</h1>
+<p>write your article in the following path</p>
+<p>.\teedoc-blog.github.io\blog\docs</p>
+<p>the website will refresh automatically</p>
+<hr />
+<p>write the content at the head of the article and search</p>
+
+<pre class="language-markdown"><code class="language-markdown">---
+title: 3DEXPERIENCE查询文件大小
+keywords: 大小
+desc: teedoc 大小, 第一篇博客
+author: designer
+date: 2021-03-14
+tags: hello, blog, 查询
+---
+
+</code></pre>
 
                         
                     </div>
@@ -199,14 +221,12 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
         <div id="footer">
             <div id="footer_top">
                 <ul>
-<li><a>Links</a><ul><li><a></a>
-</li>
-<li><a></a>
-</li>
+<li><a>链接</a><ul><li><a target="_blank" href="https://docs.mcneel.com/rhino/7/help/en-us/index.htm">rhino help</a></li>
+<li><a  href="https://support.3ds.com/knowledge-base/">CATIA help</a></li>
 </ul>
 </li>
-<li><a>Source code</a><ul><li><a target="_blank" href="https://github.com/neutree/teedoc">github</a></li>
-<li><a target="_blank" href="https://github.com/teedoc/teedoc.github.io">website source files</a></li>
+<li><a>源码</a><ul><li><a target="_blank" href="https://github.com/hsucode/teedoc-blog.github.io">github</a></li>
+<li><a target="_blank" href="https://github.com/teedoc/teedoc.github.io">本网站源文件</a></li>
 </ul>
 </li>
 </ul>
@@ -214,10 +234,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
             </div>
             <div id="footer_bottom">
                 <ul>
-<li><a></a>
-</li>
-<li><a></a>
-</li>
+<li><a target="_blank" href="https://cn.bing.com/?mkt=zh-CN">KNOWLEDGE BASE @2023</a></li>
 </ul>
 
             </div>

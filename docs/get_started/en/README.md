@@ -1,26 +1,54 @@
 ---
-title: Article title
-keywords: keyword1, keyword2
-desc: article description
+title: Quick Installation
+keywords: install, quick
+desc: Quick Installation
 date: 2022-09-01
 ---
 
-## Add article
 
-* Create markdown file with file name end with `.md` in the directory of this file, e.g. `first.md`
-* Add link in `sidebar.yaml`
+# Quick Installation
 
-```markdown
-items:
--   label: Brief
-    file: README.md
--   label: First
-    file: first.md
+Run the code in cmd to quickly deploy the site locally.
+
+```batch
+
+cd /d %~dp0
+
+#### virtual environment can be ignored
+call C:\dev\pyenv\Scripts\activate.bat 
+rem pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
+mkdir KnowledgeBaseTeedoc
+cd KnowledgeBaseTeedoc
+teedoc init
+teedoc -d KnowledgeBaseTeedoc init
+teedoc install
+teedoc serve
+teedoc build
+
+
 ```
 
-## More example
+# Article Writing
 
-More visit: [teedoc.neucrack.com](https://teedoc.neucrack.com/) or [teedoc.github.io](https://teedoc.github.io/)
+write your article in the following path
 
-And more example see: [github.com/teedoc/teedoc.github.io](https://github.com/teedoc/teedoc.github.io) and [https://github.com/teedoc/template](https://github.com/teedoc/template) , and [sipeed wiki](https://github.com/sipeed/sipeed_wiki)
+.\teedoc-blog.github.io\blog\docs
 
+the website will refresh automatically
+
+---
+
+write the content at the head of the article and search
+
+```markdown
+---
+title: 3DEXPERIENCE查询文件大小
+keywords: 大小
+desc: teedoc 大小, 第一篇博客
+author: designer
+date: 2021-03-14
+tags: hello, blog, 查询
+---
+
+```

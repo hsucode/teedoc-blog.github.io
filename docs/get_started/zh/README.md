@@ -1,7 +1,7 @@
 ---
-title: 文章标题
-keywords: 关键词1, 关键词2
-desc: 这里写文章简介
+title: Quick Installation
+keywords: install, quick
+desc: Quick Installation
 date: 2022-09-01
 ---
 
@@ -30,6 +30,16 @@ teedoc build
 ```
 
 # Article Writing
+
+write your article in the following path
+
+.\teedoc-blog.github.io\blog\docs
+
+the website will refresh automatically
+
+---
+
+write the content at the head of the article and search
 
 ```markdown
 ---
