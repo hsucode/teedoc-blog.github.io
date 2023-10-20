@@ -2,7 +2,7 @@
     "locale": "zh_CN",
     "class": "language_zh",
     "navbar": {
-        "title": "知识库",
+        "title": "KnowledgeBase",
         "logo": {
             "alt": "my_site logo",
             "src": "/static/image/logo.png"
@@ -17,11 +17,6 @@
             {
                 "url": "/blog/",
                 "label": "博客",
-                "position": "left"
-            },
-            {
-                "url": "/code/zh/",
-                "label": "代码",
                 "position": "left"
             },
             {

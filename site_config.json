@@ -8,9 +8,7 @@
     "source": "git@github.com:hsucode/xusblog.github.io.git",
     "route": {
         "docs": {
-            "/get_started/zh/": "docs/get_started/zh",
-            "/code/zh/": "docs/code/zh",
-            "/more/": "docs/more"
+            "/get_started/zh/": "docs/get_started/zh"
         },
         "pages": {
             "/": "pages/index/zh"
@@ -22,6 +20,8 @@
         "blog": {
             "/blog/": "blog"
         }
+      
+
     },
     "translate": {
         "docs": {

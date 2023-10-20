@@ -17,11 +17,8 @@
                 "label": "Blog",
                 "position": "left"
             },
-            {
-                "url": "/code/en/",
-                "label": "Code",
-                "position": "left"
-            },
+    
+
             {
                 "url": "https://github.com/hsucode",
                 "label": "github",
