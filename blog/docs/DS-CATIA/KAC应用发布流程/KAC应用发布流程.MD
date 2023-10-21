@@ -8,12 +8,13 @@ date: false
 ---
 
 
-<video id="video" controls="" preload="none" poster="封面">
+<!-- <video id="video" controls="" preload="none" poster="封面">
       <source id="mp4" src="应用发布流程.m4v" type="video/m4v">
 </videos>
 
-<video src="https://****.com/***.mp4" controls="controls" preload="auto">your brower not support play video</video>
+<video src="https://****.com/***.mp4" controls="controls" preload="auto">your brower not support play video</video> -->
 
+[video](./应用发布流程.m4v)
 
 
 数据完备性检查
