@@ -1,6 +1,20 @@
+---
+title: 应用发布流程
+keywords: kac, 应用发布流程, 应用发布流程
+desc: teedoc 静态博客页面生成
+show_source: false
+date: false
+
+---
 
 
-应用发布流程
+<video id="video" controls="" preload="none" poster="封面">
+      <source id="mp4" src="应用发布流程.m4v" type="video/m4v">
+</videos>
+
+<video src="https://****.com/***.mp4" controls="controls" preload="auto">your brower not support play video</video>
+
+
 
 数据完备性检查
 

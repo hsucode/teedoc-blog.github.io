@@ -1,5 +1,12 @@
+---
+title: earth
+keywords: CATIA,dev,qs
+desc: CATIA,dev,qs
+author: Report
+date: 2021-03-14
+tags: CATIA,dev,qs
+---
 
-# earth
 
 准备好贴图
 

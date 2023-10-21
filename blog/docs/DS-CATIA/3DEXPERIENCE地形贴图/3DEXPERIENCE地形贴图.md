@@ -1,11 +1,10 @@
 ---
 title: 3Dexperience Terrain Map
-date: 2014-4-16 09:44:30
-tags: BUILDING
-type: "categories"
-categories: "BUILDING"
-keywords: 'BIM'
-cover: A5-3_PIC_8.PNG
+keywords:  terrain
+desc: mapping,map,terrain
+author: xus
+date: 2021-03-14
+tags: mapping,map,terrain
 ---
 
 

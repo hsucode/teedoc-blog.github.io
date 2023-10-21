@@ -52,3 +52,15 @@ tags: hello, blog, 查询
 ---
 
 ```
+
+
+
+# deploy
+
+if 'github pages' access is too slow it can be deployed locally.
+
+![Alt text](image.png)
+![Alt text](image-1.png)
+![Alt text](image-2.png)
+![Alt text](image-3.png)
+

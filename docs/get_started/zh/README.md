@@ -53,6 +53,9 @@ tags: hello, blog, 查询
 
 ```
 
+# deploy
+
+如果github pages 訪問速度太慢，可以本地部署
 
 ![Alt text](image.png)
 ![Alt text](image-1.png)

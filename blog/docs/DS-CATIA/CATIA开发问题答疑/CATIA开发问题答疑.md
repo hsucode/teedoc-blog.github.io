@@ -1,4 +1,11 @@
-# CATIA开发问题答疑
+---
+title: CATIA开发问题答疑
+keywords: CATIA,dev,qs
+desc: CATIA,dev,qs
+author: Report
+date: 2021-03-14
+tags: CATIA,dev,qs
+---
 
 ## 判断catia是否打开的语句是否有变化，打开catia语句是什么
 
