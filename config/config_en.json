@@ -18,7 +18,7 @@
                 "position": "left"
             },
             {
-                "url": "https://github.com/neutree/teedoc",
+                "url": "https://github.com/hsucode/teedoc-blog.github.io.git",
                 "label": "github",
                 "target": "_blank",
                 "position": "right"
@@ -38,13 +38,13 @@
                 "label": "链接",
                 "items": [
                     {
-                        "label": "rhino help",
-                        "url": "https://docs.mcneel.com/rhino/7/help/en-us/index.htm",
+                        "label": "old wiki",
+                        "url": "https://xuscode.github.io/bimnote.github.io/",
                         "target": "_blank"
                     },
                     {
-                        "label": "CATIA help",
-                        "url": "https://support.3ds.com/knowledge-base/"
+                        "label": "project",
+                        "url": "https://hsucode.github.io/xusblog.github.io//"
                     }
                 ]
             },
@@ -58,7 +58,7 @@
                     },
                     {
                         "label": "本网站源文件",
-                        "url": "https://github.com/teedoc/teedoc.github.io",
+                        "url": "https://github.com/hsucode/hsucode.github.io.git",
                         "target": "_blank"
                     }
                 ]
