@@ -1,3 +1,11 @@
+---
+title: get the catia log
+keywords: log
+desc: teedoc 大小, 第一篇博客
+author: designer
+date: 2021-03-14
+tags: log,catia
+---
 
 # 获得CATIA日志
 

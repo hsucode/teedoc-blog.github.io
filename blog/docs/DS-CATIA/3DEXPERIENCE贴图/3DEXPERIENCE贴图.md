@@ -1,4 +1,13 @@
-3DEXPERIENCE贴图
+---
+title: 3DEXPERIENCE贴图
+keywords: pic,image,贴图
+desc: teedoc 大小, 第一篇博客
+author: designer
+date: 2021-03-14
+tags: image, pic, 贴图
+---
+
+
 
 Step:1
 新建Vpm Document

@@ -1,3 +1,14 @@
+---
+title: How to Import DP Data in the 3DExp Platform with FBDI
+keywords: dp,fbdi,import
+desc: teedoc 大小, 第一篇博客
+author: designer
+date: 2021-03-14
+tags: dp,fbdi,import
+---
+
+
+
 # How to Import DP Data in the 3DExp Platform with FBDI
 
 ## Download file

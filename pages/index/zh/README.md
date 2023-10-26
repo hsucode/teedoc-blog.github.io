@@ -15,10 +15,9 @@ id: home_page
     </div>
 </div>
 
-
-
+---
 #### __Technology Websites__
-
+---
 
 [达索官网](https://www.3ds.com/zh/)
 [达索软件下载](https://software.3ds.com/orders)
@@ -29,9 +28,7 @@ id: home_page
 [北京公有云](https://r1132101199946-eu1.iam.3dexperience.3ds.com/login?service=https%3A//r1132101199946-apc2-ifwe.3dexperience.cn/)
 [达索工业驱动在线研讨会](https://3ds.tbh5.com/index.aspx?f=BLUESEA)
 [达索CO系统（SBO系统)](https://dsxclient.3ds.com/psp/CRPRD/EMPLOYEE/DS_ECO/h/?tab=DEFAULT)
-
-
-
+---
 [3DEXPERIENCE OnCloud Developer Assistance](https://media.3ds.com/support/documentation/developer/Cloud/en/DSDocNS.htm?show=CAAWebAppsJS/CAAWebAppsUcUserPreferences.htm)
 [3DEXPERIENCE 用户帮助(on promise)](https://help.3ds.com/2022x/Simplified_Chinese/DSDoc/FrontmatterMap/DSDocHome.htm?contextscope=onpremise)
 [3DEXPERIENCE 用户帮助(on cloud)](https://help.3ds.com/2022x/Simplified_Chinese/DSDoc/FrontmatterMap/DSDocHome.htm?contextscope=cloud#_ga=2.123049102.445407654.1653323046-71325560-c1dd-11ec-890b-41eff8876be0)
@@ -39,18 +36,13 @@ id: home_page
 [最佳实践](https://www.3ds.com/support/documentation/best-practices/?woc=%7B%22resource%20types%22%3A%5B%22resource%20types%2Fbest%20practices%22%5D%7D)
 [CAA V5 Encyclopedia V5-6R2021](https://media.3ds.com/support/documentation/developer/V5-6R2021/en/online/CAACenV5Default.htm)
 [云端开发帮助](https://media.3ds.com/support/documentation/developer/Cloud/en/DSDoc.htm?show=CAADocQuickRefs/DSDocHome.htm)
-[Automation-help](C:\Program Files\Dassault Systemes\B424\win_b64\code\bin\DSYAutomation.chm)
-
 [rhino_code](github:https://github.com/hsucode/rhino_code.git)
-
 [CATSearch](https://gitee.com/xuscode/CATSearch/attach_files/1038270/download/CATIASearch.7z)
 [软件自动安装下载地址](https://gitee.com/xuscode/enovia.git)
 中文语言汉化包bug 修复，[语言包下载地址](https://gitee.com/xuscode/catia-language.git)
 [菜鸟工具](https://c.runoob.com/)
 [代码可视化](https://pythontutor.com/)
-
-
-
+---
 [digital project](https://digitalproject3d.com/)
 [Rhinoceros 最新版本获取链接](https://www2.mcneel.com/updates/78464c2c-9aeb-456e-8c27-865a524f5ca0/release/win64/en-us/stable/)
 [Autodesk viewer ](https://viewer.autodesk.com/)
@@ -75,52 +67,24 @@ CATIA-V6-ADDIN
 ```batch
 git clone https://gitea.com/terryah/CATIA-V6-ADDIN.git
 ```
-
-
+---
+#### __Local Server__
 ---
 
+##### R2021x
 
-#### __login ticket__
-
-##### "hosts"
-
-```bash
-# 172.16.0.61  v6r2020x.3de.com   # 3DEXPERIENCE R2020x
-172.16.0.6   dsplm21x.3ds.com   # 3DEXPERIENCE R2021x
-172.16.1.22  dsplm23x.3ds.com   # 3DEXPERIENCE R2023x
-
-```
-
-##### "R2023x-xus"
-
-```bash
-MzIyNTVEOUNFOTZGNDFDRjk5ODM5OTE5MzM0QTgzMDV8YWRtaW5fcGxhdGZvcm18fHx8MHw=
-```
-
-002
-
-```bash
-QkUwNjQ3M0RDMURBNDNCRjkxMUU2QUM0NDQ0NkQ1QjN8MDAyfHx8fDB8
-```
-
-##### "R2021x-xus"
-
-```bash
-QzAwODI4Rjk4MDU5NDQ3RkFFMTMxNTI4NDFFQTU1MTB8YWRtaW5fcGxhdGZvcm18YWRtaW5fcGxhdGZvcm18fHwwfA== 
-```
-
-##### cloud-user
-
-```bash
-QUVFNjkxRDREQ0VFNDYwMEFGQzRDNzExMTlDQ0ZCM0V8Y25jbG91ZHVzZXIwM3x8UjExMzIxMDA4MjQ0OTV8fDB8
-```
-
-
-
-
-#### __Local Server__
-
-
+[localhost](https://dsplm21x.3ds.com)
+[3DPassport](https://dsplm21x.3ds.com/3dpassport)
+[admin登录逃生通道](https://dsplm21x.3ds.com/3dpassport/admin-tools/v2)
+[3DDashboard](https://dsplm21x.3ds.com/3ddashboard)
+[3DSearch](https://dsplm21x.3ds.com/federated/search?query=test)
+[3DSpace](https://dsplm21x.3ds.com/3dspace)
+[Internal](https://dsplm21x.3ds.com/internal/)
+[FCS](https://dsplm21x.3ds.com/fcs/servlet/fcs/about)
+[3DSwym](https://dsplm21x.3ds.com/3dswym)
+[Exalead](http://dsplm21x.3ds.com:19001/admin/)
+[Autovue检查](https://dsplm21x.3ds.com/3dspace/VueServlet)
+---
 ##### R2023x
 
 [localhost](https://dsplm23x.3ds.com)
@@ -135,7 +99,7 @@ QUVFNjkxRDREQ0VFNDYwMEFGQzRDNzExMTlDQ0ZCM0V8Y25jbG91ZHVzZXIwM3x8UjExMzIxMDA4MjQ0
 [Exalead](http://dsplm23x.3ds.com:19001/admin/)
 [Autovue检查](https://dsplm23x.3ds.com/3dspace/VueServlet)
 
-
+---
 ##### R2022x
 
 [localhost](https://dsplm22x.3ds.com)
@@ -151,19 +115,7 @@ QUVFNjkxRDREQ0VFNDYwMEFGQzRDNzExMTlDQ0ZCM0V8Y25jbG91ZHVzZXIwM3x8UjExMzIxMDA4MjQ0
 [Autovue检查](https://dsplm22x.3ds.com/3dspace/VueServlet)
 
 
-##### R2021x
-
-[localhost](https://dsplm21x.3ds.com)
-[3DPassport](https://dsplm21x.3ds.com/3dpassport)
-[admin登录逃生通道](https://dsplm21x.3ds.com/3dpassport/admin-tools/v2)
-[3DDashboard](https://dsplm21x.3ds.com/3ddashboard)
-[3DSearch](https://dsplm21x.3ds.com/federated/search?query=test)
-[3DSpace](https://dsplm21x.3ds.com/3dspace)
-[Internal](https://dsplm21x.3ds.com/internal/)
-[FCS](https://dsplm21x.3ds.com/fcs/servlet/fcs/about)
-[3DSwym](https://dsplm21x.3ds.com/3dswym)
-[Exalead](http://dsplm21x.3ds.com:19001/admin/)
-[Autovue检查](https://dsplm21x.3ds.com/3dspace/VueServlet)
+---
 
 ##### R2020x
 
@@ -179,6 +131,7 @@ QUVFNjkxRDREQ0VFNDYwMEFGQzRDNzExMTlDQ0ZCM0V8Y25jbG91ZHVzZXIwM3x8UjExMzIxMDA4MjQ0
 [Exalead](http://v6r2020x.3de.com:19001/admin/)
 [Autovue检查](https://v6r2020x.3de.com/3dspace/VueServlet)
 
+---
 ##### R2019x
 
 [localhost](https://3dexpv6r2019x.3ds.com)
