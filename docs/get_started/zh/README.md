@@ -8,6 +8,16 @@ date: 2022-09-01
 
 # Quick Installation
 
+
+* 安装 teedoc
+
+这条命令会 **安装 teedoc 主程序**
+
+```
+pip3 install teedoc
+```
+
+
 Run the code in cmd to quickly deploy the site locally.
 
 ```batch
@@ -25,7 +35,6 @@ teedoc -d KnowledgeBaseTeedoc init
 teedoc install
 teedoc serve
 teedoc build
-
 
 ```
 

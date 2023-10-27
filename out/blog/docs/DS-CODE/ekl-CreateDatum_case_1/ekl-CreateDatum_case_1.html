@@ -7,10 +7,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta name="keywords" content="BIM">
+    <meta name="keywords" content="ekl-CreateDatum_case_1, catia">
     
     
-    <meta name="description" content="">
+    <meta name="description" content="ekl-CreateDatum_case_1">
     
     <meta name="generator" content="teedoc">
     <meta name="theme" content="teedoc-plugin-theme-default">
@@ -46,10 +46,10 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
         
     
     
-    <title>dsls - Knowledge Base</title>
+    <title>ekl-CreateDatum_case_1 - Knowledge Base</title>
     
     <script type="text/javascript">js_vars = {}</script>
-    <script type="text/javascript">metadata = {"tags": ["BUILDING"], "date": "2014-04-16", "update": [], "ts": 1397612670, "author": "", "brief": "", "cover": "/blog/docs/DS-CATIA/DSLS/A5-3_PIC_8.PNG", "type": "categories", "categories": "BUILDING"}</script>
+    <script type="text/javascript">metadata = {"tags": ["hello", "blog", "teedoc"], "date": "2021-03-14", "update": [], "ts": 1615651200, "author": "designer", "brief": "", "cover": "/blog/docs/DS-CODE/ekl-CreateDatum_case_1/assets/cover.jpg"}</script>
 </head>
 
 
@@ -113,31 +113,35 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_head">
                         <div id="article_title">
                             
-                            <h1>dsls</h1>
+                            <h1>ekl-CreateDatum_case_1</h1>
                             
                         </div>
                         <div id="article_tags">
                             <ul>
                             
-                                <li>BUILDING</li>
+                                <li>hello</li>
+                            
+                                <li>blog</li>
+                            
+                                <li>teedoc</li>
                             
                             </ul>
                         </div>
                         <div id="article_info">
                         <div id="article_info_left">
                             <span class="article_author">
-                                
+                                designer
                             </span>
                             
-                                <span class="article_date" title="最后修改日期： 2014-04-16">
-                                    2014-04-16
+                                <span class="article_date" title="最后修改日期： 2021-03-14">
+                                    2021-03-14
                                 </span>
                             
                         </div>
                         <div id="article_info_right">
                             
                             <div id="source_link">
-                                <a href="git@github.com:hsucode/xusblog.github.io.git/blog/docs/DS-CATIA/DSLS/DS-LICENSE.md" target="_blank">
+                                <a href="git@github.com:hsucode/xusblog.github.io.git/blog/docs/DS-CODE/ekl-CreateDatum_case_1/ekl-CreateDatum_case_1.md" target="_blank">
                                     编辑本页
                                 </a>
                             </div>
@@ -154,55 +158,25 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     </div>
                     <div id="article_content">
                         
-                            <span id="blog_start"></span><div class="blog_cover"><img src="/blog/docs/DS-CATIA/DSLS/A5-3_PIC_8.PNG" alt="dsls cover"></div><h1 id="DS-License">DS License</h1>
-<p><a href="./HowToImportDSLicense.mp4"  >video,右键打开观看</a></p>
-<h2 id="import-license">import license</h2>
+                            <span id="blog_start"></span><div class="blog_cover"><img src="/blog/docs/DS-CODE/ekl-CreateDatum_case_1/assets/cover.jpg" alt="ekl-CreateDatum_case_1 cover"></div>
+<pre class="language-java"><code class="language-java">
+let pln (plane)
+let i(integer)
+let fill(surface)
+let intt(curve)
+i =1
 
-<pre class="language-none"><code class="language-none">- 首先在软件安装包内找到 License Server 软件进行安装，或者通过以下网站进行下载
+for i while i &lt;= 20
+{
 
-[下载链接](https://www.3ds.com/support/documentation/resource-library/single/dassault-systemes-license-server-and-license-keys/)
-
-![](导入许可证\2022-09-20-01-32-01.png)
-
-- 打开许可管理器License Server
-
-![](导入许可证\2022-09-06-16-51-35.png)
-
-- 双击激活local host ，确定
-
-![](导入许可证\2022-09-06-16-51-43.png)
-![](导入许可证\2022-09-06-16-51-54.png)
-
-- 点击‘许可证’、‘登记’
-
-![](导入许可证\2022-09-06-16-52-01.png)
-
-- 找到从邮件里面下载好的许可证，打开。
-
-![](导入许可证\2022-09-06-16-52-09.png)
-
-确定 。
-
-导入许可证完成
-
-注：邮件里面.LICZ格式的为许可证
-![](导入许可证\2022-09-06-16-52-21.png)
+    intt=intersect( planeoffset(`xy plane`,i*3200mm,true),ddd\Extrude.1)
+    fill= fill(intt)
+    fill = CreateOrModifyDatum(&quot;Surface&quot;,`Geometrical Set.1`,`Relations\Knowledge Pattern.1\List.1`,i)
+    fill.Name = &quot;S-&quot; + ToString(i)
+    fill.Color = &quot;120,20,255&quot;
+}
 
 
-
-
-
-</code></pre>
-<h2 id="%26quot%3B%E5%88%9B%E5%BB%BA%E8%AE%B8%E5%8F%AF%26quot%3B">&quot;创建许可&quot;</h2>
-
-<pre class="language-none"><code class="language-none">一定要管理员运行cmd,不是powershell
-
-```powershell
-
-md C:\ProgramData\DassaultSystemes\Licenses\
-echo localhost:4085 &gt;C:\ProgramData\DassaultSystemes\Licenses\DSLicSrv.txt
-
-```
 </code></pre>
 
                         

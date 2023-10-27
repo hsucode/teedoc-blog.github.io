@@ -10,6 +10,10 @@ cover: A5-3_PIC_8.PNG
 
 # DS License
 
+
+
+[video,右键打开观看](./HowToImportDSLicense.mp4)
+
 ## import license
 
     - 首先在软件安装包内找到 License Server 软件进行安装，或者通过以下网站进行下载
@@ -46,7 +50,7 @@ cover: A5-3_PIC_8.PNG
 
 
 
-=== "创建许可"
+## "创建许可"
 
     一定要管理员运行cmd,不是powershell
 
