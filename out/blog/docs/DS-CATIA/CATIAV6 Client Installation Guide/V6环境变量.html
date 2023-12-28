@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"  class=" language_zh ">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="">
+    
+    
+    <meta name="description" content="">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/search/style.css" type="text/css"/>
+        
+        <meta name="blog-generator" content="teedoc-plugin-blog">
+        
+        <link rel="stylesheet" href="/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>V6 环境变量 - Knowledge Base</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": null, "update": [], "ts": 0, "author": "", "brief": "", "cover": ""}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/">
+                
+                    <img class="site_logo" src="/static/image/logo.png" alt="Knowledge_Base logo">
+                
+                
+                    <h2>Knowledge Base</h2>
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/get_started/zh/">Installation And Use</a></li>
+<li class="active"><a  href="/blog/">Blog</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class=""><a target="_blank" href="https://github.com/hsucode/teedoc-blog.github.io.git">Download this blog</a></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">搜索</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">输入关键词，多关键词空格隔开</span>
+                                <span id="search_loading_hint">正在加载，请稍候。。。</span>
+                                <span id="search_download_err_hint">下载文件失败，请刷新重试或检查网络</span>
+                                <span id="search_other_docs_result_hint">来自其它文档的结果</span>
+                                <span id="search_curr_doc_result_hint">当前文档搜索结果</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="">
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>V6 环境变量</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                                <span class="article_date" title="最后修改日期： 2023-10-26">
+                                    2023-10-26
+                                </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                            <div id="source_link">
+                                <a href="git@github.com:hsucode/xusblog.github.io.git/blog/docs/DS-CATIA/CATIAV6 Client Installation Guide/V6环境变量.md" target="_blank">
+                                    编辑本页
+                                </a>
+                            </div>
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <span id="blog_start"></span><h1 id="%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F">环境变量</h1>
+<p>所有环境变量注意等号左右都不可以有空格</p>
+<p>文件路径为 &quot;C:\Program Files\Dassault Systemes\B423\CATEnv\Env.txt&quot; ;在最后添加下列内容</p>
+<p>=== &quot;V5&quot;</p>
+
+<pre class="language-none"><code class="language-none">```bash
+CATLM_ODTS=1 - Disable license error messages at startup 
+L_WILSON_LAN=1 - Access to Wilson's spline curves 
+CGM_ROLLINGOFFSET=1 - Access to the Rolling Offset option in GSD 
+TAILLE_MEMOIRE_CHOISIE=1 - Optimize IGES export memory 
+CATNoStartDocument=no - Disable product at startup 
+CNEXTBACKGROUND=1 - Disable sky background at startup 
+CNEXTSPLASHSCREEN=1 - Disable display of planet at startup 
+SHOW_CST_CHILDREN=1 - Display stresses in the parents specification tree in sketcher 
+CNEXTOUTPUT=console - Display Catia's logs in command windows 
+MM_NO_REPLACE=1 - Associativty about replacement of components cloned with different 
+```
+
+</code></pre>
+<p>=== &quot;V6&quot;</p>
+
+<pre class="language-none"><code class="language-none">```bash
+XCAD_IMPORT_MATERIAL=true
+XCAD_IMPORT_MATERIAL_FORCED_MODE=2
+SPA_XCAD_MATERIAL_TEXTURE=1
+TPE_Autosurf=1 
+TPE_TrnChidi=1 
+
+CEG_WATERSHED=1
+CEG_SUBGRADE=1 
+CEG_SUBGRADE_PUB=1 
+CEG_SUBGRADE_ROAD_DESIGN=1 
+CEG_DRAINAGE=1
+CEG_TEST_COMMAND=1
+CEG_CRSImport_SubPath=1
+CEG_CRSExport=1
+CEG_BDPImportDXF=1
+CEG_DRAINAGE=1
+CEG_TEST_COMMAND=1
+CEG_CRSImport_SubPath=1
+CEG_CRSExport=1
+CEG_BDPImportDXF=1
+CEG_DRAINAGE=1
+CEG_Rebars=1
+CEG_RebarsAdvanced=1
+CEG_Alignments=1
+CEG_Alignments_Scaling=1
+CEG_SHAPE_COMMAND=1
+CEG_SplitWindow=1
+CEG_BDPImportDXF=1
+CEG_CAA_Alignment=1
+CEG_ImportCloudOfPoint=1
+CEG_WATERSHED=1
+
+PSD_POLYHEDRAL=1
+
+VISU_SECTIONING_VIEW_ODT=1
+CLIPPING_BOX_TOOL_ODT=1
+CATAfrDeclarativeDump =1
+UDF_PC_DIFFERENT_SCALE_INSTANTIATION=1
+DBDI_ForceCycleMigration=1
+RBR_TEST_COMMAND=1
+CNEXTOUTPUT=console
+CATForceNotCertifiedGraphics=1
+MMR_SHOW_MECH_PART_CMD=1
+CATLM_OTDS=1
+
+RBR_TEST_COMMAND=1
+CATDXAllowDataExchangePLMBatchExportPVS=1
+
+UDF_ALLOW_KNOWLEDGE_PATTERN=1 
+
+```
+</code></pre>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                    </div>
+                    <div id="next">
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a>链接</a><ul><li><a target="_blank" href="https://xuscode.github.io/bimnote.github.io/">old wiki</a></li>
+<li><a  href="https://hsucode.github.io/xusblog.github.io//">project</a></li>
+</ul>
+</li>
+<li><a>源码</a><ul><li><a target="_blank" href="https://github.com/hsucode/teedoc-blog.github.io">github</a></li>
+<li><a target="_blank" href="https://github.com/hsucode/hsucode.github.io.git">本网站源文件</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a target="_blank" href="https://cn.bing.com/?mkt=zh-CN">KNOWLEDGE BASE @2023</a></li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/static/js/theme_default/main.js"></script>
+    
+        <script src="/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/static/js/search/search_main.js"></script>
+    
+        <script src="/static/js/plugin_blog/main.js"></script>
+    
+        <script src="/static/js/custom.js"></script>
+    
+        <script type="text/javascript" src="/static/js/live.js"></script>
+    
+</body>
+
+</html>

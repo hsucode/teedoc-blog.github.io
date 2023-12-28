@@ -1,5 +1,5 @@
 cd /d %~dp0
-
+rem python -m venv pyenv
 call C:\dev\pyenv\Scripts\activate.bat
 
 goto aaa
@@ -17,5 +17,5 @@ teedoc install
 :aaa
 
 teedoc build
-@REM teedoc serve
+teedoc serve
 

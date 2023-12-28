@@ -1,5 +1,12 @@
+---
+title: Cmd-7z Package
+keywords:  7z,Package
+desc: 7z
+author: xus
+date: 2021-03-14
+tags: 7z
+---
 
-# Cmd-7z 打包文件
 
 ```bash
 

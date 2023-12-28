@@ -2,26 +2,26 @@
     "locale": "zh_CN",
     "class": "language_zh",
     "navbar": {
-        "title": "知識庫",
+        "title": "Knowledge Base",
         "logo": {
-            "alt": "知識庫 logo",
+            "alt": "Knowledge_Base logo",
             "src": "/static/image/logo.png"
         },
         "home_url": "/",
         "items": [
             {
                 "url": "/get_started/zh/",
-                "label": "安装使用",
+                "label": "Installation And Use",
                 "position": "left"
             },
             {
                 "url": "/blog/",
-                "label": "博客",
+                "label": "Blog",
                 "position": "left"
             },
             {
-                "url": "https://github.com/neutree/teedoc",
-                "label": "github",
+                "url": "https://github.com/hsucode/teedoc-blog.github.io.git",
+                "label": "Download this blog",
                 "target": "_blank",
                 "position": "right"
             },

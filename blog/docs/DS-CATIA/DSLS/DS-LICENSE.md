@@ -5,14 +5,13 @@ tags: BUILDING
 type: "categories"
 categories: "BUILDING"
 keywords: 'BIM'
-cover: A5-3_PIC_8.PNG
 ---
 
 # DS License
 
 
 
-[video,右键打开观看](./HowToImportDSLicense.mp4)
+[video,右键打开观看](HowToImportDSLicense.mp4)
 
 ## import license
 

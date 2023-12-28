@@ -1,7 +1,7 @@
 {
     "locale": "en",
     "navbar": {
-        "title": "Knowledge_Base",
+        "title": "Knowledge Base",
         "logo": {
             "alt": "Knowledge_Base logo",
             "src": "/static/image/logo.png"
@@ -10,7 +10,7 @@
         "items": [
             {
                 "url": "/get_started/en/",
-                "label": "Install",
+                "label": "Installation",
                 "position": "left"
             },            {
                 "url": "/blog/",
@@ -19,7 +19,7 @@
             },
             {
                 "url": "https://github.com/hsucode/teedoc-blog.github.io.git",
-                "label": "github",
+                "label": "Download this blog",
                 "target": "_blank",
                 "position": "right"
             },

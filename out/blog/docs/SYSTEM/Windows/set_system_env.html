@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"  class=" language_zh ">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="">
+    
+    
+    <meta name="description" content="">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/search/style.css" type="text/css"/>
+        
+        <meta name="blog-generator" content="teedoc-plugin-blog">
+        
+        <link rel="stylesheet" href="/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>set windows env - Knowledge Base</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": null, "update": [], "ts": 0, "author": "", "brief": "", "cover": ""}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/">
+                
+                    <img class="site_logo" src="/static/image/logo.png" alt="Knowledge_Base logo">
+                
+                
+                    <h2>Knowledge Base</h2>
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/get_started/zh/">Installation And Use</a></li>
+<li class="active"><a  href="/blog/">Blog</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class=""><a target="_blank" href="https://github.com/hsucode/teedoc-blog.github.io.git">Download this blog</a></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">搜索</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">输入关键词，多关键词空格隔开</span>
+                                <span id="search_loading_hint">正在加载，请稍候。。。</span>
+                                <span id="search_download_err_hint">下载文件失败，请刷新重试或检查网络</span>
+                                <span id="search_other_docs_result_hint">来自其它文档的结果</span>
+                                <span id="search_curr_doc_result_hint">当前文档搜索结果</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="">
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>set windows env</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                                <span class="article_date" title="最后修改日期： 2023-11-22">
+                                    2023-11-22
+                                </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                            <div id="source_link">
+                                <a href="git@github.com:hsucode/xusblog.github.io.git/blog/docs/SYSTEM/Windows/set_system_env.md" target="_blank">
+                                    编辑本页
+                                </a>
+                            </div>
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <span id="blog_start"></span><p>setx /m Path &quot;%SystemRoot%\system32;C:\Apps\hugo;C:\Apps\ffmeg\ffmpeg-n6.0-26-g3f345ebf21-win64-gpl-6.0\bin;C:\Apps\aria2\aria2-1.37.0-win-64bit-build1;;;;;;;;&quot;</p>
+<p>C:\Program Files\Microsoft MPI\Bin;C:\Program Files\PlasticSCM5\server;C:\Program Files\PlasticSCM5\client;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Microsoft\Web Platform Installer;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Users\user.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\dotnet;C:\Program Files\TortoiseSVN\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Rust stable MSVC 1.69\bin;C:\Program Files\TortoiseGit\bin;C:\Users\user\AppData\Local\Programs\Python\Python312\Scripts;C:\Users\user\AppData\Local\Programs\Python\Python312;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user.dotnet\tools;C:\Users\user\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\user\AppData\Local\JetBrains\Toolbox\scripts;D:\app\vim\vim\vim90;D:\app\hugo_extended_0.104.3_windows-amd64;C:\app\cpolar;C:\Users\user.dotnet\tools;D:\app\node-v16.18.0-win-x64;D:\app\PortableGit\bin;D:\app\aria2\aria2-1.36.0-win-64bit-build1;D:\app\cmder;C:\Program Files\cpolar;</p>
+<p>%ALLUSERSPROFILE% 列出所有用户Profile 文件位置。<br />
+%APPDATA% 列出应用程序数据的默认存放位置。<br />
+%CD% 列出当前目录。<br />
+%CLIENTNAME% 列出联接到终端服务会话时客户端的NETBIOS 名。<br />
+%CMDCMDLINE% 列出启动当前cmd.exe 所使用的命令行。<br />
+%CMDEXTVERSION% 命令出当前命令处理程序扩展版本号。<br />
+%CommonProgramFiles% 列出了常用文件的文件夹路径。<br />
+%COMPUTERNAME% 列出了计算机名。<br />
+%COMSPEC% 列出了可执行命令外壳 （命令处理程序）的路径。<br />
+%DATE% 列出当前日期。<br />
+%ERRORLEVEL% 列出了最近使用的命令的错误代码。<br />
+%HOMEDRIVE% 列出与用户主目录所在的驱动器盘符。<br />
+%HOMEPATH% 列出用户主目录的完整路径。<br />
+%HOMESHARE% 列出用户共享主目录的网络路径。<br />
+桌面：%HOMEDRIVE% &amp; %HOMEPATH%桌面<br />
+开始菜单：%HOMEDRIVE% &amp; %HOMEPATH% 「开始」菜单<br />
+%LOGONSEVER% 列出有效的当前登录会话的域名控制器名。<br />
+%NUMBER_OF_PROCESSORS% 列出了计算机安装的处理器数。<br />
+<strong>%OS% </strong>列出操作系统的名字。(WindowsXP 和Windows2000 列为Windows_NT.)<br />
+<strong>%Path% </strong>列出了可执行文件的搜索路径。<br />
+%PATHEXT% 列出操作系统认为可被执行的文件扩展名。<br />
+%PROCESSOR_ARCHITECTURE% 列出了处理器的芯片架构。<br />
+%PROCESSOR_IDENTFIER% 列出了处理器的描述。<br />
+%PROCESSOR_LEVEL% 列出了计算机的处理器的型号。<br />
+%PROCESSOR_REVISION% 列出了处理器的修订号。<br />
+%ProgramFiles% 列出了ProgramFiles 文件夹的路径。<br />
+%ProgramFiles(x86)% 列出了ProgramFiles (x86) 文件夹的路径。<br />
+%PROMPT%列出了当前命令解释器的命令提示设置。<br />
+%RANDOM% 列出界于0 和32767 之间的随机十进制数。<br />
+%SESSIONNAME% 列出连接到终端服务会话时的连接和会话名。<br />
+%SYSTEMDRIVE% 列出了Windows 启动目录所在驱动器。<br />
+%SYSTEMROOT% 列出了Windows 启动目录的位置。<br />
+%TEMP%或%TMP% 列出了当前登录的用户可用应用程序的默认临时目录。<br />
+%TIME% 列出当前时间。<br />
+%USERDOMAIN% 列出了包含用户帐号的域的名字。<br />
+%USERNAME% 列出当前登录的用户的名字。<br />
+<strong>%USERPROFILE% </strong>列出当前用户Profile 文件位置。<br />
+%WINDIR% 列出操作系统目录的位置</p>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                    </div>
+                    <div id="next">
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a>链接</a><ul><li><a target="_blank" href="https://xuscode.github.io/bimnote.github.io/">old wiki</a></li>
+<li><a  href="https://hsucode.github.io/xusblog.github.io//">project</a></li>
+</ul>
+</li>
+<li><a>源码</a><ul><li><a target="_blank" href="https://github.com/hsucode/teedoc-blog.github.io">github</a></li>
+<li><a target="_blank" href="https://github.com/hsucode/hsucode.github.io.git">本网站源文件</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a target="_blank" href="https://cn.bing.com/?mkt=zh-CN">KNOWLEDGE BASE @2023</a></li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/static/js/theme_default/main.js"></script>
+    
+        <script src="/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/static/js/search/search_main.js"></script>
+    
+        <script src="/static/js/plugin_blog/main.js"></script>
+    
+        <script src="/static/js/custom.js"></script>
+    
+        <script type="text/javascript" src="/static/js/live.js"></script>
+    
+</body>
+
+</html>

@@ -1,13 +1,18 @@
+---
+title: Cmd xcopy
+keywords:  cmd,xcopy
+desc: 7z
+author: xus
+date: 2021-03-14
+tags: xcopy
+---
 
+You Can Use This Method
 
-# CMD文件复制 xcopy
-
-可以使用一下方法
-
-* 先创建目标文件夹
+* create the destination folder first
 md X:\003_Projects\New_Project
 
-* 把自己的项目复制到目标文件夹,使用 下面的cmd 复制资料电脑不会卡死，/q 可以隐藏细节。
+* copy your project to the destination folder use the following cmd to copy the data computer will not freeze q can hide the details
 
 ```batch
 xcopy C:\Video\*.* X:\003_Projects\New_Project  /s /e /c /y /h /r /d
